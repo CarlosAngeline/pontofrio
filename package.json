@@ -1,0 +1,27 @@
+{
+  "name": "pontofrio",
+  "version": "1.0.1",
+  "description": "Novo site responsivo",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-bower": "^0.0.13",
+    "gulp-sass": "^2.3.2"
+  },
+  "devDependencies": {
+    "gulp-concat": "^2.6.0",
+    "gulp-minify": "0.0.14",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^2.1.1",
+    "gulp-uglify": "^2.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Lista",
+    "Site"
+  ],
+  "author": "Oxigênio Comunicação",
+  "license": "ISC"
+}

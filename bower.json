@@ -1,0 +1,22 @@
+{
+  "name": "pontofrio",
+  "description": "",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "font-awesome": "fontawesome#^4.6.3",
+    "typi": "^2.3.0"
+  },
+  "devDependencies": {
+    "sass-mixins": "^0.12.0"
+  }
+}

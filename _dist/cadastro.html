@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lista de Casamento</title>
+
+<!-- Bootstrap -->
+<link href="css/main.min.css" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/bootstrap.datepicker-fork/1.3.0/css/datepicker3.css" rel="stylesheet">
+<link href="http://silviomoreto.github.io/bootstrap-select/stylesheets/bootstrap-select.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button id="menu-toggle" type="button" class="navbar-toggle"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar bar1"></span> <span class="icon-bar bar2"></span> <span class="icon-bar bar3"></span> </button>
+      <a class="navbar-brand" href="#"><img src="images/logo.png" class="img-responsive" alt="" ></a> </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse">
+      <ul  class="nav navbar-nav navbar-right">
+        <li> <a href="#"> Regulamento </a> </li>
+        <li> <a href="#"> Dúvidas </a> </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+</nav>
+
+<div class="wrapper"> 
+<div class="page-heading">
+<div class="container">
+<h1 class="entry-title"><span>Cadastro dos noivos</span></h1></div>
+</div>
+
+  <!---->
+  <div class="features-cadastro">
+    <div class="container">
+      <div class="row">
+        <div style="">
+          <div class="col-md-8 col-md-push-2"> 
+            
+            <!--CADASTRO STEPS-->
+            <div class="cadastro-steps">
+            
+            <form action="" method="">
+            
+            <!--NAV-->
+            <ul class="nav nav-wizard">
+            <li><a href="#tab1" data-toggle="tab">1</a><div class="nav-arrow"></div><span>Nome dos noivos</span></li>
+            <li><div class="nav-wedge"></div><a href="#tab2" data-toggle="tab">2</a><div class="nav-arrow"></div> <span>Data e local</span></li>
+            <li><div class="nav-wedge"></div><a href="#tab3" data-toggle="tab">3</a> <span>Endereço de entrega</span></li>
+        	</ul>
+            
+              <div class="tab-content">
+              <!--TAB 01-->
+                <div class="tab-pane" id="tab1">
+                <div class="col-md-12">
+                <h4>Dados dos noivos</h4>
+                <p>Preencha o nome dos noivos e dos pais dos noivos para avançar no cadastro.</p>
+                </div>
+                <div class="clearfix"></div>
+                  <fieldset>
+                    <div class="col-md-12">
+                      <h5>Sobre você</h5>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <input name="nome" type="text" class="form-control" required placeholder="*Digite seu nome completo">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <input name="email" type="email" class="form-control" required placeholder="*Digite seu e-mail">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <input name="nomemae" type="text" class="form-control" placeholder="Digite o nome da Mãe">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <input name="nomepai" type="text" class="form-control" placeholder="Digite o nome do Pai">
+                      </div>
+                    </div>
+                  </fieldset>
+                  <fieldset>
+                    <div class="col-md-12">
+                      <h5>Parceiro</h5>
+                    </div>
+                    <div class="col-sm-12">
+                      <div class="form-group">
+                        <input name="cojuge" type="text" class="form-control" placeholder="*Digite o nome completo do seu(a) parceiro(a)">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <input name="conjugemae" type="text" class="form-control" placeholder="Nome da Mãe do seu(a) parceiro(a)">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <input name="conjugepai" type="text" class="form-control" placeholder="Nome do Pai do seu(a) parceiro(a)">
+                      </div>
+                    </div>
+                  </fieldset>
+                  <fieldset>
+                    <div class="col-md-12">
+                      <h5>Foto do Casal</h5>
+                    </div>
+                    <div class="col-sm-12">
+                      <div class="form-group">
+                        <div class="upload-drop-zone" id="drop-zone">
+                        <input type="text" class="btn btn-default" name="next" value="Enviar foto">
+                        <span>JPG ou GIF. Máximo: 1,10 MB</span>
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+                <!--TAB 02-->
+                <div class="tab-pane" id="tab2">
+                <div class="col-md-12">
+                <h4>Dados do Casamento</h4>
+                <p>Preencha data e local do seu casamento, você pode alterar esses dados depois na áera administrativa dos noivos.</p>
+                </div>
+                <div class="clearfix"></div>
+                  <fieldset>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                        <div class="input-group">
+                          <input type="text" class="form-control datepicker" placeholder="*Data do casamento">
+                          <span class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <select class="form-control">
+                        <option selected disabled>Estado</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espirito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraiba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantis</option>
+                      </select>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <input name="cidade" type="text" class="form-control" placeholder="Cidade">
+                      </div>
+                    </div>
+                    
+                    <div class="col-sm-8 col-sm-push-2">
+                    <div class="space-25"></div>
+                    <i class="fa fa-info-circle pull-left"></i><p style="margin-left:30px;">Sua Lista de Casamento pode ser criada com até <strong>365 dias de antecedência</strong>. Mas fique atento, o site sempre tem novidades para você e alguns produtos podem sair de linha. Mantenha a sua Lista de Casamento sempre atualizada!</p>
+                    </div>
+                  </fieldset>
+                </div>
+                <!--TAB 03-->
+                <div class="tab-pane" id="tab3">
+                <div class="col-md-12">
+                <h4>Endereço de entrega dos presentes</h4>
+                <p>Deseja que o endereço de entrega seja o mesmo do cadastro? </p>
+                </div>
+                <div class="clearfix"></div>
+                <fieldset>
+                	<div class="col-sm-12">
+                    <div class="col-sm-6">
+                    <label class="radio">
+                    <input type="radio" name="sim" data-toggle="radio" value="sim"><i></i>Sim
+                    </label>
+                    </div>
+                    <div class="col-sm-6 col-sm-pull-3">
+                    <label class="radio">
+                    <input type="radio" name="nao" data-toggle="radio" value="nao"><i></i>Não
+                    </label>
+                    </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <select class="form-control">
+                        <option selected disabled>Qual o endereço de entrega?</option>
+                        <option>Endereço A</option>
+                        <option>Endereço B</option>
+                        <option>Endereço C</option>
+                      </select>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <input name="text" type="text" class="form-control" placeholder="Digite o nome do local">
+                        <p class="help-block">Digite o nome do local (ex: casa da mãe) </p>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <input name="cep" type="text" class="form-control" placeholder="Cep">
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <input name="endereco" type="text" class="form-control" placeholder="Endereço">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <input name="numero" type="text" class="form-control" placeholder="Número">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                    <input name="cidade" type="text" class="form-control" placeholder="Cidade">
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <input name="bairro" type="text" class="form-control" placeholder="Bairro">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <input name="text" type="text" class="form-control" placeholder="Ponto de referência">
+                      </div>
+                    </div>
+                    <div class="col-sm-8 col-sm-offset-2">
+                    <div class="linha"></div>
+                      <div class="form-group">                  
+ 					<label class="checkbox" for="checkbox1">
+					<input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                    Para concluir o cadastro, é necessário aceitar o <a href="#" data-toggle="modal" data-target="#myModal" target="_blank">regulamento</a>. </label>
+                      </div>
+                    </div>
+                    
+                  </fieldset>
+                </div>
+                
+                 <ul class="pager wizard-footer">
+                 <p>*Campo obrigatório</p>
+                 <li><input type="button" class="btn btn-lg btn-fill btn-default btn-previous" name="previous" value="Voltar"></li>
+                 <li><input type="button" class="btn btn-lg btn-primary btn-next" name="next" value="Próximo"></li>
+                 <li><input type="button" class="btn btn-lg btn-primary btn-finish" name="Enviar" value="Concluir" style="display: none;"></li>
+                 <div class="clearfix"></div>
+                </ul>
+                
+              </div>
+              </form>
+            </div>
+            <!--./CADASTRO STEPS--> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--/. wrapper--> 
+<footer class="footer">
+            <div class="container">
+            <nav class="pull-left">
+                    <ul>
+                        <li><a href="#">Regulamento</a></li>
+                        <li><a href="#">Dúvidas</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </nav>
+                <div class="social-area pull-right">
+                    <a class="btn btn-social btn-facebook btn-simple">
+                        <i class="fa fa-facebook-square"></i>
+                    </a>
+                    <a class="btn btn-social btn-twitter btn-simple">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a class="btn btn-social btn-pinterest btn-simple">
+                        <i class="fa fa-pinterest"></i>
+                    </a>
+                </div>
+                <div class="copyright">
+                    © 2016 Cnova Lista de Casamento
+                </div>
+            </div>
+</footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> --> 
+<script src="js/jquery-1.10.2.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.bootstrap.wizard.js" type="text/javascript"></script> 
+<script src="https://cdn.jsdelivr.net/bootstrap.datepicker-fork/1.3.0/js/bootstrap-datepicker.min.js"></script> 
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/radio.js"></script> 
+<script src="js/checkbox.js"></script> 
+<script src="js/dropzone.min.js"></script>
+<script src="js/wizard.js"></script> 
+
+<!--  custom 	 --> 
+<script src="js/custom.min.js"></script> 
+
+<script>
+$(document).ready(function() {
+
+// Steps Cadastro
+
+$('.cadastro-steps').bootstrapWizard({
+	tabClass: 'nav nav-pills',
+	nextSelector: '.btn-next',
+	previousSelector: '.btn-previous',
+	
+	onInit : function(tab, navigation, index){
+            
+           //check number of tabs and fill the entire row
+           var $total = navigation.find('li').length;
+           $width = 100/$total;
+           
+           $display_width = $(document).width();
+           
+           if($display_width < 600 && $total > 3){
+               $width = 50;
+           }
+           
+           navigation.find('li').css('width',$width + '%');
+           
+        },
+	
+	onNext: function(tab, navigation, index){
+            if(index == 1){
+                return validateFirstStep();
+            } else if(index == 2){
+                return validateSecondStep();
+            } else if(index == 3){
+                return validateThirdStep();
+            } //etc. 
+              
+        },
+	onTabClick : function(tab, navigation, index){
+            // Disable the posibility to click on tabs
+			$('.cadastro-steps .nav.nav-wizard li a').click(function() {			
+    $(this).parent().addClass('active').siblings().removeClass('active');			
+});
+            return false;
+        },
+		onTabShow: function(tab, navigation, index) {
+            var $total = navigation.find('li').length;
+            var $current = index+1;
+            
+            var wizard = navigation.closest('.cadastro-steps');
+            
+            // If it's the last tab then hide the last button and show the finish instead
+            if($current >= $total) {
+                $(wizard).find('.btn-next').hide();
+                $(wizard).find('.btn-finish').show();
+            } else {
+                $(wizard).find('.btn-next').show();
+                $(wizard).find('.btn-finish').hide();
+            }
+        }
+	
+	});
+});
+
+function validateFirstStep(){
+	
+    $(".cadastro-steps form").validate({
+		
+		rules: {
+			nome: {
+				required: true,
+				minlength: 5
+				},
+			email: {
+				required: true,
+				email: true
+			},
+			nomemae: {
+				required: true,
+				minlength: 5
+				},		
+			nomepai: {
+				required: true,
+				minlength: 5
+				},
+			conjuge: {
+				required: true,
+				minlength: 5
+				},
+		},
+		messages: {
+			nome: "Digite seu nome completo",
+			email: "Digite um e-mail válido",
+			nomemae: "Digite o nome completo da sua mãe",
+			nomepai:"Digite o nome completo do seu pai",
+			conjuge: "Digite o nome completo do seu parceiro(a)",				
+		},
+		highlight: function(element) {
+        $(element).closest('.form-group').removeClass('has-success').addClass('has-error');
+    	},
+    	unhighlight: function(element) {
+        $(element).closest('.form-group').removeClass('has-error').addClass('has-success');
+    	},
+		errorElement: "span",
+		errorClass: 'label label-danger label-fill',
+		errorPlacement: function(error, element) {
+        if(element.parent('.input-group').length) {
+            error.insertAfter(element.parent());
+        } else {
+            error.insertAfter(element);
+        }
+    }
+	}); 
+	
+	if(!$(".cadastro-steps form").valid()){
+    	//form is invalid
+    	return false;
+		
+	}
+	
+	return true;
+}
+
+function validateSecondStep(){
+   
+    //code here for second step
+    $(".cadastro-steps form").validate({
+		rules: {
+			
+		},
+		messages: {
+			
+		}
+	}); 
+	
+	if(!$(".cadastro-steps form").valid()){
+    	console.log('invalid');
+    	return false;
+	}
+	return true;
+}
+
+function validateThirdStep(){
+    //code here for third step
+    
+}
+</script>
+</body>
+</html>

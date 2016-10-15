@@ -1,0 +1,82 @@
+// Minha Lista
+.minha-lista {
+	&.vazia {
+		h4 {
+			color: $medium-gray;
+			font-weight: $font-weight-light;
+		}
+		.btn {
+		margin-top:20px;
+		}
+	.icon {
+		min-width:100%;
+		height: inherit;
+		font-size:100px;
+		text-align: center;
+		color:$default-color;
+		& > i{
+			width: 300px;
+			@include vertical-align;
+			}
+		}
+	
+	.pulse {
+	-webkit-animation-name: pulse;
+	-moz-animation-name: pulse;
+	-o-animation-name: pulse;
+	animation-name: pulse;
+	animation-iteration-count: infinite;
+	}
+	
+	}
+}
+
+.animated{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;}.animated.hinge{-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;}
+
+@-webkit-keyframes pulse {
+    0% { -webkit-transform: scale(1); }	50% { -webkit-transform: scale(1.1); }
+    100% { -webkit-transform: scale(1); }
+}
+@-moz-keyframes pulse {
+    0% { -moz-transform: scale(1); }	
+	50% { -moz-transform: scale(1.1); }
+    100% { -moz-transform: scale(1); }
+}
+@-o-keyframes pulse {
+    0% { -o-transform: scale(1); }	
+	50% { -o-transform: scale(1.1); }
+    100% { -o-transform: scale(1); }
+}
+@keyframes pulse {
+    0% { transform: scale(1); }	
+	50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+
+@media only screen and (max-width : 320px) {
+	
+	
+
+
+}
+
+@media only screen and (max-width : 375px) {
+	
+	
+
+}
+
+@media only screen and (max-width : 414px) {
+	
+
+}
+
+@media only screen and (max-width :768px) {
+	
+	.navbar .navbar-nav > li > a {
+
+	margin: 0px -3px;
+	}
+}
+

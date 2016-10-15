@@ -1,0 +1,58 @@
+@import "variables";
+@import "mixins";
+@import "bootstrap-custom";
+//@import "include-media";
+
+@import "bower_components/typi/scss/typi";
+@import "typography";
+@import "font-awesome";
+
+// Core CSS
+@import "misc";
+@import "buttons";
+@import "inputs";
+//@import "progress-bars";
+//@import "sliders";
+//@import "alerts";
+@import "tables";
+@import "labels";
+//@import "tags";
+//@import "tooltips-and-popovers";
+@import "checkbox-radio-switch";
+@import "navbars";
+@import "footers";
+
+// Fancy Stuff
+
+@import "sidebar-menu";
+//@import "social-buttons";
+//@import "morphing-buttons";
+@import "dropdown";
+//@import "icons";
+@import "bootstrap-select";
+
+@import "nav-wizard";
+@import "tabs-navs-pagination";
+//@import "media";
+@import "cards";
+//@import "collapse";
+//@import "carousel";
+@import "modal";
+//@import "chartist";
+
+//@import "flexisel";
+@import "responsive";
+//@import "datepicker";
+
+
+//Page Files & theme
+@import "pages/home";
+@import "pages/busca";
+@import "pages/cadastro";
+@import "pages/minha_lista";
+@import "pages/produtos";
+@import "pages/lista_presentes";
+@import "pages/flex";
+@import "pages/detalhe-produto";
+@import "pages/produto-fora-lista";
+@import "pages/2_1_1_perfil_dos_noivos_lista_de_presentes";

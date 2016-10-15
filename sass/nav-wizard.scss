@@ -1,0 +1,125 @@
+$selected: #9f541b;
+
+
+.nav-pills {
+    &.nav-wizard {
+        > li {
+            overflow: visible;
+			text-align: center;
+			margin: 30px 0 0 0;
+			display: block;
+			position: relative;
+            //border-right: 15px solid transparent;
+            //border-left: 15px solid transparent;
+            + li {
+                margin-left: 0;
+            }
+			span {
+			position: absolute;
+    		left: 0;
+    		top: 35px;
+    		text-align: center;
+    		width: 100%;
+			color: #d1d9e3;
+			}
+
+			&.active span{
+				color: $selected;
+				}
+          
+            &:first-child {
+               border-left: 0;
+ 
+                a {
+                    border-radius:50%;
+					width: 65px;
+					height: 65px;
+					display: inline-block;
+                }
+            }
+ 
+            &:last-child {
+                border-right:0;
+ 
+                a {
+                    border-radius:50%;
+					width: 65px;
+					height: 65px;
+					display: inline-block;
+					z-index: 165;
+                }
+            }
+ 
+            a {
+                    border-radius:50%;
+					width: 65px;
+					height: 65px;
+					z-index: 165;
+					padding-top:23px;
+					border: 0;
+					color: #FFF;
+					font-weight: bold;
+					display: inline-block;
+					@include vertical-align();
+					background-color: #d1d9e3;
+				i{
+				font-size: 20px;
+				}
+            }
+ 
+            .nav-arrow {
+                position: absolute;
+                top: -8px;
+                right:-20px;
+                width:125px;
+                height: 0;
+                border-style: solid;
+                border-width:7px;
+                border-color: #d1d9e3;
+                z-index: 150;
+            }
+ 
+            .nav-wedge {
+                position: absolute;
+                top:-8px;
+                left:0;
+                width: 125px;
+                height: 0;
+                border-style: solid;
+                border-width:7px;
+                border-color: #d1d9e3;
+                z-index: 150;
+            }
+ 
+            /*&:hover {
+                .nav-arrow {
+                    border-color: #aaa #aaa #aaa transparent;
+                }
+ 
+                .nav-wedge {
+                    border-color: #aaa #aaa #aaa transparent;
+                }
+ 
+                a {
+                    background-color: $primary-color;
+                    color: #fff;
+                }
+            }*/
+			
+            &.active {
+                .nav-arrow {
+                    border-color:$selected;
+                }
+ 
+                .nav-wedge {
+                    border-color:#d1d9e3;
+                }
+ 
+                a {
+                    background-color:$selected;
+					//&:hover {background-color: $default-color;}
+                }
+            }
+        }
+    }
+}

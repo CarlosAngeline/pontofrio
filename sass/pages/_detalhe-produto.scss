@@ -1,0 +1,310 @@
+.features-produto {
+	padding-top: 5px;
+	.container{
+		padding:40px;
+		
+	}
+	
+	h2{
+		color: #9e9e9e;
+		font-weight:$font-weight-semi;
+		margin-bottom: 0;
+		margin-top: 5px;
+	}
+
+	p {
+
+		font-weight:$font-weight-bold;
+	}
+	
+	.form-control {
+		width: 80px;
+		position: relative;
+   		display: inline-block;
+   		margin-right: 20px;
+   		font-weight: bold;
+	}
+
+	.voltagens {
+		padding-top: 20px;
+
+	}
+
+	.voltagem {
+
+		background-color: #FFFFFF;
+	    border: 2px solid #9e9e9e;
+	    border-radius: 4px;
+	    color: #9f9f9f;
+	    padding: 10px 22px;
+	    height: 40px;
+	    margin-right: 20px;
+	    border-radius: 5px;
+	    font-weight: bold;
+	}
+
+	.voltagens a:hover {
+		border: 2px solid #9f541b;
+		background-color: #fbfaf5;
+
+	}
+
+	.voltagens a:active {
+		border: 2px solid #9f541b;
+		background-color: #fbfaf5;
+
+	}
+	
+		
+	
+	
+	small {
+		font-size: 0.75rem;
+		display: block;
+		color: #9e9e9e;
+		font-weight:$font-weight-normal;
+	}
+
+	.price-from {
+		display: block;
+	    color: #a9aebb;
+	    font-size: 14px;
+	    text-decoration: line-through;
+	    padding-top:30px;
+
+	}
+
+	.price {
+		color: #9f541b;
+    	font-weight: normal;
+    	font-size: 30px;
+
+	}
+
+	.price-x {
+
+		display: block;
+	    color: #a9aebb;
+	    font-size: 14px;
+	    padding-bottom: 20px;
+	    
+	}
+
+	.entregador {
+
+		display: block;
+	    color: #a9aebb;
+	    font-size: 14px;
+	    padding-top: 20px;
+	    padding-bottom: 20px;
+	    border-top: 1px solid #f0eff4;
+	    border-bottom: 1px solid #f0eff4;
+	}
+
+	.entregador strong {
+		color: #c99252;
+		font-weight:$font-weight-bold;
+	}
+
+
+	.add-carrinho {
+		padding-top: 12px;
+		display: -webkit-flex;
+    	display: flex;
+    	justify-content: space-between;
+    	align-items: center;
+
+	}
+
+	.add-carrinho > div {
+		text-align: center;
+	}
+
+	.qtd-solicitado {
+		
+	    color: #a9aebb;
+	    font-size: 14px;
+	  
+	}
+
+	.qtd-comprado {
+		
+	    color: #a9aebb;
+	    font-size: 14px;
+	     
+	}
+
+	.quantity {
+		display: block;
+	    color: #a9aebb;
+	    font-size: 14px;
+	}
+
+	.quantity strong {
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	.quantity input {
+		border: 1px solid #a9aebb;
+		width: auto;
+		padding: 6px;
+		font-size: 18px;
+		width: 50px;
+
+	}
+
+	.features-produto .qty input:focus {
+		
+
+	}
+
+	.total-compra {
+		padding-top: 20px;
+		text-align: center;
+		color: #a9aebb;
+	}
+
+	.btn-add-cart {
+		border-radius: 30px;
+		display: inline-flex;
+		align-items: center;
+	}
+
+	.btn-add-cart i {
+		padding-right: 10px;
+	}
+
+	
+}
+
+.breadcrumb {
+	background-color: transparent;
+}
+
+.breadcrumb li {
+	font-size: 16px;
+}
+
+.breadcrumb li a {
+	color: #9e9e9e;
+}
+
+.breadcrumb span {
+	color: #cb965a;
+	font-size: 20px;
+	font-weight:$font-weight-bold;
+
+}
+
+
+
+.wrapper.details-products {
+		background-color: #fbfaf5;
+	}
+
+.details-products h2 {
+	color: #c99252;
+
+}
+
+.details-products p {
+	color: #a9adb9;
+}
+
+.wrapper.details-products strong {
+	color: #9e9e9e;
+}
+
+.table-section {
+	border-bottom: 1px solid #f0eff4;
+	padding-bottom: 25px;
+}
+
+.table-row {
+	display: -webkit-flex;
+    	display: flex;
+}
+
+.table-td {
+	margin-left: 20px;
+}
+
+.table-th {
+	width: 200px;
+}
+
+.table-section:last-child {
+	padding-bottom: 60px;
+	border-bottom: none;
+}
+
+
+@media only screen and (max-width : 320px) {
+  .features-produto .container {
+  	padding: 15px;
+  }
+
+  .features-produto .voltagem {
+  	margin-right: 0;
+  }
+
+  .breadcrumb > li + li:before {
+  		content: none;
+  }
+  .breadcrumb li:last-child {
+  	display: none;
+  }
+
+  .breadcrumb .lista-2 {
+  	position: relative;
+    left: 29px;
+    font-size: 22px;
+    font-weight: bold;
+
+  }
+
+  .breadcrumb .lista-1 {
+  	display: none;
+  }
+
+  .features-produto h2{
+  	font-size: 16px;
+  }
+
+  .features-produto p {
+  	font-size: 14px;
+  	font-weight: 500;
+  }
+
+  .features-produto .voltagem{
+  	margin-right: 10px;
+  }
+
+  .features-produto .entregador {
+  	text-align: center;
+  }
+
+  .details-products h2 {
+  	font-size: 16px;
+  }
+
+  .details-products p {
+  	font-size: 14px;
+  }
+
+  .add-carrinho {
+  	flex-wrap: wrap;
+  }
+
+  .add-carrinho > .botao {
+  	margin-top: 20px;
+  	width: 100%;
+  }
+
+  .features-produto .btn-add-cart {
+  	width: 100%;
+  	justify-content: center;
+  	text-align: center;
+  }
+}
