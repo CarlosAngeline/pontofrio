@@ -322,6 +322,33 @@
 }
 
 
+#owl-demo .owl-prev {
+  display: block !important;
+}
+
+#owl-demo .owl-next {
+  display: block !important;
+}
+
+#owl-demo .owl-prev {
+  width: 36px;
+  height: 68px;
+  position: absolute;
+  top: 50%;
+  left:-22px;
+  margin-top: -12px;
+}
+
+#owl-demo .owl-next  {
+   width: 36px;
+  height: 68px;
+  
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  margin-top: -12px;
+}
+
 
 
 @media only screen and (max-width : 375px) {
@@ -568,3 +595,11 @@
   	display: none;
   }
 }
+
+
+
+
+
+
+
+
