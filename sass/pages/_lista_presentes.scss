@@ -34,6 +34,8 @@
 		width: 98%;
 		//margin-left:230px;
 	}
+
+
 	.widget-countdown{
 		width: 100%;
 		min-height:auto;
@@ -98,7 +100,7 @@
 
 @media only screen and (max-width : 320px) {
   .mobile-only {
-  	font-size: 15px;
+  	font-size: 11px;
   	}
 
   	.features-perfil-features-lista-presentes .container {
@@ -121,6 +123,11 @@
 
   	.features-perfil .dados-lista {
   		display: none;
+  	}
+
+  	.codigo-mobile {
+  		display: flex;
+  		font-size:12px;
   	}
 
 
