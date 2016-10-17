@@ -130,5 +130,41 @@
   		font-size:12px;
   	}
 
+  	.busca-mobile{
+  		padding-bottom: 20px;
+  	}
+
+  	h3.subtitle {
+  		padding:0 !important;
+  	}
+
+  	.visualizar-mobile {
+  	    font-size: 22px !important;
+	    border: 1px solid;
+	    padding: 4px 9px;
+	    margin-top:12px;
+  	}
+
+  	.visualizar-lista {
+  	    font-size: 13px !important;
+	    padding: 4px 9px;
+	    margin-top:12px;
+  	}
+
+  	.visualizar-lista i {
+  		font-size: 24px;
+  		margin-right: 10px;
+  	}
+
+  	
+
+  }
+
+  @media only screen and (max-width : 375px) {
+
+  	.busca-mobile{
+  		padding-bottom: 20px;
+  	}
+
 
   }
