@@ -103,6 +103,23 @@
   	font-size: 11px;
   	}
 
+  
+		
+		
+	.avatar{
+	
+	    display: inline;
+	    width: 25%;
+	    height: auto;
+	    overflow: hidden;
+		
+	}
+
+	.features-perfil-features-lista-presentes h1 {
+		font-size: 18px;
+		margin-top: 12px;
+	}
+
   	.features-perfil-features-lista-presentes .container {
   		padding: 10px!important;
   	}
@@ -160,6 +177,30 @@
   		padding-top: 30px;
   	}
 
+  	.mais-infos {
+  		text-align: center;
+  		padding-top: 15px;
+  		padding-bottom: 10px;
+  		padding-left: 10px;
+  		padding-right: 10px;
+
+  	}
+
+  	.mais-infos a {
+  		font-size: 11px;
+  		color: #c99252;
+
+  	}
+
+  	.mais-infos p {
+  		text-align: left;
+  		font-size: 12px;
+  	}
+
+  	.mais-infos-text {
+  		padding-top:20px;
+  	}
+
   	
 
   }
@@ -170,5 +211,16 @@
   		padding-bottom: 20px;
   	}
 
+  	[class*="features-"] {
+  	padding-bottom: 0;
+  	}
 
   }
+
+   @media only screen and (max-width : 414px){
+
+   	[class*="features-"] {
+  	padding-bottom: 0;
+  	}
+
+   }
