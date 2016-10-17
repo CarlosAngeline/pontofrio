@@ -320,3 +320,251 @@
   	display: none;
   }
 }
+
+
+
+
+@media only screen and (max-width : 375px) {
+  .features-produto .container {
+  	padding: 15px;
+  }
+
+  .features-produto .voltagem {
+  	margin-right: 0;
+  }
+
+  .breadcrumb > li + li:before {
+  		content: none;
+  }
+  .breadcrumb li:last-child {
+  	display: none;
+  }
+
+  .breadcrumb .lista-2 {
+  	position: relative;
+    left: 29px;
+    font-size: 22px;
+    font-weight: bold;
+
+  }
+
+  .breadcrumb .lista-1 {
+  	display: none;
+  }
+
+  .features-produto h2{
+  	font-size: 16px;
+  }
+
+  .features-produto p {
+  	font-size: 14px;
+  	font-weight: 500;
+  }
+
+  .features-produto .voltagem{
+  	margin-right: 10px;
+  }
+
+  .features-produto .entregador {
+  	text-align: center;
+  }
+
+  .details-products h2 {
+  	font-size: 16px;
+  }
+
+  .details-products p {
+  	font-size: 14px;
+  }
+
+  .add-carrinho {
+  	flex-wrap: wrap;
+  }
+
+  .add-carrinho > .botao {
+  	margin-top: 20px;
+  	width: 100%;
+  }
+
+  .features-produto .btn-add-cart {
+  	width: 100%;
+  	justify-content: center;
+  	text-align: center;
+  }
+
+  .mais-infos-detalhe-produto {
+  	border-bottom: 1px solid #f0eff4;
+  }
+
+  .mais-infos-text {
+   display: none;
+  }
+
+  .mais-infos-text-2 {
+  	display: none;
+  }
+}
+
+
+@media only screen and (max-width : 414px) {
+  .features-produto .container {
+  	padding: 15px;
+  }
+
+  .features-produto .voltagem {
+  	margin-right: 0;
+  }
+
+  .breadcrumb > li + li:before {
+  		content: none;
+  }
+  .breadcrumb li:last-child {
+  	display: none;
+  }
+
+  .breadcrumb .lista-2 {
+  	position: relative;
+    left: 29px;
+    font-size: 22px;
+    font-weight: bold;
+
+  }
+
+  .breadcrumb .lista-1 {
+  	display: none;
+  }
+
+  .features-produto h2{
+  	font-size: 16px;
+  }
+
+  .features-produto p {
+  	font-size: 14px;
+  	font-weight: 500;
+  }
+
+  .features-produto .voltagem{
+  	margin-right: 10px;
+  }
+
+  .features-produto .entregador {
+  	text-align: center;
+  }
+
+  .details-products h2 {
+  	font-size: 16px;
+  }
+
+  .details-products p {
+  	font-size: 14px;
+  }
+
+  .add-carrinho {
+  	flex-wrap: wrap;
+  }
+
+  .add-carrinho > .botao {
+  	margin-top: 20px;
+  	width: 100%;
+  }
+
+  .features-produto .btn-add-cart {
+  	width: 100%;
+  	justify-content: center;
+  	text-align: center;
+  }
+
+  .mais-infos-detalhe-produto {
+  	border-bottom: 1px solid #f0eff4;
+  }
+
+  .mais-infos-text {
+   display: none;
+  }
+
+  .mais-infos-text-2 {
+  	display: none;
+  }
+}
+
+
+@media only screen and (max-width : 768px) {
+  .features-produto .container {
+  	padding: 15px;
+  }
+
+  .features-produto .voltagem {
+  	margin-right: 0;
+  }
+
+  .breadcrumb > li + li:before {
+  		content: none;
+  }
+  .breadcrumb li:last-child {
+  	display: none;
+  }
+
+  .breadcrumb .lista-2 {
+  	position: relative;
+    left: 29px;
+    font-size: 22px;
+    font-weight: bold;
+
+  }
+
+  .breadcrumb .lista-1 {
+  	display: none;
+  }
+
+  .features-produto h2{
+  	font-size: 16px;
+  }
+
+  .features-produto p {
+  	font-size: 14px;
+  	font-weight: 500;
+  }
+
+  .features-produto .voltagem{
+  	margin-right: 10px;
+  }
+
+  .features-produto .entregador {
+  	text-align: center;
+  }
+
+  .details-products h2 {
+  	font-size: 16px;
+  }
+
+  .details-products p {
+  	font-size: 14px;
+  }
+
+  .add-carrinho {
+  	flex-wrap: wrap;
+  }
+
+  .add-carrinho > .botao {
+  	margin-top: 20px;
+  	width: 100%;
+  }
+
+  .features-produto .btn-add-cart {
+  	width: 100%;
+  	justify-content: center;
+  	text-align: center;
+  }
+
+  .mais-infos-detalhe-produto {
+  	border-bottom: 1px solid #f0eff4;
+  }
+
+  .mais-infos-text {
+   display: none;
+  }
+
+  .mais-infos-text-2 {
+  	display: none;
+  }
+}
