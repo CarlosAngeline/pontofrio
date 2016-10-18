@@ -321,6 +321,11 @@
   }
 }
 
+.icon-owl {
+  margin: 0 auto;
+   width: 70% !important;
+}
+
 
 #owl-demo .owl-prev {
   display: block !important;
@@ -333,22 +338,30 @@
 #owl-demo .owl-prev {
   width: 36px;
   height: 68px;
+  background-image: url("../images/prev.gif");
+  background-repeat: no-repeat;
   position: absolute;
   top: 50%;
-  left:-22px;
+  left:-14px;
   margin-top: -12px;
 }
 
 #owl-demo .owl-next  {
-   width: 36px;
+  width: 36px;
   height: 68px;
-  
+  background-image: url("../images/next.gif");
+  background-repeat: no-repeat;
   position: absolute;
   top: 50%;
-  right: -30px;
+  right: -44px;
   margin-top: -12px;
 }
 
+.owl-prev,
+.owl-next {
+  overflow: hidden;
+  text-indent: -2000px;
+}
 
 
 #owl-demo img {
