@@ -351,6 +351,23 @@
 
 
 
+#owl-demo img {
+  border: 1px solid #a9aebb;
+  padding: 3px
+}
+
+#owl-demo img:hover {
+  border: 3px solid #c99252;
+ 
+}
+
+#owl-demo img:active {
+  border: 3px solid #c99252;
+ 
+}
+
+
+
 @media only screen and (max-width : 375px) {
   .features-produto .container {
   	padding: 15px;

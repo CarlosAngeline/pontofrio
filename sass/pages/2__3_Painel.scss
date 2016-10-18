@@ -1,0 +1,481 @@
+.features-perfil-features-lista-presentes {
+	padding-top: 5px;
+	.container{
+		padding:40px;
+		border-bottom:1px solid #e4ebf1;
+	}
+	
+	h1{
+		color: #ff575e;
+		font-weight:$font-weight-semi;
+	}
+	
+	.linha {
+	width:70%;
+	height: 1px;
+	display:inline-block;
+	margin: 0 auto;
+	border: 1px solid #f4f0e4;
+	}
+	.avatar{
+	img {
+		display: inline;
+		width: 80%;
+		height: auto;
+		overflow: hidden;
+		border-radius:100%;
+		border: 1px solid $light-gray;
+		padding:10%;
+		}
+	}
+	
+	.resumo {
+		display: block;
+		width: 98%;
+		//margin-left:230px;
+	}
+
+
+	.widget-countdown{
+		width: 100%;
+		min-height:auto;
+		background:#fbfaf5;
+		border: 1px solid #f4f0e4;
+		padding: 15px;
+		text-align: center;
+		
+		.data{
+		color:$dark-gray;
+		@include typi($p-map);
+		font-weight: bold;
+		}
+		.clock{
+		color: $default-color;
+		font-weight: bold;
+		@include typi($h2-map);
+		letter-spacing: -0.02em;
+		}
+
+	}
+
+	.widget-countdown-mobile{
+		
+		width: 100%;
+		min-height:auto;
+		border: 1px solid #f4f0e4;
+		display: flex;
+		padding: 15px;
+
+		
+		.data{
+		color:$dark-gray;
+		@include typi($p-map);
+		border-right: 1px solid #f4f0e4;
+		font-size: 13px!important;
+		font-weight: bold;
+		padding-right:15px;
+		}
+		
+		.clock{
+		color:$dark-gray;
+		font-size: 13px!important;
+		@include typi($h2-map);
+		letter-spacing: -0.02em;
+		font-weight: bold;
+		padding-left:15px;
+		}
+
+	} 
+
+	small {
+		font-size: 90%;
+		display: block;
+		color: #9e9e9e;
+	}
+
+
+}
+
+
+
+
+.painel__admin {
+
+	.codigo-mobile  {
+		color: #c99252;
+	}
+
+	.lista_extrato_gbl1 {
+		background-color: #fbfaf5;
+		border: 1px solid #f4f0e4;
+		padding-top:15px;
+		padding-bottom: 15px;
+		
+		
+	}
+
+	.fundo__extrato {
+		background-color: #fbfaf5;
+		border: 1px solid #f4f0e4;
+		padding-top:15px;
+		padding-bottom: 15px;
+		
+	}
+
+	.caixa_mensagem_noivos {
+		text-align: right;
+	}
+
+	.caixa_mensagem_noivos a{
+		color: #c99252;
+		border: 1px solid #ccc;
+    	padding: 10px 15px;
+
+		
+	}
+
+	.caixa_mensagem_noivos i {
+		margin-right: 10px;
+		padding-bottom: 20px;
+	}
+
+	.lista-extrato1 {
+		padding: 0;
+	}
+	
+	
+}
+
+
+
+@media only screen and (max-width : 320px) {
+	.mobile-only {
+		font-size: 11px;
+		}
+
+	
+	.avatar{
+	
+			display: inline;
+			width: 25%;
+			height: auto;
+			overflow: hidden;
+		
+	}
+
+	.features-perfil-features-lista-presentes h1 {
+		font-size: 18px;
+		margin-top: 12px;
+	}
+
+		.features-perfil-features-lista-presentes .container {
+			padding: 10px!important;
+		}
+
+		.features-lista-presentes .container {
+			padding: 10px !important;
+		}
+
+		.features-perfil .avatar img {
+			width: 55px;
+			height: 55px;
+		}
+
+		.features-perfil h1 {
+			font-size: 18px;
+			word-wrap: break-word;
+		}
+
+		.features-perfil .dados-lista {
+			display: none;
+		}
+
+		.codigo-mobile {
+			display: flex;
+			font-size:12px;
+		}
+
+		.busca-mobile{
+			padding-bottom: 20px;
+		}
+
+		h3.subtitle {
+			padding:0 !important;
+		}
+
+		.visualizar-mobile {
+				font-size: 22px !important;
+			border: 1px solid;
+			padding: 4px 9px;
+			margin-top:12px;
+		}
+
+		.visualizar-lista {
+				font-size: 13px !important;
+			padding: 4px 9px;
+			margin-top:12px;
+		}
+
+		.visualizar-lista i {
+			font-size: 24px;
+			margin-right: 10px;
+		}
+
+		.lista-produtos {
+			padding-top: 30px;
+		}
+
+		.mais-infos {
+			text-align: center;
+			padding-top: 15px;
+			padding-bottom: 10px;
+			padding-left: 10px;
+			padding-right: 10px;
+
+		}
+
+		.mais-infos a {
+			font-size: 11px;
+			color: #c99252;
+
+		}
+
+		.mais-infos p {
+			text-align: left;
+			font-size: 12px;
+		}
+
+		.mais-infos-text {
+			padding-top:20px;
+		}
+
+		
+
+	}
+
+		.busca-mobile{
+			padding-bottom: 20px;
+		}
+
+		h3.subtitle {
+			padding:0 !important;
+		}
+
+		.visualizar-mobile {
+				font-size: 22px !important;
+			border: 1px solid;
+			padding: 4px 9px;
+			margin-top:12px;
+		}
+
+		.visualizar-lista {
+				font-size: 13px !important;
+			padding: 4px 9px;
+			margin-top:12px;
+		}
+
+		.visualizar-lista i {
+			font-size: 24px;
+			margin-right: 10px;
+		}
+
+		.lista-produtos {
+			padding-top: 30px;
+		}
+
+		.mais-infos {
+			text-align: center;
+			padding-top: 15px;
+			padding-bottom: 10px;
+			padding-left: 10px;
+			padding-right: 10px;
+
+		}
+
+		.mais-infos a {
+			font-size: 11px;
+			color: #c99252;
+
+		}
+
+		.mais-infos p {
+			text-align: left;
+			font-size: 12px;
+		}
+
+		.mais-infos-text {
+			padding-top:20px;
+		}
+
+		
+
+
+@media only screen and (max-width : 414px) {
+	.mobile-only {
+		font-size: 11px;
+		}
+
+		[class*="features-"] {
+		padding: 0;
+		}
+
+	
+	.avatar{
+	
+			display: inline;
+			width: 25%;
+			height: auto;
+			overflow: hidden;
+		
+	}
+
+	.features-perfil-features-lista-presentes h1 {
+		font-size: 18px;
+		margin-top: 12px;
+	}
+
+		.features-perfil-features-lista-presentes .container {
+			padding: 10px!important;
+		}
+
+		.features-lista-presentes .container {
+			padding: 10px !important;
+		}
+
+		.features-perfil .avatar img {
+			width: 55px;
+			height: 55px;
+		}
+
+		.features-perfil h1 {
+			font-size: 18px;
+			word-wrap: break-word;
+		}
+
+		.features-perfil .dados-lista {
+			display: none;
+		}
+
+		.codigo-mobile {
+			display: flex;
+			font-size:12px;
+		}
+
+		.busca-mobile{
+			padding-bottom: 20px;
+		}
+
+		h3.subtitle {
+			padding:0 !important;
+		}
+
+		.visualizar-mobile {
+				font-size: 22px !important;
+			border: 1px solid;
+			padding: 4px 9px;
+			margin-top:12px;
+		}
+
+		.visualizar-lista {
+				font-size: 13px !important;
+			padding: 4px 9px;
+			margin-top:12px;
+		}
+
+		.visualizar-lista i {
+			font-size: 24px;
+			margin-right: 10px;
+		}
+
+		.lista-produtos {
+			padding-top: 30px;
+		}
+
+		.mais-infos {
+			text-align: center;
+			padding-top: 15px;
+			padding-bottom: 10px;
+			padding-left: 10px;
+			padding-right: 10px;
+
+		}
+
+		.mais-infos a {
+			font-size: 11px;
+			color: #c99252;
+
+		}
+
+		.mais-infos p {
+			text-align: left;
+			font-size: 12px;
+		}
+
+		.mais-infos-text {
+			padding-top:20px;
+		}
+
+		
+
+	}
+
+		.busca-mobile{
+			padding-bottom: 20px;
+		}
+
+		h3.subtitle {
+			padding:0 !important;
+		}
+
+		.visualizar-mobile {
+				font-size: 22px !important;
+			border: 1px solid;
+			padding: 4px 9px;
+			margin-top:12px;
+		}
+
+		.visualizar-lista {
+				font-size: 13px !important;
+			padding: 4px 9px;
+			margin-top:12px;
+		}
+
+		.visualizar-lista i {
+			font-size: 24px;
+			margin-right: 10px;
+		}
+
+		.lista-produtos {
+			padding-top: 30px;
+		}
+
+		.mais-infos {
+			text-align: center;
+			padding-top: 15px;
+			padding-bottom: 10px;
+			padding-left: 10px;
+			padding-right: 10px;
+
+		}
+
+		.mais-infos a {
+			font-size: 11px;
+			color: #c99252;
+
+		}
+
+		.mais-infos p {
+			text-align: left;
+			font-size: 12px;
+		}
+
+		.mais-infos-text {
+			padding-top:20px;
+		}
+
+		
+	
+
+
+
+
