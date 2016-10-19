@@ -146,6 +146,65 @@
 	
 }
 
+// Grafico 
+
+ 
+
+    
+
+.box {
+    margin: 0px auto;
+    width: 90%;
+
+}
+
+.engloba-box {
+	display: flex;
+	align-items: center;
+
+}
+
+
+// Saldo Atual 
+
+.engloba-saldo-atual {
+	display: flex;
+	
+}
+
+.saldo-atual-left {
+	width: 280px;
+	
+}
+
+.saldo-interno p {
+	margin: 0;
+}
+
+.saldo-atual-left {
+	display: flex;
+}
+
+.fa-area-3 {
+    font-size: 30px;
+    width: 60px;
+    text-align: center;
+    line-height: 50px;
+    height: 60px;
+    border-radius: 100%;
+    border: double 1px solid #333;
+    color: #333;
+    transition: all 350ms ease;
+    border: double;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+
+
+
+
+
 
 
 @media only screen and (max-width : 320px) {

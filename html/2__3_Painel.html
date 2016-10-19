@@ -7,6 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 <title>Lista de Casamento</title>
+ <script src="js/Chart.min.js"></script>
+<script type="text/javascript">
+    var randomnb = function(){ return Math.round(Math.random()*300)};
+</script>  
 
 <!-- Bootstrap -->
 <link href="css/main.min.css" rel="stylesheet">
@@ -97,30 +101,45 @@
 
 
 <section class="lista-extrato">
-	<div class="row">
-		<div class="container">
-			<div class="col-md-12 lista_extrato_gbl">
-				<div class="col-md-6 titulo-lista">
-					<h3 class="subtitle h3-mobile">Minha Lista</h3>
-				</div>
-				<div class="col-md-6 titulo-extrato">
-					<h3 class="subtitle h3-mobile">Extrato</h3>
-				</div>
-			</div>
-		</div>
-	</div>
-
+	
 	<div class="row">
 		<div class="container">
 			
 				<div class="col-md-6">
+					<h3 class="subtitle h3-mobile">Minha Lista</h3>
 					<div class="fundo__extrato">
-						Minha Lista
+						
+						<div class="engloba-box">
+							<div class="box-grafico">	
+								<div class="box">
+			           				<canvas id="GraficoDonuts"></canvas>
+		       					</div>
+		       				</div>
+	       					<div class="botaografico">
+								<button class="btn btn-md btn-add btn-add-cart"><strong>Ver todos os Presentes Recebidos</strong></button>
+							</div>
+						</div>
 					</div>
 				</div>
+
 				<div class="col-md-6">
+					<h3 class="subtitle h3-mobile">Extrato</h3>
 					<div class="fundo__extrato">
-						class="subtitle h3-mobile">Extrato<
+						<div class="engloba-saldo-atual">
+							<div class="saldo-atual-left">
+								<div class="icon-dolar fa-area-3">
+									<i class="fa fa-usd" aria-hidden="true"></i>
+								</div>
+								<div class="saldo-interno">
+									<p>Saldo Atual</p>
+									<p><strong>R$ 25.000,00</strong></p>
+									<p>de R$ 33.500,00</p>
+								</div>
+							</div>
+							<div class="saldo-atual-right">
+								debito
+							</div>
+						</div>
 					</div>
 				</div>
 			
@@ -179,6 +198,37 @@
 
 <!--  Custom 	 --> 
 <script src="js/custom.min.js"></script> 
+
+ <script type="text/javascript">
+
+                var options = {
+                    responsive:true                    
+                };
+
+                var data = [
+                    {
+                        value: 17,
+                        color:"#F7464A",
+                        highlight: "#FF5A5E",
+                        label: "Itens"
+                    },
+                    {
+                        value: 50,
+                        color: "#46BFBD",
+                        highlight: "#5AD3D1",
+                        label: "de "
+                    },
+                    
+                ]
+                
+                window.onload = function(){
+
+                    var ctx = document.getElementById("GraficoDonuts").getContext("2d");
+                    var PizzaChart = new Chart(ctx).Doughnut(data, options);
+                }  
+            </script>           
+
+
 <script>
 
 $('.clock').countdown('2017/08/20', function(event) {
