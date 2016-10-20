@@ -114,12 +114,6 @@
 		
 	}
 
-	.fundo__presentes__rec {
-		background-color: #fbfaf5;
-		border: 1px solid #f4f0e4;
-		padding: 15px 25px 15px 25px;
-		
-	}
 
 	.fundo__extrato {
 		background-color: #fbfaf5;
@@ -151,7 +145,7 @@
 	}
 	
 	
-}
+
 
 // SECTION GRAFICO
 
@@ -254,8 +248,39 @@
 
 // SECTION ULTIMOS PRESENTE RECEBIDOS
 	
-.fundo__presentes__rec .shop_table > tbody > tr > td.product-quantity{
-	min-width: 150px;
+
+
+.fundo-presentes-rec {
+		
+		border: 1px solid #f4f0e4;
+		padding: 15px 25px 15px 25px;
+		display: inline-flex;
+		flex-wrap: wrap;
+		margin-bottom: 20px;
+
+		
+		
+	}
+
+.produto-thumb {
+	
+	
+}
+
+.saldo-interno {
+	align-self: center;
+}
+
+.producto-nome {
+	align-self: center;
+}
+
+.btnconverter {
+	align-self: center;
+}
+
+.btnliberar {
+	align-self: center;
 }
 
 
@@ -288,7 +313,7 @@
 	width: 60%;
 }
 
-
+}
 //  MEDIAS QUERYS
 
 
@@ -297,20 +322,19 @@
 		font-size: 11px;
 		}
 
-	
-	.avatar{
+		.avatar{
 	
 			display: inline;
 			width: 25%;
 			height: auto;
 			overflow: hidden;
 		
-	}
+			}
 
-	.features-perfil-features-lista-presentes h1 {
-		font-size: 18px;
-		margin-top: 12px;
-	}
+		.features-perfil-features-lista-presentes h1 {
+			font-size: 18px;
+			margin-top: 12px;
+		}
 
 		.features-perfil-features-lista-presentes .container {
 			padding: 10px!important;
@@ -344,6 +368,10 @@
 			font-size:12px;
 		}
 
+		.caixa_mensagem_noivos {
+			padding-top:25px;
+		}
+
 		.engloba-box {
 			flex-wrap: wrap;
 			display: flex;
@@ -360,17 +388,22 @@
 			flex-wrap: wrap;
 		}
 
-		.saldo-atual-left {
-			padding-bottom: 20px;
-		}
+		
 
 		.mais-infos-text {
 		    font-size: 11px;
 		    color: #c99252;
 		 }
 
+		 .saldo-atual-left i {
+		 	font-size: 33px;
+		 }
+
 		 .saldo-atual-right {
-		 	border: none;
+		 	border-left: 0!important;
+		 	display: none;
+		 	
+
 		 }
 	
 
@@ -425,9 +458,6 @@
 		}
 
 		
-
-
-
 		.busca-mobile{
 			padding-bottom: 20px;
 		}
@@ -482,6 +512,17 @@
 			display: block;
 			padding-top:20px;
 		}
+
+
+		.painel__admin .fundo-presentes-rec {
+			padding: 0;
+		}
+
+		.painel__admin .data-compra p{
+			margin: 0;
+		}
+
+
 
 }
 
