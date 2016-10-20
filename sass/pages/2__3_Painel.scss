@@ -336,6 +336,7 @@
 
 		.editar-infos {
 			margin-left: 90px;
+			margin-bottom: 15px;
 		}
 
 		.codigo-mobile {
@@ -345,8 +346,32 @@
 
 		.engloba-box {
 			flex-wrap: wrap;
+			display: flex;
+    		justify-content: center;
 		}
 
+		.box-grafico {
+			margin-right: 23px;
+    		padding-bottom: 15px;
+		}
+
+		.engloba-saldo-atual {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.saldo-atual-left {
+			padding-bottom: 20px;
+		}
+
+		.mais-infos-text {
+		    font-size: 11px;
+		    color: #c99252;
+		 }
+
+		 .saldo-atual-right {
+		 	border: none;
+		 }
 	
 
 		h3.subtitle {
@@ -401,7 +426,7 @@
 
 		
 
-	}
+
 
 		.busca-mobile{
 			padding-bottom: 20px;
@@ -454,10 +479,11 @@
 		}
 
 		.mais-infos-text {
+			display: block;
 			padding-top:20px;
 		}
 
-
+}
 
 
 @media only screen and (max-width : 414px) {
