@@ -155,9 +155,6 @@
 
 // SECTION GRAFICO
 
- 
-
-    
 
 .box {
     margin: 0px auto;
@@ -262,6 +259,34 @@
 }
 
 
+// SECTION PESQUISAS 
+
+.engloba-pesquisas {
+	display: flex;
+    align-items: stretch;
+    padding-bottom: 25px;
+}
+
+
+.fundo__pesquisas {
+		background-color: #fbfaf5;
+		border: 1px solid #f4f0e4;
+		padding: 15px 25px 15px 25px;
+		margin-top: 25px;
+		height: 100%;
+		display: flex;
+	    flex-direction: column;
+	    justify-content: space-between;
+		
+	}
+
+.fundo__pesquisas td {
+	padding-bottom: 10px;
+}
+
+.btn-presente {
+	width: 60%;
+}
 
 
 //  MEDIAS QUERYS
@@ -309,14 +334,20 @@
 			display: none;
 		}
 
+		.editar-infos {
+			margin-left: 90px;
+		}
+
 		.codigo-mobile {
-			display: flex;
+			
 			font-size:12px;
 		}
 
-		.busca-mobile{
-			padding-bottom: 20px;
+		.engloba-box {
+			flex-wrap: wrap;
 		}
+
+	
 
 		h3.subtitle {
 			padding:0 !important;
@@ -426,7 +457,7 @@
 			padding-top:20px;
 		}
 
-		
+
 
 
 @media only screen and (max-width : 414px) {
@@ -476,7 +507,7 @@
 		}
 
 		.codigo-mobile {
-			display: flex;
+			text-align: center;
 			font-size:12px;
 		}
 
