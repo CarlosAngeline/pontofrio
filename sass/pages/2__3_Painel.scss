@@ -322,6 +322,12 @@
 		font-size: 11px;
 		}
 
+		.icon-dolar  {
+			margin-left: 0!important;
+		}
+			
+
+
 		.avatar{
 	
 			display: inline;
@@ -402,7 +408,7 @@
 		 .saldo-atual-right {
 		 	border-left: 0!important;
 		 	display: none;
-		 	
+
 
 		 }
 	
@@ -527,29 +533,24 @@
 }
 
 
-@media only screen and (max-width : 414px) {
+@media only screen and (max-width : 375px) {
 	.mobile-only {
 		font-size: 11px;
 		}
 
-		[class*="features-"] {
-		padding: 0;
-		}
-
-	
-	.avatar{
+		.avatar{
 	
 			display: inline;
 			width: 25%;
 			height: auto;
 			overflow: hidden;
 		
-	}
+			}
 
-	.features-perfil-features-lista-presentes h1 {
-		font-size: 18px;
-		margin-top: 12px;
-	}
+		.features-perfil-features-lista-presentes h1 {
+			font-size: 18px;
+			margin-top: 12px;
+		}
 
 		.features-perfil-features-lista-presentes .container {
 			padding: 10px!important;
@@ -573,28 +574,68 @@
 			display: none;
 		}
 
+		.editar-infos {
+			margin-left: 90px;
+			margin-bottom: 15px;
+		}
+
 		.codigo-mobile {
-			text-align: center;
+			
 			font-size:12px;
 		}
 
-		.busca-mobile{
-			padding-bottom: 20px;
+		.caixa_mensagem_noivos {
+			padding-top:25px;
 		}
+
+		.engloba-box {
+			flex-wrap: wrap;
+			display: flex;
+    		justify-content: center;
+		}
+
+		.box-grafico {
+			margin-right: 23px;
+    		padding-bottom: 15px;
+		}
+
+		.engloba-saldo-atual {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		
+
+		.mais-infos-text {
+		    font-size: 11px;
+		    color: #c99252;
+		 }
+
+		 .saldo-atual-left i {
+		 	font-size: 33px;
+		 }
+
+		 .saldo-atual-right {
+		 	border-left: 0!important;
+		 	display: none;
+
+
+		 }
+	
 
 		h3.subtitle {
 			padding:0 !important;
 		}
 
 		.visualizar-mobile {
-				font-size: 22px !important;
+			font-size: 22px !important;
 			border: 1px solid;
 			padding: 4px 9px;
 			margin-top:12px;
 		}
 
 		.visualizar-lista {
-				font-size: 13px !important;
+			font-size: 13px !important;
 			padding: 4px 9px;
 			margin-top:12px;
 		}
@@ -633,65 +674,314 @@
 		}
 
 		
+		.busca-mobile{
+			padding-bottom: 20px;
+		}
 
+		h3.subtitle {
+			padding:0 !important;
+		}
+
+		.visualizar-mobile {
+			font-size: 22px !important;
+			border: 1px solid;
+			padding: 4px 9px;
+			margin-top:12px;
+		}
+
+		.visualizar-lista {
+			font-size: 13px !important;
+			padding: 4px 9px;
+			margin-top:12px;
+		}
+
+		.visualizar-lista i {
+			font-size: 24px;
+			margin-right: 10px;
+		}
+
+		.lista-produtos {
+			padding-top: 30px;
+		}
+
+		.mais-infos {
+			text-align: center;
+			padding-top: 15px;
+			padding-bottom: 10px;
+			padding-left: 10px;
+			padding-right: 10px;
+
+		}
+
+		.mais-infos a {
+			font-size: 11px;
+			color: #c99252;
+
+		}
+
+		.mais-infos p {
+			text-align: left;
+			font-size: 12px;
+		}
+
+		.mais-infos-text {
+			display: block;
+			padding-top:20px;
+		}
+
+
+		.painel__admin .fundo-presentes-rec {
+			padding: 0;
+		}
+
+		.painel__admin .data-compra p{
+			margin: 0;
+		}
+
+		.container {
+			padding-right: 0;
+		}
+
+
+
+}
+
+@media only screen and (max-width : 414px) {
+	.mobile-only {
+		font-size: 11px;
+		}
+
+		.avatar{
+	
+			display: inline;
+			width: 25%;
+			height: auto;
+			overflow: hidden;
+		
+			}
+
+		.features-perfil-features-lista-presentes h1 {
+			font-size: 18px;
+			margin-top: 12px;
+		}
+
+		.features-perfil-features-lista-presentes .container {
+			padding: 10px!important;
+		}
+
+		.features-lista-presentes .container {
+			padding: 10px !important;
+		}
+
+		.features-perfil .avatar img {
+			width: 55px;
+			height: 55px;
+		}
+
+		.features-perfil h1 {
+			font-size: 18px;
+			word-wrap: break-word;
+		}
+
+		.features-perfil .dados-lista {
+			display: none;
+		}
+
+		.editar-infos {
+			margin-left: 90px;
+			margin-bottom: 15px;
+		}
+
+		.codigo-mobile {
+			
+			font-size:12px;
+		}
+
+		.caixa_mensagem_noivos {
+			padding-top:25px;
+		}
+
+		.engloba-box {
+			flex-wrap: wrap;
+			display: flex;
+    		justify-content: center;
+		}
+
+		.box-grafico {
+			margin-right: 23px;
+    		padding-bottom: 15px;
+		}
+
+		.engloba-saldo-atual {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		
+
+		.mais-infos-text {
+		    font-size: 11px;
+		    color: #c99252;
+		 }
+
+		 .saldo-atual-left i {
+		 	font-size: 33px;
+		 }
+
+		 .saldo-atual-right {
+		 	border-left: 0!important;
+		 	display: none;
+
+
+		 }
+	
+
+		h3.subtitle {
+			padding:0 !important;
+		}
+
+		.visualizar-mobile {
+			font-size: 22px !important;
+			border: 1px solid;
+			padding: 4px 9px;
+			margin-top:12px;
+		}
+
+		.visualizar-lista {
+			font-size: 13px !important;
+			padding: 4px 9px;
+			margin-top:12px;
+		}
+
+		.visualizar-lista i {
+			font-size: 24px;
+			margin-right: 10px;
+		}
+
+		.lista-produtos {
+			padding-top: 30px;
+		}
+
+		.mais-infos {
+			text-align: center;
+			padding-top: 15px;
+			padding-bottom: 10px;
+			padding-left: 10px;
+			padding-right: 10px;
+
+		}
+
+		.mais-infos a {
+			font-size: 11px;
+			color: #c99252;
+
+		}
+
+		.mais-infos p {
+			text-align: left;
+			font-size: 12px;
+		}
+
+		.mais-infos-text {
+			padding-top:20px;
+		}
+
+		
+		.busca-mobile{
+			padding-bottom: 20px;
+		}
+
+		h3.subtitle {
+			padding:0 !important;
+		}
+
+		.visualizar-mobile {
+			font-size: 22px !important;
+			border: 1px solid;
+			padding: 4px 9px;
+			margin-top:12px;
+		}
+
+		.visualizar-lista {
+			font-size: 13px !important;
+			padding: 4px 9px;
+			margin-top:12px;
+		}
+
+		.visualizar-lista i {
+			font-size: 24px;
+			margin-right: 10px;
+		}
+
+		.lista-produtos {
+			padding-top: 30px;
+		}
+
+		.mais-infos {
+			text-align: center;
+			padding-top: 15px;
+			padding-bottom: 10px;
+			padding-left: 10px;
+			padding-right: 10px;
+
+		}
+
+		.mais-infos a {
+			font-size: 11px;
+			color: #c99252;
+
+		}
+
+		.mais-infos p {
+			text-align: left;
+			font-size: 12px;
+		}
+
+		.mais-infos-text {
+			display: block;
+			padding-top:20px;
+		}
+
+
+		.painel__admin .fundo-presentes-rec {
+			padding: 0;
+		}
+
+		.painel__admin .data-compra p{
+			margin: 0;
+		}
+
+		.container {
+			padding-right: 0;
+		}
+
+
+
+}
+
+
+
+@media only screen and (max-width : 768px) {
+	
+
+	.features-perfil-features-lista-presentes .widget-countdown {
+		margin-top: 44px;
 	}
 
-		.busca-mobile{
-			padding-bottom: 20px;
-		}
+	.box-grafico {
+		margin-right: 86px;
+	}
 
-		h3.subtitle {
-			padding:0 !important;
-		}
+	.saldo-atual-left {
+		margin-right: 50px;
+		margin-left: 25px;
+	}
 
-		.visualizar-mobile {
-				font-size: 22px !important;
-			border: 1px solid;
-			padding: 4px 9px;
-			margin-top:12px;
-		}
 
-		.visualizar-lista {
-				font-size: 13px !important;
-			padding: 4px 9px;
-			margin-top:12px;
-		}
+} 
 
-		.visualizar-lista i {
-			font-size: 24px;
-			margin-right: 10px;
-		}
 
-		.lista-produtos {
-			padding-top: 30px;
-		}
 
-		.mais-infos {
-			text-align: center;
-			padding-top: 15px;
-			padding-bottom: 10px;
-			padding-left: 10px;
-			padding-right: 10px;
-
-		}
-
-		.mais-infos a {
-			font-size: 11px;
-			color: #c99252;
-
-		}
-
-		.mais-infos p {
-			text-align: left;
-			font-size: 12px;
-		}
-
-		.mais-infos-text {
-			padding-top:20px;
-		}
-
-		
-	
 
 
 
