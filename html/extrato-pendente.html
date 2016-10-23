@@ -62,70 +62,79 @@
 	<div class="features-extrato">
     	<div class="row">
 
-    		<div id="exTab2" class="container">	
+  			<div id="exTab2" class="container">	
 
 				<ul class="nav nav-tabs">
 					<li class="active">
 				        <a  href="#1" data-toggle="tab">Pendentes (9)<br>R$5.500,00 <br></a>
 						</li>
+
 						<li><a href="#2" data-toggle="tab">Liberados para entrega (1)<br>R$ 1.000,00</a>
 						</li>
 						<li><a href="#3" data-toggle="tab">Convertidos em vale (4)<br> R$ 32.500,00</a>
 						</li>
-						tab teste
 				</ul>
 
 			<!-- TAB CONTENT -->
 				<div class="tab-content">
 <!-- INICIO TAB 1 PENDENTES-->		    
 				    <div class="tab-pane active" id="1">
-	            		<h3 class="subtitle">Escolha os presentes recebidos para convertê-los em vale compras ou liberarar para entrega:</h3>
-			            	<!-- ENGLOBA ITENS -->	
-			            	<div class="engloba-itens">
-			            		<div class="data-compra">
-									<span> carlos eduardo: </span>
-									<span class="comprador">dia 10/02/16</span>
-								</div>
+	            		<h3 class="subtitle">Escolha os presentes recebidos para convertê-los em vale compras ou liberarar para entrega</h3>
+	            		
+	            		
+						  	<select class="selectpicker" data-style="form-control" data-width="210px">
+							<option disabled selected> Selecionar todos</option>
+							<option value="1">Converter em Vale compras</option>
+							<option value="1">Liberar para entrega</option>
+						 </select>
+								        
+		            	<!-- ENGLOBA ITENS -->	
+		            	<div class="engloba-itens">
+		            		<div class="data-compra">
+								<span> carlos eduardo: </span>
+								<span class="comprador">dia 10/02/16</span>
+							</div>
 
-								<div class="agradecimentos col-md-3">
-									<p><strong>Escreveu:</strong><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...(mais</p>
-									<button class="btn btn-md btn-primary center-block hidden-xs">Agradecer</button>
-								</div>
+							<div class="agradecimentos col-md-3">
+								<p><strong>Escreveu:</strong><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...(mais</p>
+								<button data-toggle="modal" href="#myModal" class="btn btn-md btn-primary center-block hidden-xs">Agradecer</button>
+								 
+							</div>
 
-								<div class="itens-comprados">
-										
-									<div class="col-md-4">
-										<div class="thumb-extrato">
-											<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
-										<div class="titulo-products">
-											<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
-										</div>
-										</div>
-										<p class="preco">R$ 750,00</p>
-						       			<span>2 unidades</span>
+							<div class="itens-comprados">
+									
+								<div class="col-md-4">
+									<div class="thumb-extrato">
+										<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
+									<div class="titulo-products">
+										<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
 									</div>
-								</div><!-- itens comprados -->
-
-								<div class="itens-comprados">
-										
-									<div class="col-md-4">
-										<div class="thumb-extrato">
-											<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
-										<div class="titulo-products">
-											<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
-										</div>
-										</div>
-										<p class="preco">R$ 750,00</p>
-						       			<span>2 unidades</span>
 									</div>
-								</div><!-- itens comprados -->
+									<p class="preco">R$ 750,00</p>
+					       			<span>2 unidades</span>
+								</div>
+							</div><!-- itens comprados -->
+
+							<div class="itens-comprados">
+									
+								<div class="col-md-4">
+									<div class="thumb-extrato">
+										<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
+									<div class="titulo-products">
+										<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
+									</div>
+									</div>
+									<p class="preco">R$ 750,00</p>
+					       			<span>2 unidades</span>
+								</div>
+							</div><!-- itens comprados -->
+						
+							<button class="btn btn-md btn-primary btn-tab-extratos hidden-xs">Converter em vale compras</button>
+							<button class="btn btn-md btn-primary btn-tab-extratos hidden-xs">Liberar para entrega</button>
 							
-									<button class="btn btn-md btn-primary btn-tab-extratos hidden-xs">Converter em vale compras</button>
-									<button class="btn btn-md btn-primary btn-tab-extratos hidden-xs">Liberar para entrega</button>
-								
-							</div><!-- END ENGLOBA ITENS -->
+						</div><!-- END ENGLOBA ITENS -->
 
-							<!-- ENGLOBA ITENS -->	
+						<!-- ENGLOBA ITENS -->	
 			            	<div class="engloba-itens">
 			            		<div class="data-compra">
 									<span> carlos eduardo: </span>
@@ -428,6 +437,47 @@
 	
 		
 </div><!--/. wrapper-->  
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <form action="enviaform.php" method="post" class="js-form-confirmacao">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h2 class="modal-title" style="color: #fff;">Agradecer</h2>
+            </div>
+
+            <div class="modal-body">
+                <div class="engloba-email">
+                <div class="autor-email">
+               	<span> Carlos Eduardo<br>carlos@email.com.br</span>
+                </div>
+                <div class="datahora">
+                	<span>02/09/16 ás 12:34 </span>
+                </div>	
+           		 </div>
+
+                <div class="form text-email">
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.
+
+                    bjs
+ 				    </span>
+
+                    <textarea class="form-control resp-email" rows="3" placeholder="Responder para Carlos Eduardo"></textarea>
+                    
+                   
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button"  class="btn btn-default" data-dismiss="modal">Enviar</button>
+                
+            </div>
+        </div><!-- /.modal-content -->
+    </form>
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
 
 
 <footer class="footer">
