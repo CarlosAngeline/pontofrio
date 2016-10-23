@@ -82,10 +82,10 @@
 	            		<h3 class="subtitle">Escolha os presentes recebidos para convertê-los em vale compras ou liberarar para entrega</h3>
 	            		
 	            		
-						  	<select class="selectpicker" data-style="form-control" data-width="210px">
+						  	<select class="selectpicker" data-style="form-control" data-toggle="modal" data-width="210px">
 							<option disabled selected> Selecionar todos</option>
-							<option value="1">Converter em Vale compras</option>
-							<option value="1">Liberar para entrega</option>
+							<option value="myModal2">Converter em Vale compras</option>
+							<option value="myModal3">Liberar para entrega</option>
 						 </select>
 								        
 		            	<!-- ENGLOBA ITENS -->	
@@ -222,8 +222,10 @@
 
 							<div class="agradecimentos col-md-3">
 								<p><strong>Escreveu:</strong><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...(mais</p>
-								<button class="btn btn-md btn-primary center-block hidden-xs"><i class="fa fa-check-circle" aria-hidden="true"></i>Mensagen respondida</button>
+								<button  data-toggle="modal" href="#myModa4"class="btn btn-md btn-primary center-block hidden-xs"><i class="fa fa-check-circle" aria-hidden="true"></i>Mensagen respondida</button>
 							</div>
+
+							
 
 							<div class="itens-comprados">
 									
@@ -652,6 +654,45 @@
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
+<!-- MMODAL MENSAGEM RESPONDIDA ABA 3 -->
+<div class="modal fade" id="myModa4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <form action="enviaform.php" method="post" class="js-form-confirmacao">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h2 class="modal-title" style="color: #fff;">Menssagem Respondida</h2>
+            </div>
+
+            <div class="modal-body">
+                <div class="engloba-email">
+                <div class="autor-email">
+               	<span> Carlos Eduardo<br>carlos@email.com.br</span>
+                </div>
+                <div class="datahora">
+                	<span>02/09/16 ás 12:34 </span>
+                </div>	
+           		 </div>
+                <div class="form text-email">
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.
+                    bjs</span>
+                  sua resposta
+                </div><br><br>
+
+                <div class="sua-resposta">
+                	<strong>Sua resposta:</strong>
+                	<p>Obrigado pela Lembrança<br>Bjs</p><br>
+
+                </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button"  class="btn btn-default" data-dismiss="modal">Fechar</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </form>
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
 </div><!--/. wrapper--> 
 
 <footer class="footer">
@@ -678,7 +719,20 @@
 <!--  Custom 	 --> 
 <script src="js/custom.min.js"></script> 
 
-      
+ <script type="text/javascript">
+
+$('select').on('change', function () {
+   if ($(this).val() == "myModal2") {
+   $('#myModal2').modal('show');
+
+}
+
+ if ($(this).val() == "myModal3") {
+   $('#myModal3').modal('show');
+   
+}
+});
+</script>     
 
 
 
