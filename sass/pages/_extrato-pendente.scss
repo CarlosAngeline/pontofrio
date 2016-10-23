@@ -54,6 +54,7 @@
 		border-bottom: 0;
 	}
 
+//MODAL STYLES
 
 	.modal-title {
 		color: #fff;
@@ -66,26 +67,64 @@
 
 	
 
-
-
-
-
-}
-
-.engloba-email {
+	.engloba-email {
 		display: flex;
+
+		}
+
+	.datahora {
+		margin-left: 300px;
+	}
+
+	.text-email {
+		margin-top: 30px;
+	}
+
+	.resp-email{
+		margin-top: 30px;
+	}
+
+	.thumb-extrato-modal{
+		display: flex;
+		margin-top: 30px;
+		padding-bottom: 15px;
+
 
 	}
 
-.datahora {
-	margin-left: 300px;
-}
+	.total-convertido {
+		display: flex;
+		justify-content: space-between;
+		border-top: 1px solid #e4ebf1;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
 
-.text-email {
-	margin-top: 30px;
-}
+	.termos-condicoes {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
 
-.resp-email{
-	margin-top: 30px;
-}
+	.condicoes-juridicas {
+		text-align: left;
+		padding-top: 20px;
+	}
 
+	.texto-endereco p {
+		margin: 0;
+	}
+
+	.total-convertido-entrega {
+		display: flex;
+    	justify-content: flex-start;
+		border-top: 1px solid #e4ebf1;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.kart {
+		margin-right: 20px;
+	}
+
+
+}

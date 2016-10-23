@@ -101,36 +101,38 @@
 								 
 							</div>
 
-							<div class="itens-comprados">
-									
-								<div class="col-md-4">
-									<div class="thumb-extrato">
-										<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
-									<div class="titulo-products">
-										<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
+							<div class="engloba-itens-comprados">
+								<div class="itens-comprados">
+										
+									<div class="col-md-4">
+										<div class="thumb-extrato">
+											<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
+										<div class="titulo-products">
+											<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
+										</div>
+										</div>
+										<p class="preco">R$ 750,00</p>
+						       			<span>2 unidades</span>
 									</div>
-									</div>
-									<p class="preco">R$ 750,00</p>
-					       			<span>2 unidades</span>
-								</div>
-							</div><!-- itens comprados -->
+								</div><!-- itens comprados -->
 
-							<div class="itens-comprados">
-									
-								<div class="col-md-4">
-									<div class="thumb-extrato">
-										<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
-									<div class="titulo-products">
-										<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
+								<div class="itens-comprados">
+										
+									<div class="col-md-4">
+										<div class="thumb-extrato">
+											<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
+										<div class="titulo-products">
+											<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
+										</div>
+										</div>
+										<p class="preco">R$ 750,00</p>
+						       			<span>2 unidades</span>
 									</div>
-									</div>
-									<p class="preco">R$ 750,00</p>
-					       			<span>2 unidades</span>
-								</div>
-							</div><!-- itens comprados -->
+								</div><!-- itens comprados -->
+							</div><!-- END ENGLOBA ITENS COMPRADOS -->
 						
-							<button class="btn btn-md btn-primary btn-tab-extratos hidden-xs">Converter em vale compras</button>
-							<button class="btn btn-md btn-primary btn-tab-extratos hidden-xs">Liberar para entrega</button>
+							<button data-toggle="modal" href="#myModal2" class="btn btn-md btn-primary btn-tab-extratos hidden-xs">Converter em vale compras</button>
+							<button data-toggle="modal" href="#myModal3" class="btn btn-md btn-primary btn-tab-extratos hidden-xs">Liberar para entrega</button>
 							
 						</div><!-- END ENGLOBA ITENS -->
 
@@ -202,7 +204,8 @@
 									</div>
 								</div><!-- itens comprados -->
 							
-									<button class="btn btn-md btn-primary btn-tab-extratos hidden-xs">Converter em vale compras</button>
+									<button data-toggle="modal" href="#myModal2" class="btn btn-md btn-primary btn-tab-extratos hidden-xs">Converter em vale compras</button>
+									
 									<button class="btn btn-md btn-primary btn-tab-extratos hidden-xs">Liberar para entrega</button>
 								
 							</div><!-- END ENGLOBA ITENS -->
@@ -436,9 +439,9 @@
 
 	
 		
-</div><!--/. wrapper-->  
+ 
 
-<!-- Modal -->
+<!-- MMODAL RESPOSTA MENSAGEM -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
     <form action="enviaform.php" method="post" class="js-form-confirmacao">
@@ -457,28 +460,199 @@
                 	<span>02/09/16 ás 12:34 </span>
                 </div>	
            		 </div>
-
                 <div class="form text-email">
                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.
-
-                    bjs
- 				    </span>
-
-                    <textarea class="form-control resp-email" rows="3" placeholder="Responder para Carlos Eduardo"></textarea>
-                    
-                   
+                    bjs</span>
+                   <textarea class="form-control resp-email" rows="3" placeholder="Responder para Carlos Eduardo"></textarea>
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button"  class="btn btn-default" data-dismiss="modal">Enviar</button>
-                
+            <button type="button"  class="btn btn-default" data-dismiss="modal">Enviar</button>
             </div>
         </div><!-- /.modal-content -->
     </form>
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
+<!-- MMODAL CONVERTER PRODUTOS EM VALE COMPRAS -->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <form action="enviaform.php" method="post" class="js-form-confirmacao">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h2 class="modal-title" style="color: #fff;">Substituição de produto por crédito</h2>
+            </div>
 
+            <div class="modal-body">
+                
+                
+	            <span>O valor referente ao(s) produto(s) abaixo será convertido em crédito (Vale Compra) que deverá ser utilizado exclusivamente para compra no Extra.com.br ou pelo Televendas.</span>
+	            <h2>Produtos</h2>
+	            <div class="autor-email">
+	           		<span>Produtos de:<br><strong>Carlos Eduardo</strong></span>
+	            </div>
+
+	            <div class="itens-comprados">
+					<div class="col-md-12">
+						<div class="thumb-extrato-modal">
+							<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
+						<div class="titulo-products col-md-8">
+							<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
+						</div>
+						<p class="preco"><strong>R$ 750,00</strong></p>
+		       			
+						</div>
+						
+					</div>
+				</div><!-- itens comprados -->
+				 <div class="itens-comprados">
+					<div class="col-md-12">
+						<div class="thumb-extrato-modal">
+							<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
+						<div class="titulo-products col-md-8">
+							<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
+						</div>
+						<p class="preco"><strong>R$ 750,00</strong></p>
+		       			
+						</div>
+						
+					</div>
+					
+				</div><!-- itens comprados -->
+
+				<div class="total-convertido col-md-12">
+					<div class="kart">
+						<img src="images/cart-modal.png">
+					</div>
+					<div class="texto-total">
+						<p>Total a ser convertido em vale compras</p>
+					</div>
+					<div class="texto-total">
+						<p class="preco"><strong>R$1.500,00</strong></p>
+					</div>
+
+				</div>
+
+				<div class="condicoes-juridicas col-md-12">
+					<h6>Condições Juridicas</h6>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipconsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore ...</p>
+				</div>
+
+				<div class="col-md-12 termos-condicoes">
+					<label class="checkbox-inline">
+					  <input type="checkbox" id="inlineCheckbox1" value="option1"><p>Estou ciente e concordo com as condições</p>
+					</label>
+				</div>
+
+               	
+           	
+               
+            </div><!-- END MODAL CONTENT-->
+            <div class="modal-footer">
+            <button type="button"  class="btn btn-default center-block" data-dismiss="modal">Enviar</button>
+            
+            <div class="condicoes-juridicas col-md-12">
+				<h6>Importante</h6>
+				<p>O Vale Compra tem validade de 1 ano a partir da data da conversão. Para usar o Vale, faça login no site, escolha o(s) produto(s) que deseja no www.pontofrio.com.br e adicione ao carrinho. Defina o endereço e tipo de entrega, na tela seguinte - de pagamento - o total disponível em crédito aparecerá e você escolhe se deseja ou não utilizar e quanto. Se prefirir, você pode fazer sua compra através do Televendas.
+				Feita a slicitação de conversão, não será possível cancelar este procedimento.</p>
+			</div>
+			</div>
+        </div><!-- /.modal-content -->
+    </form>
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- MMODAL LIBERAR ENTREGA -->
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <form action="enviaform.php" method="post" class="js-form-confirmacao">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h2 class="modal-title" style="color: #fff;">Liberar entrega</h2>
+            </div>
+
+            <div class="modal-body">
+                
+                
+	            <span>O(s) produto(s) serão entregue no endereço abaixo citado</span>
+	            <h2>Produtos</h2>
+	            <div class="autor-email">
+	           		<span>Produtos de:<br><strong>Carlos Eduardo</strong></span>
+	            </div>
+
+	            <div class="itens-comprados">
+					<div class="col-md-12">
+						<div class="thumb-extrato-modal">
+							<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
+						<div class="titulo-products col-md-8">
+							<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
+						</div>
+						<p class="preco"><strong>R$ 750,00</strong></p>
+		       			
+						</div>
+						
+					</div>
+				</div><!-- itens comprados -->
+				 <div class="itens-comprados">
+					<div class="col-md-12">
+						<div class="thumb-extrato-modal">
+							<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
+						<div class="titulo-products col-md-8">
+							<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
+						</div>
+						<p class="preco"><strong>R$ 750,00</strong></p>
+		       			
+						</div>
+						
+					</div>
+					
+				</div><!-- itens comprados -->
+
+				
+				<div class="total-convertido-entrega col-md-12">
+					<div class="kart">
+						<img src="images/entrega-modal.png">
+					</div>
+					<div class="texto-endereco">
+						<p><strong>Endereço da entrega</strong></p>
+						<p class="destinatario">Destinatário: <span> Vanessa Silva</span></p>
+						<p class="endereco">Rua Almeida Queiroz de Azevedo, Comercial</p>
+						<p class="referencia">Referência: próximo ao mercado Extra</p>
+					</div>
+					
+				</div>
+
+				<div class="condicoes-juridicas col-md-12">
+					<h6>Condições Juridicas</h6>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipconsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore ...</p>
+				</div>
+
+				<div class="col-md-12 termos-condicoes">
+					<label class="checkbox-inline">
+					  <input type="checkbox" id="inlineCheckbox1" value="option1"><p>Estou ciente e concordo com as condições</p>
+					</label>
+				</div>
+
+               	
+           	
+               
+            </div><!-- END MODAL CONTENT-->
+            <div class="modal-footer">
+            <button type="button"  class="btn btn-default center-block" data-dismiss="modal">Enviar</button>
+            
+            <div class="condicoes-juridicas col-md-12">
+				<h6>Importante</h6>
+				<p>Todos os produtos a serem entregues estão sujeitos a confirmação de sua existência nos estoques do Pontofrio.com.br, ou de seus fornecedores, no momento da programação de entrega. Nos casos em que o produto comprado deixar de ser comercializado pelo Pontofrio.com.br ou deixar de ser produzido pelo fabricante, o valor pago pelo convidado à vista será convertido em créditos.</p>
+			</div>
+			</div>
+        </div><!-- /.modal-content -->
+    </form>
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+</div><!--/. wrapper--> 
 
 <footer class="footer">
   <div class="container">
