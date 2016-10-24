@@ -56,11 +56,71 @@
 
 <div class="wrapper extrato__pendente">
 <div class="container">	
+
+<div class="col-md-12">
+	<div class="col-md-4">			
+	<div class="fundo__extrato">
+		<div class="engloba-saldo-atual">
+			<div class="saldo-atual-left">
+				<div class="icon-dolar fa-area-3">
+					<i class="fa fa-usd" aria-hidden="true"></i>
+				</div>
+				<div class="saldo-interno">
+					<p>Saldo Atual</p>
+					<p><strong>R$ 25.000,00</strong></p>
+					<p>de R$ 33.500,00</p>
+				
+					<a href="#" class="" data-element=".saldo-atual-right" id="meubotao"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
+				</div>
+
+
+			</div>
+			
+			
+			<div class="saldo-atual-right">
+				<table>
+					  <tr>
+					    <th class="titulo-table" >item</th>
+					    <th class="reais titulo-table">R$</th>
+					  </tr>
+					  <tr>
+					    <td><p>Créditos</p></td>
+					    <td class="number"><p>35.500,00</p></td>
+					  </tr>
+					  <tr>
+					    <td>Vale Compra</td>
+					    <td class="number">32.500,00</td>
+					  </tr>
+					  <tr>
+					    <td>Outros</td>
+					    <td class="number">1.000,00</td>
+					  </tr>
+					  <tr>
+					    <td><p class="usado">Usado</p></td>
+					    <td class="number"><p class="usado">8.500,00</p></td>
+					  </tr>
+					  <tr>
+					    <td><span>Saldo</span></td>
+					    <td class="number"><span>25.500,00</span></td>
+					  </tr>
+				</table>
+			</div>
+				
+		</div>
+		</div>
+
+</div>
+</div>
+
+
+
+
 <h3 class="subtitle hidden-xs">Presentes recebidos e Extratos</h3>
 <strong>14 presentes recebidos</strong>
 </div>
 	<div class="features-extrato">
     	<div class="row">
+
 
   			<div id="exTab2" class="container">	
 
@@ -283,7 +343,55 @@
 								</div>
 							</div><!-- itens comprados -->
 							
-							<button class="btn btn-md btn-primary btn-tab-extratos hidden-xs"><i class="fa fa-truck" aria-hidden="true"></i>Status do Pedido</button>
+							<a class="btn btn-primary btn-tab-extratos" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-truck" aria-hidden="true"></i>Status do Pedido</a>
+
+							<div class="collapse col-md-12" id="collapseExample">
+			            		<!-- widget div-->
+					            <div role="content">
+					                <!-- widget content -->
+					                <div class="widget-body col-md-9">
+
+					                    <div class="row">
+					                        <form id="wizard-1" novalidate="novalidate">
+					                            <div id="bootstrap-wizard-1" class="col-sm-12">
+					                                <div class="form-bootstrapWizard">
+					                                    <ul class="bootstrapWizard form-wizard">
+					                                        <li class="active" data-target="#step1">
+					                                            <a href="#tab1" data-toggle="tab" class="active"> <span class="step">1</span> <span class="title">separação<br> estoque<br>18/10/2016</span> </a>
+					                                        </li>
+					                                        <li data-target="#step2" class="active">
+					                                            <a href="#tab1" data-toggle="tab" class="active"> <span class="step">2</span> <span class="title">Nota<br>Fiscal<br>18/10/2016</span> </a>
+					                                        </li>
+					                                        <li data-target="#step3" class="active">
+					                                           <a href="#tab1" data-toggle="tab" class="active"> <span class="step">3</span> <span class="title">tranportadota<br><br>18/10/2016</span> </a>
+					                                        </li>
+					                                        <li data-target="#step4">
+					                                           <a href="#tab1" data-toggle="tab" class="active"> <span class="step">4</span> <span class="title">Produto entregue</span> </a></li>
+
+					                                    </ul>
+					                               
+					                                </div>
+					                              
+					                            </div>
+					                        </form>
+
+					                    </div>
+					                    
+					                </div>
+					                <!-- end widget content -->
+					                <div class="nota-fiscal col-md-2">
+					                    <p>Nota fiscal Eletrônica</p>
+					                    <span class="baixar-arquivo">Baixar arquivo</span>
+					                    <div class="gera-pdf">
+					                    	<span ><a href="#">PDF</a><span/>
+					                    </div>
+					                    <div class="gera-xml">
+					                    	<span ><a href="#">XML</a><span/>
+					                    </div>
+					                    
+					                </div>
+					            </div>
+							</div><!-- END COLAPSE -->
 
 							
 						</div><!-- END ENGLOBA ITENS -->
