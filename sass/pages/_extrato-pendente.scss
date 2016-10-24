@@ -284,90 +284,114 @@
 		background-color: #fbfaf5;
 		border: 1px solid #f4f0e4;
 		padding-top:15px;
-		padding-bottom: 15px;
+		
 		
 	}
 
 	// SECTION SALDO ATUAL
 
-.engloba-saldo-atual {
-	display: flex;
-	
-}
+	.engloba-saldo-atual {
+		display: flex;
+		
+	}
 
-.saldo-atual-left {
-	width: 280px;
-	
-}
+	.saldo-atual-left {
+		width: 280px;
+		
+	}
 
-.saldo-interno p {
-	margin: 0;
-}
+	.saldo-interno p {
+		margin: 0;
+	}
 
-.saldo-atual-left {
-	display: flex;
-	align-self: center;
-}
+	.saldo-atual-left {
+		display: flex;
+		align-self: center;
+	}
 
-.fa-area-3 {
-    font-size: 30px;
-    width: 60px;
-    text-align: center;
-    line-height: 50px;
-    height: 60px;
-    border-radius: 100%;
-    border: double 1px solid #848789;
-    color: #848789;
-    transition: all 350ms ease;
-    border: double;
-    margin-left: 19px;
-    margin-right: 19px;
-}
-
-
-// SECTION TABELA EXTRATO
-
-.engloba-saldo-atual strong {
-	font-size: 20px;
-}
-
-.saldo-atual-right {
-	width: 280px;
-	margin-right: 25px;
-	border-left: 1px solid  #848789;
-    padding-left: 31px;
-    display: none;
-}
-
-.saldo-atual-right .number {
-	text-align: right;
-}
+	.fa-area-3 {
+	    font-size: 30px;
+	    width: 60px;
+	    text-align: center;
+	    line-height: 50px;
+	    height: 60px;
+	    border-radius: 100%;
+	    border: double 1px solid #848789;
+	    color: #848789;
+	    transition: all 350ms ease;
+	    border: double;
+	    margin-left: 19px;
+	    margin-right: 19px;
+	}
 
 
+	// SECTION TABELA EXTRATO
 
-.saldo-atual-right table {
-	width: 100%;
+	.engloba-saldo-atual strong {
+		font-size: 20px;
+	}
 
-}
+	.saldo-atual-right {
+		width: 280px;
+		margin-right: 25px;
+		border-left: 1px solid  #848789;
+	    padding-left: 31px;
+	    display: none;
+	}
 
-.saldo-atual-right .reais {
-	text-align: right;
+	.saldo-atual-right .number {
+		text-align: right;
+	}
 
-}
 
-.saldo-atual-right .titulo-table {
-	padding-bottom: 15px;
-	color: #848789;
-}
 
-.saldo-atual-right span {
-	font-size: 15px;
-	font-weight: bold;
-	color: #848789
-}
+	.saldo-atual-right table {
+		
 
-.saldo-atual-right .usado {
-	margin-top: 10px;
-}
+	}
 
+	.saldo-atual-right .reais {
+		text-align: right;
+
+	}
+
+	.saldo-atual-right .titulo-table {
+		padding-bottom: 15px;
+		color: #848789;
+	}
+
+	.saldo-atual-right span {
+		font-size: 15px;
+		font-weight: bold;
+		color: #848789
+	}
+
+	.saldo-atual-right .usado {
+		margin-top: 10px;
+	}
+ //  DROPDOWN LIMITE CREDITO
+
+	.limite-credito {
+		left: -100px !important;
+		min-width: 259px;
+		
+		
+	}
+
+	.limite-credito  {
+		padding: 10px !important;
+		
+	}
+
+	.dropdown-menu li {
+		list-style: none!important;
+	}
+
+	.text-credito {
+		width: 150px;
+	}
+
+	.number {
+		text-align: right!important;
+	}
 }
