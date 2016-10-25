@@ -1,397 +1,52 @@
-.wrapper.extrato__pendente {
+.wrapper.planejador {
 
 	.tab-content  {
 		padding: 30px;
 	}
 
-	.agradecimentos {
-		background-color: #fbfaf5;
-    	border: 1px solid #f4f0e4;
-    	padding-top: 20px;
-    	padding-bottom: 20px;
+	.imprimir-planilha {
+		text-align: right;
+		padding-top: 25px;
+		padding-bottom: 25px;
 	}
 
-	.agradecimentos p {
-		margin: 0;
-		padding-bottom: 15px;
-	}
-
-	.data-compra {
-		margin-bottom : 15px;
-
-	}
-
-	.thumb-extrato{
-		display: flex;
-
-	}
-
-	.thumb {
-		margin-right: 15px;
-	}
-
-	.titulo-products {
-		margin-right: 15px;
-	}
-
-	.preco {
-		margin: 0;
-	}
-
-	.btn-tab-extratos {
-		margin-top: 30px;
-
-	}
-
-	.engloba-itens {
-		margin-top:100px;
-
-		
-		
-	}
-
-	.filtro {
-		border-bottom: 0;
-	}
-
-//MODAL STYLES
-
-	.modal-title {
-		color: #fff;
-	}
-
-
-	.engloba-email {
-		display: flex;
-	}
-
-	
-
-	.engloba-email {
-		display: flex;
-
-		}
-
-	.datahora {
-		margin-left: 300px;
-	}
-
-	.text-email {
-		margin-top: 30px;
-	}
-
-	.resp-email{
-		margin-top: 30px;
-	}
-
-	.thumb-extrato-modal{
-		display: flex;
-		margin-top: 30px;
-		padding-bottom: 15px;
-
-
-	}
-
-	.total-convertido {
-		display: flex;
-		justify-content: space-between;
-		border-top: 1px solid #e4ebf1;
-		padding-top: 30px;
-		padding-bottom: 30px;
-	}
-
-	.termos-condicoes {
-		padding-top: 20px;
-		padding-bottom: 20px;
-	}
-
-	.condicoes-juridicas {
-		text-align: left;
-		padding-top: 20px;
-	}
-
-	.texto-endereco p {
-		margin: 0;
-	}
-
-	.total-convertido-entrega {
-		display: flex;
-    	justify-content: flex-start;
-		border-top: 1px solid #e4ebf1;
-		padding-top: 30px;
-		padding-bottom: 30px;
-	}
-
-	.kart {
+	.icon-check-list {
 		margin-right: 20px;
 	}
 
+	.card-block li {
+		list-style: none;
+	}
+
+	.card-block ul{
+		padding-right: 10px !important;
+	}
+
+	.users {
+    	table-layout: fixed;
+	 	width: 100%;
+	   
+	}
 	
-
-	.sua-reposta{
-		padding-top: 40px;
-	}
-
-	.bootstrapWizard {
-    display: block;
-    list-style: none;
-    padding: 0;
-    position: relative;
-    width: 100%
-	}
-
-	.bootstrapWizard a:hover,.bootstrapWizard a:active,.bootstrapWizard a:focus {
-	    text-decoration: none
-	}
-
-	.bootstrapWizard li {
-	    display: block;
-	    float: left;
-	    width: 25%;
-	    text-align: center;
-	    padding-left: 0
-	}
-
-	.bootstrapWizard li:before {
-	    border-top: 3px solid #55606E;
-	    content: "";
-	    display: block;
-	    font-size: 0;
+	.users td {
+	   
 	    overflow: hidden;
-	    position: relative;
-	    top: 11px;
-	    right: 1px;
-	    width: 100%;
-	    z-index: 1
+	    text-overflow: ellipsis;
 	}
 
-	.bootstrapWizard li:first-child:before {
-	    left: 50%;
-	    max-width: 50%
+	.users tr {
+		border-bottom: 1px solid #e7e7e7;
 	}
 
-	.bootstrapWizard li:last-child:before {
-	    max-width: 50%;
-	    width: 50%
-	}
-
-	.bootstrapWizard li.complete .step {
-	    background: #0aa66e;
-	    padding: 1px 6px;
-	    border: 3px solid #55606E
-	}
-
-	.bootstrapWizard li .step i {
-	    font-size: 10px;
-	    font-weight: 400;
-	    position: relative;
-	    top: -1.5px
-	}
-
-	.bootstrapWizard li .step {
-	    background: #B2B5B9;
-	    color: #fff;
-	    display: inline;
-	    font-size: 15px;
-	    font-weight: 700;
-	    line-height: 12px;
-	    padding: 7px 13px;
-	    border: 3px solid transparent;
-	    border-radius: 50%;
-	    line-height: normal;
-	    position: relative;
-	    text-align: center;
-	    z-index: 2;
-	    transition: all .1s linear 0s
-	}
-
-	.bootstrapWizard li.active .step,.bootstrapWizard li.active.complete .step {
-	    background: #0091d9;
-	    color: #fff;
-	    font-weight: 700;
-	    padding: 7px 13px;
-	    font-size: 15px;
-	    border-radius: 50%;
-	    border: 3px solid #55606E
-	}
-
-	.bootstrapWizard li.complete .title,.bootstrapWizard li.active .title {
-	    color: #2B3D53
-	}
-
-	.bootstrapWizard li .title {
-	    color: #bfbfbf;
-	    display: block;
-	    font-size: 13px;
-	    line-height: 15px;
-	    max-width: 100%;
-	    position: relative;
-	    table-layout: fixed;
-	    text-align: center;
-	    top: 20px;
-	    word-wrap: break-word;
-	    z-index: 104
-	}
-
-	.wizard-actions {
-	    display: block;
-	    list-style: none;
-	    padding: 0;
-	    position: relative;
-	    width: 100%
-	}
-
-	.wizard-actions li {
-	    display: inline
-	}
-
-	.tab-content.transparent {
-	    background-color: transparent
-	}
-
-	.nota-fiscal {
-		border: 1px solid #a9aebb;
-   		padding: 10px;
-	}
-
-	.baixar-arquivo {
-		margin-bottom: 8px;
-	}
-
-	.gera-pdf {
-		border: 1px solid #a9aebb;
-		text-align: center;
-		margin-bottom: 8px;
-		margin-top: 8px;
-
-	}
-
-	.gera-xml {
-		border: 1px solid #a9aebb;
-		text-align: center;
-	}
-
-	.collapse {
-		margin-top: 30px;
-    	margin-bottom: 20px;
-    	border: 1px solid #a9aebb;
-    	padding: 10px;
-	}
-
-	// tabela credito
-
-	.fundo__extrato {
-		background-color: #fbfaf5;
-		border: 1px solid #f4f0e4;
-		padding-top:15px;
-		
-		
-	}
-
-	// SECTION SALDO ATUAL
-
-	.engloba-saldo-atual {
-		display: flex;
-		
-	}
-
-	.saldo-atual-left {
-		width: 280px;
-		
-	}
-
-	.saldo-interno p {
-		margin: 0;
-	}
-
-	.saldo-atual-left {
-		display: flex;
-		align-self: center;
-	}
-
-	.fa-area-3 {
-	    font-size: 30px;
-	    width: 60px;
-	    text-align: center;
-	    line-height: 50px;
-	    height: 60px;
-	    border-radius: 100%;
-	    border: double 1px solid #848789;
-	    color: #848789;
-	    transition: all 350ms ease;
-	    border: double;
-	    margin-left: 19px;
-	    margin-right: 19px;
-	}
-
-
-	// SECTION TABELA EXTRATO
-
-	.engloba-saldo-atual strong {
-		font-size: 20px;
-	}
-
-	.saldo-atual-right {
-		width: 280px;
-		margin-right: 25px;
-		border-left: 1px solid  #848789;
-	    padding-left: 31px;
-	    display: none;
-	}
-
-	.saldo-atual-right .number {
-		text-align: right;
-	}
-
-
-
-	.saldo-atual-right table {
-		
-
-	}
-
-	.saldo-atual-right .reais {
-		text-align: right;
-
-	}
-
-	.saldo-atual-right .titulo-table {
+	.users p {
+		padding-top: 15px;
 		padding-bottom: 15px;
-		color: #848789;
 	}
 
-	.saldo-atual-right span {
-		font-size: 15px;
-		font-weight: bold;
-		color: #848789
+	.users th {
+		font-size: 18px;
 	}
 
-	.saldo-atual-right .usado {
-		margin-top: 10px;
-	}
- //  DROPDOWN LIMITE CREDITO
-
-	.limite-credito {
-		left: -100px !important;
-		min-width: 259px;
-		
-		
-	}
-
-	.limite-credito  {
-		padding: 10px !important;
-		
-	}
-
-	.dropdown-menu li {
-		list-style: none!important;
-	}
-
-	.text-credito {
-		width: 150px;
-	}
-
-	.number {
-		text-align: right!important;
-	}
+	
+ 
 }
