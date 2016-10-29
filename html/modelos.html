@@ -57,76 +57,108 @@
 <div class="wrapper modelos">
 	<div class="container">	
 		<h3 class="subtitle hidden-xs">Save the Date</h3>
-
-		 
-
 	</div>
+<!-- widget content -->
+    <div class="container">
+      
+    		<div class="widget-body">
+    	        <form id="wizard-1" novalidate="novalidate">
+                    <div id="bootstrap-wizard-1">
+                        <div class="form-bootstrapWizard">
+                            <ul class="bootstrapWizard form-wizard">
+                                <li class="active" data-target="#step1">
+                                    <a href="#tab1" data-toggle="tab" class="active"> <span class="step">1</span> <span class="title">Modelo</a>
+                                </li>
+                                <li data-target="#step2">
+                                    <a href="#tab1" data-toggle="tab" class="active"> <span class="step">2</span> <span class="title">Mensagem</a>
+                                </li>
+                                <li data-target="#step3">
+                                   <a href="#tab1" data-toggle="tab" class="active"> <span class="step">3</span> <span class="title">Compartilhar</a>
+                                </li>
+                               
+                            </ul>
+                       
+                        </div>
+                      
+                    </div>
+                </form>
+
+            </div>
+         
+    </div>
+                
+
 	<div class="features-models">
 		<div class="row">
 			<div class="container">	
 				<div class="engloba-noiva col-md-12">
 					<h5>Modelo</h5>
 					  <p>Escolha o modelo de sua mensagem</p>
-					
+			<!-- MODELO MSG 1--> 					
 					<div class="col-md-4">
 						
 						<div class="tag right"><span><i class="fa fa-search-plus" aria-hidden="true"></i></span></div>
-						<div class="tag right checked"><span><i class="fa fa-check-circle-o" aria-hidden="true"></i></span></div>
+						<div class="tag right checked" id="escolhido" style="display: none;"><span><i class="fa fa-check-circle-o" aria-hidden="true"></i></span></div>
 						<div class="item">
 
 						<a title="Image 1" href="#"><img class="thumbnail img-responsive" src="http://placehold.it/507x271"></a>
 						</div> 
 					</div>
-
+			<!-- MODELO MSG 2--> 
 					<div class="col-md-4">
 						
 						<div class="tag right"><span><i class="fa fa-search-plus" aria-hidden="true"></i></span></div>
+						<div class="tag right checked" id="escolhido2" style="display: none;"><span><i class="fa fa-check-circle-o" aria-hidden="true"></i></span></div>
 						<div class="item">
 
 						<a title="Image 2" href="#"><img class="thumbnail img-responsive" src="http://placehold.it/507x271"></a>
 						</div> 
 					</div>
-
+			<!-- MODELO MSG 3-->
 					<div class="col-md-4">
 						
 						<div class="tag right"><span><i class="fa fa-search-plus" aria-hidden="true"></i></span></div>
+						<div class="tag right checked" id="escolhido3" style="display: none;"><span><i class="fa fa-check-circle-o" aria-hidden="true"></i></span></div>
 						<div class="item">
 
 						<a title="Image 3" href="#"><img class="thumbnail img-responsive" src="http://placehold.it/507x271"></a>
 						</div> 
 					</div>
-
+			<!-- MODELO MSG 4-->
 					<div class="col-md-4">
 						
 						<div class="tag right"><span><i class="fa fa-search-plus" aria-hidden="true"></i></span></div>
+						<div class="tag right checked" id="escolhido4" style="display: none;"><span><i class="fa fa-check-circle-o" aria-hidden="true"></i></span></div>
 						<div class="item">
 
 						<a title="Image 4" href="#"><img class="thumbnail img-responsive" src="http://placehold.it/507x271"></a>
 						</div> 
 					</div>
+			<!-- MODELO MSG 5-->		
 					<div class="col-md-4">
 						
 						<div class="tag right"><span><i class="fa fa-search-plus" aria-hidden="true"></i></span></div>
+						<div class="tag right checked" id="escolhido5" style="display: none;"><span><i class="fa fa-check-circle-o" aria-hidden="true"></i></span></div>
 						<div class="item">
 
 						<a title="Image 5" href="#"><img class="thumbnail img-responsive" src="http://placehold.it/507x271"></a>
 						</div> 
 					</div>
+			<!-- MODELO MSG 6-->		
 					<div class="col-md-4">
 						
 						<div class="tag right"><span><i class="fa fa-search-plus" aria-hidden="true"></i></span></div>
+						<div class="tag right checked" id="escolhido6" style="display: none;"><span><i class="fa fa-check-circle-o" aria-hidden="true"></i></span></div>
 						<div class="item">
 
 						<a title="Image 6" href="#"><img class="thumbnail img-responsive" src="http://placehold.it/507x271"></a>
 						</div> 
 					</div>
+
 				</div>
 			</div>
 			<div class="imprimir-compra-cartao col-md-12">
-			   
-					
-					
-					<button class="btn btn-md btn-primary btn-add-cart center-block"><strong>Escrever Mensagem</strong></button>
+				<button class="btn btn-md btn-primary btn-add-cart center-block"><strong>Escrever Mensagem</strong></button>
 				
 			   
 			</div>
@@ -144,19 +176,21 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 <h2 class="modal-title" style="color: #fff;"></h2>
             </div>
-		<div class="modal-body">
+		<div class="modal-body"> 
 
-			
+			imkhh
 		</div>
 		
 		<div class="modal-footer">
-			<button class="btn btn-md btn-primary btn-add-cart center-block" data-dismiss="modal">Quero este</button>
+			<button type="button" onclick="Mudarestado('escolhido')" class="btn btn-md btn-primary btn-add-cart center-block" data-dismiss="modal">Quero este</button>
 		</div>
 	    </div>
 	</div>
 </div>
- 
+
+
  <!-- END MMODAL RESPOSTA LIGHTBOX-->  
+
 
 
 </div><!--/. wrapper--> 
@@ -208,6 +242,16 @@ $('.thumbnail').click(function(){
   	$('#myModal').modal({show:true});
 });
 });
+
+
+function Mudarestado(el) {
+    var display = document.getElementById(el).style.display;
+
+    if(display == "none")
+        document.getElementById(el).style.display = 'block';
+    else
+        document.getElementById(el).style.display = 'none';
+}
 
 
 </script>
