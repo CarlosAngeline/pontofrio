@@ -1,0 +1,68 @@
+.wrapper.modelos{
+
+	.engloba-noiva{
+		margin-bottom: 35px;
+		background: #fbfaf5;
+    	border: 1px solid #f4f0e4;
+	}
+
+	.engloba-noiva img {
+		padding: 15px;
+		display: block;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+
+
+	.item {
+		
+    	padding: 10px;
+	}
+
+	.modal-dialog {width:500px;}
+	.thumbnail {margin-bottom:6px;}
+	.thumbnail img-responsive {width: 10%;}
+
+	.tag {
+	    top: 5px;
+	    left: 290px;
+	    z-index: 200;
+	    position: absolute;
+	    border-radius: 100%;
+	    width: 45px;
+	    height: 45px;
+	    color: #FFFFFF;
+	    font-weight: bold;
+	    margin: 12px;
+	    line-height: 45px;
+	    text-align: center;
+	   
+	}
+
+	.fa-search-plus:before {
+		font-size: 35px;
+		color: #777;
+	}
+
+	.checked {
+		top: 73px;
+	    left: 134px;
+	    z-index: 200;
+	    position: absolute;
+	    border-radius: 100%;
+	    width: 45px;
+	    height: 45px;
+	    color: #FFFFFF;
+	    font-weight: bold;
+	    margin: 12px;
+	    line-height: 45px;
+	    text-align: center;
+	    display: none;
+	}
+
+	.fa-check-circle-o:before {
+		font-size: 70px;
+		color: #777;
+	}
+ 
+}

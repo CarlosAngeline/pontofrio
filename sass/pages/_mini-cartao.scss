@@ -1,52 +1,44 @@
-.wrapper.planejador {
+.wrapper.mini-cartao {
 
-	.tab-content  {
-		padding: 30px;
-	}
-
-	.imprimir-planilha {
-		text-align: right;
-		padding-top: 25px;
-		padding-bottom: 25px;
+	.engloba-noiva{
+		margin-bottom: 35px;
+		background: #fbfaf5;
+    	border: 1px solid #f4f0e4;
 	}
 
-	.icon-check-list {
-		margin-right: 20px;
+	.engloba-noiva img {
+		padding: 15px;
+		display: block;
+	    margin-left: auto;
+	    margin-right: auto;
 	}
 
-	.card-block li {
-		list-style: none;
+	.imprimir-compra-cartao {
+		padding: 15px;
+		display: flex;
+		padding-top: 10px;
+
+
 	}
 
-	.card-block ul{
-		padding-right: 10px !important;
+	.imprimir-compra-cartao h5{
+		padding-bottom: 10px;
 	}
 
-	.users {
-    	table-layout: fixed;
-	 	width: 100%;
-	   
-	}
-	
-	.users td {
-	   
-	    overflow: hidden;
-	    text-overflow: ellipsis;
+	.imprimir-compra-cartao p{
+		padding-bottom: 10px;
 	}
 
-	.users tr {
-		border-bottom: 1px solid #e7e7e7;
+	.imprimir-cartao {
+		padding-left: 20px;
 	}
 
-	.users p {
-		padding-top: 15px;
-		padding-bottom: 15px;
-	}
-
-	.users th {
-		font-size: 18px;
-	}
 
 	
+
+	
+	
+
+		
  
 }
