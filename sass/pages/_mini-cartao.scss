@@ -1,0 +1,52 @@
+.wrapper.planejador {
+
+	.tab-content  {
+		padding: 30px;
+	}
+
+	.imprimir-planilha {
+		text-align: right;
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+
+	.icon-check-list {
+		margin-right: 20px;
+	}
+
+	.card-block li {
+		list-style: none;
+	}
+
+	.card-block ul{
+		padding-right: 10px !important;
+	}
+
+	.users {
+    	table-layout: fixed;
+	 	width: 100%;
+	   
+	}
+	
+	.users td {
+	   
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	}
+
+	.users tr {
+		border-bottom: 1px solid #e7e7e7;
+	}
+
+	.users p {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	.users th {
+		font-size: 18px;
+	}
+
+	
+ 
+}
