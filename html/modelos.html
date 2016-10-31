@@ -95,7 +95,7 @@
 					<h5>Modelo</h5>
 					  <p>Escolha o modelo de sua mensagem</p>
 			<!-- MODELO MSG 1--> 					
-					<div class="col-md-4">
+					<div class="col-md-4 col-sm-6">
 						
 						<div class="tag right"><span><i class="fa fa-search-plus" aria-hidden="true"></i></span></div>
 						<div class="tag right checked" id="escolhido" style="display: none;"><span><i class="fa fa-check-circle-o" aria-hidden="true"></i></span></div>
@@ -105,7 +105,7 @@
 						</div> 
 					</div>
 			<!-- MODELO MSG 2--> 
-					<div class="col-md-4">
+					<div class="col-md-4 col-sm-6">
 						
 						<div class="tag right"><span><i class="fa fa-search-plus" aria-hidden="true"></i></span></div>
 						<div class="tag right checked" id="escolhido2" style="display: none;"><span><i class="fa fa-check-circle-o" aria-hidden="true"></i></span></div>
@@ -115,7 +115,7 @@
 						</div> 
 					</div>
 			<!-- MODELO MSG 3-->
-					<div class="col-md-4">
+					<div class="col-md-4 col-sm-6">
 						
 						<div class="tag right"><span><i class="fa fa-search-plus" aria-hidden="true"></i></span></div>
 						<div class="tag right checked" id="escolhido3" style="display: none;"><span><i class="fa fa-check-circle-o" aria-hidden="true"></i></span></div>
@@ -125,7 +125,7 @@
 						</div> 
 					</div>
 			<!-- MODELO MSG 4-->
-					<div class="col-md-4">
+					<div class="col-md-4 col-sm-6">
 						
 						<div class="tag right"><span><i class="fa fa-search-plus" aria-hidden="true"></i></span></div>
 						<div class="tag right checked" id="escolhido4" style="display: none;"><span><i class="fa fa-check-circle-o" aria-hidden="true"></i></span></div>
@@ -135,7 +135,7 @@
 						</div> 
 					</div>
 			<!-- MODELO MSG 5-->		
-					<div class="col-md-4">
+					<div class="col-md-4 col-sm-6">
 						
 						<div class="tag right"><span><i class="fa fa-search-plus" aria-hidden="true"></i></span></div>
 						<div class="tag right checked" id="escolhido5" style="display: none;"><span><i class="fa fa-check-circle-o" aria-hidden="true"></i></span></div>
@@ -145,7 +145,7 @@
 						</div> 
 					</div>
 			<!-- MODELO MSG 6-->		
-					<div class="col-md-4">
+					<div class="col-md-4 col-sm-6">
 						
 						<div class="tag right"><span><i class="fa fa-search-plus" aria-hidden="true"></i></span></div>
 						<div class="tag right checked" id="escolhido6" style="display: none;"><span><i class="fa fa-check-circle-o" aria-hidden="true"></i></span></div>
@@ -168,24 +168,25 @@
 
 <!-- MMODAL RESPOSTA LIGHTBOX-->
 
-
+<div class="modelos-modal">
 <div tabindex="-1" class="modal fade" id="myModal" role="dialog">
 	<div class="modal-dialog">
-	    <div class="modal-content">
+	    <div class="modal-content img-responsive">
 		    <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 <h2 class="modal-title" style="color: #fff;"></h2>
             </div>
 		<div class="modal-body"> 
 
-			imkhh
+			
 		</div>
 		
 		<div class="modal-footer">
-			<button type="button" onclick="Mudarestado('escolhido')" class="btn btn-md btn-primary btn-add-cart center-block" data-dismiss="modal">Quero este</button>
+			<button type="button" id="js-quero-este" class="btn btn-md btn-primary btn-add-cart center-block" data-dismiss="modal">Quero este</button>
 		</div>
 	    </div>
 	</div>
+</div>
 </div>
 
 
@@ -232,25 +233,35 @@ $(function(){
 	});
 });
 
+window.selectedItem = null;
 
 $(document).ready(function() {
-$('.thumbnail').click(function(){
-      $('.modal-body').empty();
-  	var title = $(this).parent('a').attr("title");
-  	$('.modal-title').html(title);
-  	$($(this).parents('div').html()).appendTo('.modal-body');
-  	$('#myModal').modal({show:true});
-});
+	$('.thumbnail').click(function(e){
+		e.preventDefault();
+
+		window.selectedItem = $(this).parents('.item').siblings('.checked').get(0);
+
+	  	$('.modal-body').empty();
+	  	var title = $(this).parent('a').attr("title");
+	  	$('.modal-title').html(title);
+	  	$($(this).parents('div').html()).appendTo('.modal-body');
+	  	$('#myModal').modal({show:true});
+	});
+
+	$('#js-quero-este').on('click', function(e) {
+		e.preventDefault();
+
+		Mudarestado( window.selectedItem );
+	});
 });
 
 
 function Mudarestado(el) {
-    var display = document.getElementById(el).style.display;
+	$('.checked').css('display', 'none');
+	
 
-    if(display == "none")
-        document.getElementById(el).style.display = 'block';
-    else
-        document.getElementById(el).style.display = 'none';
+    el.style.display = 'block';
+   
 }
 
 

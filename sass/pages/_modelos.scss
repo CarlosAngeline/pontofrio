@@ -80,7 +80,7 @@
 	.bootstrapWizard li {
 	    display: block;
 	    float: left;
-	    width: 25%;
+	    width: 33%;
 	    text-align: center;
 	    padding-left: 0
 	}
@@ -181,5 +181,80 @@
 	.form-bootstrapWizard{
 		padding-bottom: 80px;
 	}
- 
+
+
+	@media only screen and (max-width : 768px) {
+		.right {
+			left: 261px;
+		}
+
+		.modal-content.img-responsive {
+			
+		}
+
+		.checked {
+			left: 118px;
+   			top: 48px;
+		}
+		
+	}
+
+
+	@media only screen and (max-width : 414px) {
+		.right {
+			left: 310px;
+		}
+
+		.modal-content.img-responsive {
+			width: 412px;
+		}
+
+		.checked {
+			left: 143px;
+   			top: 60px;
+		}
+		
+	}
+
+	@media only screen and (max-width : 375px) {
+		.right {
+			left: 272px;
+		}
+
+		.modal-content.img-responsive {
+			width: 373px;
+		}
+
+		.checked {
+			left: 125px;
+   			top: 52px;
+		}
+		
+	}
+
+	@media only screen and (max-width : 320px) {
+		.right {
+			left: 214px;
+		}
+
+		.modal-content.img-responsive {
+			width: 318px;
+		}
+
+		.checked {
+			left: 100px;
+   			top: 37px;
+		}
+	}	
 }
+
+
+
+
+
+	
+
+
+
+
+
