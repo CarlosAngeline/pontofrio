@@ -394,4 +394,26 @@
 	.number {
 		text-align: right!important;
 	}
+
+
+
+	@media only screen and (max-width :320px) {
+		.nav-tabs > li > a {
+			padding: 9px 8px;
+		}
+
+		[class*="features-"] .container {
+			padding-top: 15px;
+		}
+
+		h3.subtitle {
+			font-size: 17px;
+		}
+
+		body .engloba-itens {
+			padding-top: 30px !important;
+		}
+	}
+
+	
 }

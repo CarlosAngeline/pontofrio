@@ -47,6 +47,18 @@
 		font-size: 18px;
 	}
 
+
+	@media only screen and (max-width : 320px) {
+		.users th {
+			font-size: 14px;
+		}
+
+		.users p {
+			font-size: 12px;
+		}
+		
+	}
+
 	
  
 }

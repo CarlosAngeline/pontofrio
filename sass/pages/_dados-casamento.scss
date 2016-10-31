@@ -50,5 +50,18 @@
 		margin-bottom: 35px;
 	}
 
+
+	@media only screen and (max-width :320px) {
+		.features-dados-casamento .nav > li > a {
+			padding: 9px 8px;
+		}
+	}
+
+	@media only screen and (max-width :414px) {
+		.features-dados-casamento .nav > li > a {
+			padding: 12px 31px;
+		}
+	}
+
 	
 }
