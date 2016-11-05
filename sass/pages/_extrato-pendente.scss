@@ -4,6 +4,14 @@
 		padding: 30px;
 	}
 
+	.border-table {
+		
+	}
+
+	.bootstrap-select {
+		padding-top: 15px;
+	}
+
 	.agradecimentos {
 		background-color: #fbfaf5;
     	border: 1px solid #f4f0e4;
@@ -21,10 +29,13 @@
 
 	}
 
-	.thumb-extrato{
+	.nome-produto{
 		display: flex;
+		padding-top: 20px;
 
 	}
+
+
 
 	.thumb {
 		margin-right: 15px;
@@ -39,7 +50,7 @@
 	}
 
 	.btn-tab-extratos {
-		margin-top: 30px;
+		
 
 	}
 
@@ -130,6 +141,11 @@
 
 	.sua-reposta{
 		padding-top: 40px;
+	}
+
+	.buttons-extrato {
+		padding-bottom: 20px;
+
 	}
 
 	.bootstrapWizard {
@@ -271,12 +287,6 @@
 		text-align: center;
 	}
 
-	.collapse {
-		margin-top: 30px;
-    	margin-bottom: 20px;
-    	border: 1px solid #a9aebb;
-    	padding: 10px;
-	}
 
 	// tabela credito
 
@@ -290,10 +300,13 @@
 
 	// SECTION SALDO ATUAL
 
-	.engloba-saldo-atual {
+	.saldo-total {
 		display: flex;
-		
+	    align-items: center;
+	    padding-bottom: 10px;
 	}
+
+	
 
 	.saldo-atual-left {
 		width: 280px;
@@ -328,7 +341,7 @@
 	// SECTION TABELA EXTRATO
 
 	.engloba-saldo-atual strong {
-		font-size: 20px;
+		font-size: 17px;
 	}
 
 	.saldo-atual-right {
@@ -371,10 +384,58 @@
 	}
  //  DROPDOWN LIMITE CREDITO
 
+ 	/* Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fafafa;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 9999;
+    border: 1px solid #bfbfbf;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
 	.limite-credito {
-		left: -100px !important;
-		min-width: 259px;
-		
+		left: -208px !important;
+		min-width: 266px;
+		top: 65px;
 		
 	}
 
@@ -398,8 +459,44 @@
 
 
 	@media only screen and (max-width :320px) {
+	
+		.tab-content {
+			padding:20px;
+		}
+
+		.saldo-atual-mobile {
+			display: flex;
+		    align-items: center;
+		    padding-bottom: 15px;
+		   
+		}
+
+		.saldo-atual-mobile p {
+			margin-top: 0;
+			margin-bottom: 0;
+			font-size: 13px;
+		}
+
+		.fa-area-3 {
+			font-size: 27px;
+		    width: 45px;
+		    text-align: center;
+		    line-height: 39px;
+		    height: 45px;
+		}
+
+		.seta-baixa {
+			width: 15px !important;
+		}
+
+		.limite-credito {
+			left: -225px !important;
+		   	top: 46px;
+		}
+
 		.nav-tabs > li > a {
 			padding: 9px 8px;
+			font-size: 13px;
 		}
 
 		[class*="features-"] .container {
@@ -407,13 +504,307 @@
 		}
 
 		h3.subtitle {
-			font-size: 17px;
+			font-size: 14px;
+			font-weight: normal;
+			padding: 0;
+			margin-top: 10px;
 		}
 
 		body .engloba-itens {
 			padding-top: 30px !important;
 		}
+
+		.qtd-presentes-mobile {
+			font-size: 12px;
+		}
+
+		.dropdown-toggle {
+			width: 131px;
+		}
+
+		.dropdown-menu.open {
+			left: -79px;
+		}
+
+		.agradecimentos p{
+			font-size: 13px;
+		}
+
+		.buttons-extrato {
+			text-align: center;
+		}
+
+		.btn-tab-extratos {
+			margin-bottom: 10px;
+		}
+
+		.titulo-products{
+			font-size: 13px;
+		}
+
+		.btn-group bootstrap-select {
+			width: 131px;
+		}
+
+
+		.total-convertido {
+			display: block;
+		}
+
+		.texto-total p {
+			text-align: center;
+		}
+
+		.condicoes-juridicas p {
+			font-size: 13px;
+		}
+
+		.checkbox-inline p {
+			font-size: 13px;
+		}
+
+		.widget-body {
+			margin-bottom: 25px;
+		}
+
+		.dolar {
+			font-size: 13px;
+		}
 	}
+
+
+	@media only screen and (max-width :375px) {
+
+		.tab-content {
+			padding:20px;
+		}
+
+		.saldo-atual-mobile {
+			display: flex;
+		    align-items: center;
+		    padding-bottom: 15px;
+		   
+		}
+
+		.saldo-atual-mobile p {
+			margin-top: 0;
+			margin-bottom: 0;
+			font-size: 13px;
+		}
+
+		.fa-area-3 {
+			font-size: 27px;
+		    width: 45px;
+		    text-align: center;
+		    line-height: 39px;
+		    height: 45px;
+		}
+
+		.seta-baixa {
+			width: 15px !important;
+		}
+
+		.limite-credito {
+			left: -225px !important;
+		   	top: 46px;
+		}
+
+		.nav-tabs > li > a {
+			padding: 9px 21px;
+			font-size: 13px;
+		}
+
+		[class*="features-"] .container {
+			padding-top: 15px;
+		}
+
+		h3.subtitle {
+			font-size: 16px;
+			font-weight: normal;
+			padding: 0;
+			margin-top: 10px;
+		}
+
+		body .engloba-itens {
+			padding-top: 30px !important;
+		}
+
+		.qtd-presentes-mobile {
+			font-size: 12px;
+		}
+
+		.dropdown-toggle {
+			width: 131px;
+		}
+
+		.dropdown-menu.open {
+			left: -79px;
+		}
+
+		.agradecimentos p{
+			font-size: 13px;
+		}
+
+		.buttons-extrato {
+			text-align: center;
+		}
+
+		.btn-tab-extratos {
+			margin-bottom: 10px;
+		}
+
+		.titulo-products{
+			font-size: 13px;
+		}
+
+		.btn-group bootstrap-select {
+			width: 131px;
+		}
+
+
+		.total-convertido {
+			display: block;
+		}
+
+		.texto-total p {
+			text-align: center;
+		}
+
+		.condicoes-juridicas p {
+			font-size: 13px;
+		}
+
+		.checkbox-inline p {
+			font-size: 13px;
+		}
+
+		.widget-body {
+			margin-bottom: 25px;
+		}
+
+		.dolar {
+			font-size: 13px;
+		}
+	}
+
+	@media only screen and (max-width :414px) {
+
+		.tab-content {
+			padding:20px;
+		}
+
+		.saldo-atual-mobile {
+			display: flex;
+		    align-items: center;
+		    padding-bottom: 15px;
+		   
+		}
+
+		.saldo-atual-mobile p {
+			margin-top: 0;
+			margin-bottom: 0;
+			font-size: 13px;
+		}
+
+		.fa-area-3 {
+			font-size: 27px;
+		    width: 45px;
+		    text-align: center;
+		    line-height: 39px;
+		    height: 45px;
+		}
+
+		.seta-baixa {
+			width: 15px !important;
+		}
+
+		.limite-credito {
+			left: -225px !important;
+		   	top: 46px;
+		}
+
+		.nav-tabs > li > a {
+			padding: 9px 8px;
+			font-size: 14px;
+		}
+
+		[class*="features-"] .container {
+			padding-top: 15px;
+		}
+
+		h3.subtitle {
+			font-size: 16px;
+			font-weight: normal;
+			padding: 0;
+			margin-top: 10px;
+		}
+
+		body .engloba-itens {
+			padding-top: 30px !important;
+		}
+
+		.qtd-presentes-mobile {
+			font-size: 12px;
+		}
+
+		.dropdown-toggle {
+			width: 131px;
+		}
+
+		.dropdown-menu.open {
+			left: -79px;
+		}
+
+		.agradecimentos p{
+			font-size: 13px;
+		}
+
+		.buttons-extrato {
+			text-align: center;
+		}
+
+		.btn-tab-extratos {
+			margin-bottom: 10px;
+		}
+
+		.titulo-products{
+			font-size: 13px;
+		}
+
+		.btn-group bootstrap-select {
+			width: 131px;
+		}
+
+
+		.total-convertido {
+			display: block;
+		}
+
+		.texto-total p {
+			text-align: center;
+		}
+
+		.condicoes-juridicas p {
+			font-size: 13px;
+		}
+
+		.checkbox-inline p {
+			font-size: 13px;
+		}
+
+		.widget-body {
+			margin-bottom: 25px;
+		}
+
+		.dolar {
+			font-size: 13px;
+			text-align: center;
+		}
+
+	}
+
+
+
 
 	
 }

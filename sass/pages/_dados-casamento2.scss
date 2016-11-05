@@ -1,0 +1,67 @@
+.wrapper.dados-casamento {
+
+	.editable-input {
+	    font: medium -moz-fixed;
+	    font: -webkit-small-control;
+	    overflow: auto;
+	    padding: 8px;
+	    
+	    border: 1px solid transparent;
+	}
+
+	.editable-input:focus {
+	    -moz-appearance: textfield-multiline;
+	    -webkit-appearance: textarea;
+	    border: 1px solid gray;
+	}
+
+	.engloba-noiva{
+		margin-bottom: 35px;
+		background: #fbfaf5;
+    	border: 1px solid #f4f0e4;
+	}
+
+	.engloba-noivo {
+		margin-bottom: 35px;
+		background: #fbfaf5;
+    	border: 1px solid #f4f0e4;
+	}
+
+	.engloba-foto {
+		
+		background: #fbfaf5;
+    	border: 1px solid #f4f0e4;
+    	margin-bottom: 25px;
+	}
+
+	.avatar img {
+		display: inline;
+	    width: 80%;
+	    height: auto;
+	    overflow: hidden;
+	    border-radius: 100%;
+	    border: 1px solid #a9aebb;
+	    padding: 10%;
+	    margin-top: 15px;
+	}
+
+	textarea {
+		margin-top: 35px;
+		margin-bottom: 35px;
+	}
+
+
+	@media only screen and (max-width :320px) {
+		.features-dados-casamento .nav > li > a {
+			padding: 9px 8px;
+		}
+	}
+
+	@media only screen and (max-width :414px) {
+		.features-dados-casamento .nav > li > a {
+			padding: 12px 31px;
+		}
+	}
+
+	
+}

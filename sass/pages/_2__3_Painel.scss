@@ -94,6 +94,8 @@
 	}
 
 
+
+
 }
 
 
@@ -143,157 +145,253 @@
 	.lista-extrato1 {
 		padding: 0;
 	}
+
+
 	
-	
+	// SECTION GRAFICO
 
 
-// SECTION GRAFICO
+	.box {
+	    margin: 0px auto;
+	    width: 90%;
+
+	}
+
+	.engloba-box {
+		display: flex;
+		align-items: center;
+		padding-bottom: 14px;
+	    padding-top: 14px;
+
+	}
 
 
-.box {
-    margin: 0px auto;
-    width: 90%;
+	// SECTION SALDO ATUAL
 
-}
-
-.engloba-box {
-	display: flex;
-	align-items: center;
-	padding-bottom: 14px;
-    padding-top: 14px;
-
-}
-
-
-// SECTION SALDO ATUAL
-
-.engloba-saldo-atual {
-	display: flex;
-	
-}
-
-.saldo-atual-left {
-	width: 280px;
-	
-}
-
-.saldo-interno p {
-	margin: 0;
-}
-
-.saldo-atual-left {
-	display: flex;
-	align-self: center;
-}
-
-.fa-area-3 {
-    font-size: 30px;
-    width: 60px;
-    text-align: center;
-    line-height: 50px;
-    height: 60px;
-    border-radius: 100%;
-    border: double 1px solid #848789;
-    color: #848789;
-    transition: all 350ms ease;
-    border: double;
-    margin-left: 19px;
-    margin-right: 19px;
-}
-
-
-// SECTION TABELA EXTRATO
-
-.engloba-saldo-atual strong {
-	font-size: 20px;
-}
-
-.saldo-atual-right {
-	width: 280px;
-	margin-right: 25px;
-	border-left: 1px solid  #848789;
-    padding-left: 31px;
-}
-
-.saldo-atual-right .number {
-	text-align: right;
-}
-
-
-
-.saldo-atual-right table {
-	width: 100%;
-
-}
-
-.saldo-atual-right .reais {
-	text-align: right;
-
-}
-
-.saldo-atual-right .titulo-table {
-	padding-bottom: 15px;
-	color: #848789;
-}
-
-.saldo-atual-right span {
-	font-size: 15px;
-	font-weight: bold;
-	color: #848789
-}
-
-.saldo-atual-right .usado {
-	margin-top: 10px;
-}
-
-// SECTION ULTIMOS PRESENTE RECEBIDOS
-	
-
-
-.fundo-presentes-rec {
-		
-		border: 1px solid #f4f0e4;
-		padding: 15px 25px 15px 25px;
-		display: inline-flex;
-		flex-wrap: wrap;
-		margin-bottom: 20px;
-
-		
+	.engloba-saldo-atual {
+		display: flex;
 		
 	}
 
-.produto-thumb {
+	.saldo-atual-left {
+		width: 280px;
+		
+	}
+
+	.saldo-interno p {
+		margin: 0;
+	}
+
+	.saldo-atual-left {
+		display: flex;
+		align-self: center;
+	}
+
+	.fa-area-3 {
+	    font-size: 30px;
+	    width: 60px;
+	    text-align: center;
+	    line-height: 50px;
+	    height: 60px;
+	    border-radius: 100%;
+	    border: double 1px solid #848789;
+	    color: #848789;
+	    transition: all 350ms ease;
+	    border: double;
+	    margin-left: 19px;
+	    margin-right: 19px;
+	}
+
+
+	// SECTION TABELA EXTRATO
+
+	.engloba-saldo-atual strong {
+		font-size: 20px;
+	}
+
+	.saldo-atual-right {
+		width: 280px;
+		margin-right: 25px;
+		border-left: 1px solid  #848789;
+	    padding-left: 31px;
+	}
+
+	.saldo-atual-right .number {
+		text-align: right;
+	}
+
+
+
+	.saldo-atual-right table {
+		width: 100%;
+
+	}
+
+	.saldo-atual-right .reais {
+		text-align: right;
+
+	}
+
+	.saldo-atual-right .titulo-table {
+		padding-bottom: 15px;
+		color: #848789;
+	}
+
+	.saldo-atual-right span {
+		font-size: 15px;
+		font-weight: bold;
+		color: #848789
+	}
+
+	.saldo-atual-right .usado {
+		margin-top: 10px;
+	}
+
+	// SECTION ULTIMOS PRESENTE RECEBIDOS
+		
+	.agradecimentos {
+		background-color: #fbfaf5;
+    	border: 1px solid #f4f0e4;
+    	padding-top: 20px;
+    	padding-bottom: 20px;
+	}
+
+	.agradecimentos p {
+		margin: 0;
+		padding-bottom: 15px;
+	}
+
+	.data-compra {
+		margin-bottom : 15px;
+
+	}
+
+	.nome-produto{
+		display: flex;
+		padding-top: 20px;
+
+	}
+
+
+
+	.thumb {
+		margin-right: 15px;
+	}
+
+	.titulo-products {
+		margin-right: 15px;
+	}
+
+	.preco {
+		margin: 0;
+	}
+
+	.buttons-extrato {
+		margin-top: 30px;
+	}
+
+	//MODAL STYLES
+
+	.modal-title {
+		color: #fff;
+	}
+
+
+	.engloba-email {
+		display: flex;
+	}
+
 	
+
+	.engloba-email {
+		display: flex;
+
+		}
+
+	.datahora {
+		margin-left: 300px;
+	}
+
+	.text-email {
+		margin-top: 30px;
+	}
+
+	.resp-email{
+		margin-top: 30px;
+	}
+
+	.thumb-extrato-modal{
+		display: flex;
+		margin-top: 30px;
+		padding-bottom: 15px;
+
+
+	}
+
+	.total-convertido {
+		display: flex;
+		justify-content: space-between;
+		border-top: 1px solid #e4ebf1;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.termos-condicoes {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.condicoes-juridicas {
+		text-align: left;
+		padding-top: 20px;
+	}
+
+	.texto-endereco p {
+		margin: 0;
+	}
+
+	.total-convertido-entrega {
+		display: flex;
+    	justify-content: flex-start;
+		border-top: 1px solid #e4ebf1;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.kart {
+		margin-right: 20px;
+	}
+
 	
-}
 
-.saldo-interno {
-	align-self: center;
-}
+	.sua-reposta{
+		padding-top: 40px;
+	}
 
-.producto-nome {
-	align-self: center;
-}
+	.buttons-extrato {
+		padding-bottom: 20px;
 
-.btnconverter {
-	align-self: center;
-}
+	}
 
-.btnliberar {
-	align-self: center;
-}
+	
 
 
-// SECTION PESQUISAS 
-
-.engloba-pesquisas {
-	display: flex;
-    align-items: stretch;
-    padding-bottom: 25px;
-}
 
 
-.fundo__pesquisas {
+
+
+
+
+	// SECTION PESQUISAS 
+
+	.engloba-pesquisas {
+		display: flex;
+	    align-items: stretch;
+	    padding-bottom: 25px;
+	}
+
+
+	.fundo__pesquisas {
 		background-color: #fbfaf5;
 		border: 1px solid #f4f0e4;
 		padding: 15px 25px 15px 25px;
@@ -305,13 +403,13 @@
 		
 	}
 
-.fundo__pesquisas td {
-	padding-bottom: 10px;
-}
+	.fundo__pesquisas td {
+		padding-bottom: 10px;
+	}
 
-.btn-presente {
-	width: 60%;
-}
+	.btn-presente {
+		width: 60%;
+	}
 
 }
 //  MEDIAS QUERYS
@@ -414,8 +512,36 @@
 	
 
 		h3.subtitle {
-			padding:0 !important;
+			font-size: 16px;
+			font-weight: normal;
+			padding: 0;
+			margin-top: 10px;
 		}
+
+		.agradecimentos p{
+			font-size: 13px;
+		}
+
+		.buttons-extrato {
+			text-align: center;
+		}
+
+		.btn-tab-extratos {
+			margin-bottom: 10px;
+		}
+
+		.titulo-products{
+			font-size: 13px;
+		}
+
+		.btn-group bootstrap-select {
+			width: 131px;
+		}
+
+		.btn-tab-extratos {
+			width: 100%;
+		}
+
 
 		.visualizar-mobile {
 				font-size: 22px !important;
@@ -530,6 +656,8 @@
 
 
 
+
+
 }
 
 
@@ -603,6 +731,38 @@
 			display: flex;
 			flex-wrap: wrap;
 		}
+
+		h3.subtitle {
+			font-size: 16px;
+			font-weight: normal;
+			padding: 0;
+			margin-top: 10px;
+		}
+
+		.agradecimentos p{
+			font-size: 13px;
+		}
+
+		.buttons-extrato {
+			text-align: center;
+		}
+
+		.btn-tab-extratos {
+			margin-bottom: 10px;
+		}
+
+		.titulo-products{
+			font-size: 13px;
+		}
+
+		.btn-group bootstrap-select {
+			width: 131px;
+		}
+
+		.btn-tab-extratos {
+			width: 100%;
+		}
+
 
 		
 
@@ -800,6 +960,38 @@
 		.caixa_mensagem_noivos {
 			padding-top:25px;
 		}
+
+		h3.subtitle {
+			font-size: 16px;
+			font-weight: normal;
+			padding: 0;
+			margin-top: 10px;
+		}
+
+		.agradecimentos p{
+			font-size: 13px;
+		}
+
+		.buttons-extrato {
+			text-align: center;
+		}
+
+		.btn-tab-extratos {
+			margin-bottom: 10px;
+		}
+
+		.titulo-products{
+			font-size: 13px;
+		}
+
+		.btn-group bootstrap-select {
+			width: 131px;
+		}
+
+		.btn-tab-extratos {
+			width: 100%;
+		}
+
 
 		.engloba-box {
 			flex-wrap: wrap;

@@ -55,103 +55,124 @@
 </nav>
 
 <div class="wrapper extrato__pendente">
-<div class="container">	
-
-<div class="col-md-12">
-	<div class="col-md-3">			
-	<div class="fundo__extrato">
-		<div class="engloba-saldo-atual">
-			<div class="saldo-atual-left">
-				<div class="icon-dolar fa-area-3">
-					<i class="fa fa-usd" aria-hidden="true"></i>
-				</div>
+	<div class="container border-table">	
+		<div class="col-md-9 col-sm-7">
+			<h3 class="subtitle hidden-xs">Presentes recebidos e Extratos</h3>
+			<strong class="hidden-xs">14 presentes recebidos</strong>
+			
+		</div>
+		<div class="col-md-3 col-sm-5 hidden-xs">
+		<div class="fundo__extrato">
+			<div class="engloba-saldo-atual">
 				<div class="saldo-interno">
-					<p>Saldo Atual</p>
-					<p><strong>R$ 25.000,00</strong></p>
-					<p>de R$ 33.500,00</p>
+					<div class="saldo-total">
+						<div class="icon-dolar fa-area-3">
+							<i class="fa fa-usd" aria-hidden="true"></i>
+						</div>
+						<div class="precos">
+							<p><strong>Saldo Atual</strong></p>
+							<p>Recebido</p>
+							<p><strong>R$ 25.000,00</strong></p>
+						</div>
+
+
+
 					<div class="btn-group">
-							<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							   <i class="fa fa-caret-down" aria-hidden="true"></i>
-
-							</button>
 						
-							<div class="dropdown-menu limite-credito">
-							  	<table>
-								  <tr>
-								    <th class="titulo-table" >item</th>
-								    <th class="reais titulo-table">R$</th>
-								  </tr>
-								  <tr>
-								    <td class="text-credito">Créditos</td>
-								    <td class="number">35.500,00</td>
-								  </tr>
-								  <tr>
-								    <td class="text-credito">Vale Compra</td>
-								    <td class="number">32.500,00</td>
-								  </tr>
-								  <tr>
-								    <td class="text-credito">Outros</td>
-								    <td class="number">1.000,00</td>
-								  </tr>
-								  <tr>
-								    <td class="text-credito">Usado</td>
-								    <td class="number">8.500,00</td>
-								  </tr>
-								  <tr>
-								    <td class="text-credito"><span>Saldo</span></td>
-								    <td class="number"><span>25.500,00</span></td>
-								  </tr>
-							</table>
-					  		</div>
+
+						<div class="dropdown">
+						  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-caret-down" aria-hidden="true"></i>
+						</button>
+
+						  	<div class="dropdown-content limite-credito">
+							    <table>
+									  <tr>
+									    <th class="titulo-table" >item</th>
+									    <th class="reais titulo-table">R$</th>
+									  </tr>
+									  <tr>
+									    <td class="text-credito">Créditos</td>
+									    <td class="number">35.500,00</td>
+									  </tr>
+									  <tr>
+									    <td class="text-credito">Vale Compra</td>
+									    <td class="number">32.500,00</td>
+									  </tr>
+									  <tr>
+									    <td class="text-credito">Outros</td>
+									    <td class="number">1.000,00</td>
+									  </tr>
+									  <tr>
+									    <td class="text-credito">Usado</td>
+									    <td class="number">8.500,00</td>
+									  </tr>
+									  <tr>
+									    <td class="text-credito"><span>Saldo</span></td>
+									    <td class="number"><span>25.500,00</span></td>
+									  </tr>
+								</table>
+						  	</div>
+						</div>
+					</div><!--end btn -->
 					</div>
-				</div>
+				</div><!-- fecha saldo interon -->
+			</div>
 
-			</div>
-			
-			
-			<div class="saldo-atual-right">
-				<table>
-					  <tr>
-					    <th class="titulo-table" >item</th>
-					    <th class="reais titulo-table">R$</th>
-					  </tr>
-					  <tr>
-					    <td><p>Créditos</p></td>
-					    <td class="number"><p>35.500,00</p></td>
-					  </tr>
-					  <tr>
-					    <td>Vale Compra</td>
-					    <td class="number">32.500,00</td>
-					  </tr>
-					  <tr>
-					    <td>Outros</td>
-					    <td class="number">1.000,00</td>
-					  </tr>
-					  <tr>
-					    <td><p class="usado">Usado</p></td>
-					    <td class="number"><p class="usado">8.500,00</p></td>
-					  </tr>
-					  <tr>
-					    <td><span>Saldo</span></td>
-					    <td class="number"><span>25.500,00</span></td>
-					  </tr>
-				</table>
-			</div>
-				
-		</div>
 		</div>
 
-</div>
+	</div>
+	<div class="saldo-atual-mobile hidden-md hidden-lg hidden-sm">
+	
+		<div class="icon-dolar fa-area-3">
+			<i class="fa fa-usd" aria-hidden="true"></i>
+		</div>
+		<div class="precos">
+			<p><strong>Saldo Atual</strong></p>
+			<p><strong>R$ 25.000,00</strong>de: R$ 35.500,00</p>
+		</div>
 
+					<div class="btn-group">
+						
 
-</div>
+						<div class="dropdown">
+						  <button type="button" class="btn btn-danger dropdown-toggle seta-baixa" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-caret-down" aria-hidden="true"></i>
+						</button>
 
+						  	<div class="dropdown-content limite-credito">
+							    <table>
+									  <tr>
+									    <th class="titulo-table" >item</th>
+									    <th class="reais titulo-table">R$</th>
+									  </tr>
+									  <tr>
+									    <td class="text-credito">Créditos</td>
+									    <td class="number">35.500,00</td>
+									  </tr>
+									  <tr>
+									    <td class="text-credito">Vale Compra</td>
+									    <td class="number">32.500,00</td>
+									  </tr>
+									  <tr>
+									    <td class="text-credito">Outros</td>
+									    <td class="number">1.000,00</td>
+									  </tr>
+									  <tr>
+									    <td class="text-credito">Usado</td>
+									    <td class="number">8.500,00</td>
+									  </tr>
+									  <tr>
+									    <td class="text-credito"><span>Saldo</span></td>
+									    <td class="number"><span>25.500,00</span></td>
+									  </tr>
+								</table>
+						  	</div>
+						</div>
+					</div><!--end btn -->
 
-
-
-<h3 class="subtitle hidden-xs">Presentes recebidos e Extratos</h3>
-<strong>14 presentes recebidos</strong>
-</div>
+	</div>
+		
+	<strong class="hidden-md hidden-lg hidden-sm qtd-presentes-mobile">14 presentes ganhos no total de R$ 40.000,00</strong>
+	</div>
 	<div class="features-extrato">
     	<div class="row">
 
@@ -176,407 +197,363 @@
 						</li>
 				</ul>
 
-			<!-- TAB CONTENT -->
-				<div class="tab-content">
+<!-- TAB CONTENT -->
+<div class="tab-content">
 <!-- INICIO TAB 1 PENDENTES-->		    
-				    <div class="tab-pane active" id="1">
-	            		<h3 class="subtitle">Escolha os presentes recebidos para convertê-los em vale compras ou liberarar para entrega</h3>
-	            		
-	            		
-						  	<select class="selectpicker" data-style="form-control" data-toggle="modal" data-width="210px">
-							<option disabled selected> Selecionar todos</option>
-							<option value="myModal2">Converter em Vale compras</option>
-							<option value="myModal3">Liberar para entrega</option>
-						 </select>
-								        
-		            	<!-- ENGLOBA ITENS -->	
-		            	<div class="engloba-itens">
-		            		<div class="data-compra">
-								<span> carlos eduardo: </span>
-								<span class="comprador">dia 10/02/16</span>
-							</div>
-
-							<div class="agradecimentos col-md-3">
-								<p><strong>Escreveu:</strong><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...(mais</p>
-								<button data-toggle="modal" href="#myModal" class="btn btn-md btn-primary center-block">Agradecer</button>
-								 
-							</div>
-
-							<div class="engloba-itens-comprados">
-								<div class="itens-comprados">
-										
-									<div class="col-md-4">
-										<div class="thumb-extrato">
-											<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
-										<div class="titulo-products">
-											<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
-										</div>
-										</div>
-										<p class="preco">R$ 750,00</p>
-						       			<span>2 unidades</span>
-									</div>
-								</div><!-- itens comprados -->
-
-								<div class="itens-comprados">
-										
-									<div class="col-md-4">
-										<div class="thumb-extrato">
-											<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
-										<div class="titulo-products">
-											<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
-										</div>
-										</div>
-										<p class="preco">R$ 750,00</p>
-						       			<span>2 unidades</span>
-									</div>
-								</div><!-- itens comprados -->
-							</div><!-- END ENGLOBA ITENS COMPRADOS -->
-						
-							<button data-toggle="modal" href="#myModal2" class="btn btn-md btn-primary btn-tab-extratos hidden-xs">Converter em vale compras</button>
-							<button data-toggle="modal" href="#myModal3" class="btn btn-md btn-primary btn-tab-extratos hidden-xs">Liberar para entrega</button>
-							
-						</div><!-- END ENGLOBA ITENS -->
-
-						<!-- ENGLOBA ITENS -->	
-			            	<div class="engloba-itens">
-			            		<div class="data-compra">
-									<span> carlos eduardo: </span>
-									<span class="comprador">dia 10/02/16</span>
-								</div>
-
-								<div class="agradecimentos col-md-3">
-									<p><strong>Escreveu:</strong><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...(mais</p>
-									<button class="btn btn-md btn-primary center-block hidden-xs">Agradecer</button>
-								</div>
-
-								<div class="itens-comprados">
-										
-									<div class="col-md-4">
-										<div class="thumb-extrato">
-											<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
-										<div class="titulo-products">
-											<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
-										</div>
-										</div>
-										<p class="preco">R$ 750,00</p>
-						       			<span>2 unidades</span>
-									</div>
-								</div><!-- itens comprados -->
-
-								<div class="itens-comprados">
-										
-									<div class="col-md-4">
-										<div class="thumb-extrato">
-											<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
-										<div class="titulo-products">
-											<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
-										</div>
-										</div>
-										<p class="preco">R$ 750,00</p>
-						       			<span>2 unidades</span>
-									</div>
-								</div><!-- itens comprados -->
-
-								<div class="itens-comprados">
-										
-									<div class="col-md-4">
-										<div class="thumb-extrato">
-											<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
-										<div class="titulo-products">
-											<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
-										</div>
-										</div>
-										<p class="preco">R$ 750,00</p>
-						       			<span>2 unidades</span>
-									</div>
-								</div><!-- itens comprados -->
-
-								<div class="itens-comprados">
-										
-									<div class="col-md-4">
-										<div class="thumb-extrato">
-											<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
-										<div class="titulo-products">
-											<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
-										</div>
-										</div>
-										<p class="preco">R$ 750,00</p>
-						       			<span>2 unidades</span>
-									</div>
-								</div><!-- itens comprados -->
-							
-									<button data-toggle="modal" href="#myModal2" class="btn btn-md btn-primary btn-tab-extratos hidden-xs">Converter em vale compras</button>
-									
-									<button class="btn btn-md btn-primary btn-tab-extratos hidden-xs">Liberar para entrega</button>
-								
-							</div><!-- END ENGLOBA ITENS -->
-					</div><!-- END TAB 1 -->
-<!-- INICIO TAB 2 LIBERADOS PARA ENTREGA-->
-					<div class="tab-pane" id="2">
-	            		<h3 class="subtitle">Presentes liberados para entrega:</h3>
-					<!-- ENGLOBA ITENS -->	
-		            	<div class="engloba-itens">
-		            		<div class="data-compra">
-								<span> Diego Nunes: </span>
-								<span class="comprador">dia 10/02/16</span>
-							</div>
-
-							<div class="agradecimentos col-md-3">
-								<p><strong>Escreveu:</strong><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...(mais</p>
-								<button  data-toggle="modal" href="#myModa4"class="btn btn-md btn-primary center-block hidden-xs"><i class="fa fa-check-circle" aria-hidden="true"></i>Mensagen respondida</button>
-							</div>
-
-							
-
-							<div class="itens-comprados">
-									
-								<div class="col-md-4">
-									<div class="thumb-extrato">
-										<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
-									<div class="titulo-products">
-										<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
-									</div>
-									</div>
-									<p class="preco">R$ 750,00</p>
-					       			<span>2 unidades</span>
-								</div>
-							</div><!-- itens comprados -->
-
-							<div class="itens-comprados">
-									
-								<div class="col-md-4">
-									<div class="thumb-extrato">
-										<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
-									<div class="titulo-products">
-										<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
-									</div>
-									</div>
-									<p class="preco">R$ 750,00</p>
-					       			<span>2 unidades</span>
-								</div>
-							</div><!-- itens comprados -->
-
-							<div class="itens-comprados">
-									
-								<div class="col-md-4">
-									<div class="thumb-extrato">
-										<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
-									<div class="titulo-products">
-										<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
-									</div>
-									</div>
-									<p class="preco">R$ 750,00</p>
-					       			<span>2 unidades</span>
-								</div>
-							</div><!-- itens comprados -->
-
-							<div class="itens-comprados">
-									
-								<div class="col-md-4">
-									<div class="thumb-extrato">
-										<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
-									<div class="titulo-products">
-										<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
-									</div>
-									</div>
-									<p class="preco">R$ 750,00</p>
-					       			<span>2 unidades</span>
-								</div>
-							</div><!-- itens comprados -->
-							
-							<a class="btn btn-primary btn-tab-extratos" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-truck" aria-hidden="true"></i>Status do Pedido</a>
-
-							<div class="collapse col-md-12" id="collapseExample">
-			            		<!-- widget div-->
-					            <div role="content">
-					                <!-- widget content -->
-					                <div class="widget-body col-md-9">
-
-					                    <div class="row">
-					                        <form id="wizard-1" novalidate="novalidate">
-					                            <div id="bootstrap-wizard-1" class="col-sm-12">
-					                                <div class="form-bootstrapWizard">
-					                                    <ul class="bootstrapWizard form-wizard">
-					                                        <li class="active" data-target="#step1">
-					                                            <a href="#tab1" data-toggle="tab" class="active"> <span class="step">1</span> <span class="title">separação<br> estoque<br>18/10/2016</span> </a>
-					                                        </li>
-					                                        <li data-target="#step2" class="active">
-					                                            <a href="#tab1" data-toggle="tab" class="active"> <span class="step">2</span> <span class="title">Nota<br>Fiscal<br>18/10/2016</span> </a>
-					                                        </li>
-					                                        <li data-target="#step3" class="active">
-					                                           <a href="#tab1" data-toggle="tab" class="active"> <span class="step">3</span> <span class="title">tranportadota<br><br>18/10/2016</span> </a>
-					                                        </li>
-					                                        <li data-target="#step4">
-					                                           <a href="#tab1" data-toggle="tab" class="active"> <span class="step">4</span> <span class="title">Produto entregue</span> </a></li>
-
-					                                    </ul>
-					                               
-					                                </div>
-					                              
-					                            </div>
-					                        </form>
-
-					                    </div>
-					                    
-					                </div>
-					                <!-- end widget content -->
-					                <div class="nota-fiscal col-md-2">
-					                    <p>Nota fiscal Eletrônica</p>
-					                    <span class="baixar-arquivo">Baixar arquivo</span>
-					                    <div class="gera-pdf">
-					                    	<span ><a href="#">PDF</a><span/>
-					                    </div>
-					                    <div class="gera-xml">
-					                    	<span ><a href="#">XML</a><span/>
-					                    </div>
-					                    
-					                </div>
-					            </div>
-							</div><!-- END COLAPSE -->
-
-							
-						</div><!-- END ENGLOBA ITENS -->
-
-
-
-	            		<!-- ENGLOBA ITENS -->	
-		            	<div class="engloba-itens">
-		            		<div class="data-compra">
-								<span> carlos eduardo: </span>
-								<span class="comprador">dia 10/02/16</span>
-							</div>
-
-							<div class="agradecimentos col-md-3">
-								<p><strong>Escreveu:</strong><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...(mais</p>
-								<button class="btn btn-md btn-primary center-block hidden-xs"><i class="fa fa-check-circle" aria-hidden="true"></i>Mensagen respondida</button>
-
-							</div>
-
-							<div class="itens-comprados">
-									
-								<div class="col-md-4">
-									<div class="thumb-extrato">
-										<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
-									<div class="titulo-products">
-										<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
-									</div>
-									</div>
-									<p class="preco">R$ 750,00</p>
-					       			<span>2 unidades</span>
-								</div>
-							</div><!-- itens comprados -->
-
-							<div class="itens-comprados">
-									
-								<div class="col-md-4">
-									<div class="thumb-extrato">
-										<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
-									<div class="titulo-products">
-										<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
-									</div>
-									</div>
-									<p class="preco">R$ 750,00</p>
-					       			<span>2 unidades</span>
-								</div>
-							</div><!-- itens comprados -->
-						
-								<button class="btn btn-md btn-primary btn-tab-extratos hidden-xs"><i class="fa fa-truck" aria-hidden="true"></i>Status do Pedido</button>
-							
-						</div><!-- END ENGLOBA ITENS -->
-
-						<!-- ENGLOBA ITENS -->	
-		            	<div class="engloba-itens">
-		            		<div class="data-compra">
-								<span>Marina Souza: </span>
-								<span class="comprador">dia 10/02/16</span>
-							</div>
-
-							<div class="agradecimentos col-md-3">
-								<p><strong>Escreveu:</strong><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...(mais</p>
-								<button class="btn btn-md btn-primary center-block hidden-xs"><i class="fa fa-check-circle" aria-hidden="true"></i>Mensagen respondida</button>
-							</div>
-
-							<div class="itens-comprados">
-									
-								<div class="col-md-4">
-									<div class="thumb-extrato">
-										<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
-									<div class="titulo-products">
-										<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
-									</div>
-									</div>
-									<p class="preco">R$ 750,00</p>
-					       			<span>2 unidades</span>
-								</div>
-							</div><!-- itens comprados -->
-							<div class="itens-comprados">
-									
-								<div class="col-md-4">
-									<div class="thumb-extrato">
-										<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
-									<div class="titulo-products">
-										<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
-									</div>
-									</div>
-									<p class="preco">R$ 750,00</p>
-					       			<span>2 unidades</span>
-								</div>
-							</div><!-- itens comprados -->
-						
-								<button class="btn btn-md btn-primary btn-tab-extratos hidden-xs"><i class="fa fa-truck" aria-hidden="true"></i>Status do Pedido</button>
-							
-							
-						</div><!-- END ENGLOBA ITENS -->
-
-
-
+    <div class="tab-pane active" id="1">
+		<div class="row">
+			<div class="col-md-9 col-xs-6">
+				<h3 class="subtitle">Escolha os presentes para convertê-los em vale compras ou liberar para entrega</h3>
+			</div>
+			<div class="col-md-3 col-xs-6">
+				<select class="selectpicker hidden-xs" data-style="form-control" data-toggle="modal" data-width="210px">
+					<option disabled selected> Selecionar todos</option>
+					<option value="myModal2">Converter em Vale compras</option>
+					<option value="myModal3">Liberar para entrega</option>
+				</select>
+				<select class="selectpicker hidden-md hidden-sm hidden-lg" data-style="form-control" data-toggle="modal" data-width="130px">
+					<option disabled selected> Selecionar todos</option>
+					<option value="myModal2">Converter em Vale compras</option>
+					<option value="myModal3">Liberar para entrega</option>
+				</select>
+			</div>
+		</div>
+		<!-- ENGLOBA ITENS -->	
+		
+		<div class="row">
+			
+				
+			<div class="agradecimentos col-md-3">
+				<span class="comprador">10/02/16</span></br>
+				<strong>Carlos Eduardo: </strong></br>
+				<p><span>Escreveu:</span></br></br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...(mais)</p>
+				<button data-toggle="modal" href="#myModal" class="btn btn-md btn-primary">Agradecer</button>
+			</div>
+			<div class="col-md-9">
+			<!--ITEM 1 -->	
+				<div class="item col-md-6">
+					<div class="nome-produto">
+						<div class="thumb-extrato">
+							<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
+						</div>
+					
+						<div class="titulo-products">
+							<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
+							<p class="preco">R$ 750,00</p>
+			       		<span>2 unidades</span>
+						</div>
 					</div>
+				</div>
+			<!--ITEM 2 -->
+				<div class="item col-md-6">
+					<div class="nome-produto">
+						<div class="thumb-extrato">
+							<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
+						</div>
+					
+						<div class="titulo-products">
+							<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
+							<p class="preco">R$ 750,00</p>
+			       		<span>2 unidades</span>
+						</div>
+					</div>
+				</div>
+				<!--ITEM 2 -->
+				<div class="item col-md-6">
+					<div class="nome-produto">
+						<div class="thumb-extrato">
+							<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
+						</div>
+					
+						<div class="titulo-products">
+							<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
+							<p class="preco">R$ 750,00</p>
+			       		<span>2 unidades</span>
+						</div>
+					</div>
+				</div>
+				<!--ITEM 2 -->
+				<div class="item col-md-6">
+					<div class="nome-produto">
+						<div class="thumb-extrato">
+							<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
+						</div>
+					
+						<div class="titulo-products">
+							<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
+							<p class="preco">R$ 750,00</p>
+			       		<span>2 unidades</span>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="buttons-extrato">
+				<button data-toggle="modal" href="#myModal2" class="btn btn-md btn-primary btn-tab-extratos">Converter em vale compras</button>
+				<button data-toggle="modal" href="#myModal3" class="btn btn-md btn-primary btn-tab-extratos">Liberar para entrega</button>
+			</div>	
+		</div>
+	</div><!-- END TAB 1 -->
+
+
+
+<!-- INICIO TAB 2 LIBERADOS PARA ENTREGA-->
+	<div class="tab-pane" id="2">
+		<div class="row">
+			<div class="col-md-12">
+				<h3 class="subtitle">Presentes liberados para entrega:</h3>
+			</div>
+		</div>
+		<!-- ENGLOBA ITENS -->	
+		
+		<div class="row">
+			
+			<div class="agradecimentos col-md-3">
+				<span class="comprador">10/02/16</span></br>
+				<strong>Carlos Eduardo: </strong></br>
+				<p><span>Escreveu:</span></br></br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...(mais)</p>
+				<button  data-toggle="modal" href="#myModa4"class="btn btn-md btn-primary center-block hidden-xs"><i class="fa fa-check-circle" aria-hidden="true"></i>Mensagen respondida</button>
+			</div>
+			<div class="col-md-9">
+			<!--ITEM 1 -->	
+				<div class="item col-md-6">
+					<div class="nome-produto">
+						<div class="thumb-extrato">
+							<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
+						</div>
+					
+						<div class="titulo-products">
+							<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
+							<p class="preco">R$ 750,00</p>
+			       		<span>2 unidades</span>
+						</div>
+					</div>
+				</div>
+			<!--ITEM 2 -->
+				<div class="item col-md-6">
+					<div class="nome-produto">
+						<div class="thumb-extrato">
+							<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
+						</div>
+					
+						<div class="titulo-products">
+							<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
+							<p class="preco">R$ 750,00</p>
+			       		<span>2 unidades</span>
+						</div>
+					</div>
+				</div>
+				<div class="buttons-extrato"><img src="images/entrega.png" width="40x40">
+				<a class="btn btn-primary btn-tab-extratos" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Status do Pedido</a>
+				</div>
+			</div>
+			<div class="collapse col-md-9" id="collapseExample">
+        		<!-- widget div-->
+	            <div role="content">
+	                <!-- widget content -->
+	                <div class="widget-body col-md-9">
+	                    <div class="row">
+	                        <form id="wizard-1" novalidate="novalidate">
+	                            <div id="bootstrap-wizard-1" class="col-sm-12">
+	                                <div class="form-bootstrapWizard">
+	                                    <ul class="bootstrapWizard form-wizard">
+	                                        <li class="active" data-target="#step1">
+	                                            <a href="#tab1" data-toggle="tab" class="active"> <span class="step">1</span> <span class="title">separação<br> estoque<br>18/10/2016</span> </a>
+	                                        </li>
+	                                        <li data-target="#step2" class="active">
+	                                            <a href="#tab1" data-toggle="tab" class="active"> <span class="step">2</span> <span class="title">Nota<br>Fiscal<br>18/10/2016</span> </a>
+	                                        </li>
+	                                        <li data-target="#step3" class="active">
+	                                           <a href="#tab1" data-toggle="tab" class="active"> <span class="step">3</span> <span class="title">tranportadota<br><br>18/10/2016</span> </a>
+	                                        </li>
+	                                        <li data-target="#step4">
+	                                           <a href="#tab1" data-toggle="tab" class="active"> <span class="step">4</span> <span class="title">Produto entregue</span> </a></li>
+	                                    </ul>
+ 	                                </div>
+	                            </div>
+	                        </form>
+	                    </div>
+	                </div>
+	                <!-- end widget content -->
+	                <div class="nota-fiscal col-md-2">
+	                    <p>Nota fiscal Eletrônica</p>
+	                    <span class="baixar-arquivo">Baixar arquivo</span>
+	                    <div class="gera-pdf">
+	                    	<span><a href="#">PDF</a><span/>
+	                    </div>
+	                    <div class="gera-xml">
+	                    	<span><a href="#">XML</a><span/>
+	                    </div>
+	                    
+	                </div>
+	            </div>
+			</div><!-- END COLAPSE -->	
+		</div>
+
+		
+		<div class="row">
+			
+			<div class="agradecimentos col-md-3">
+				<span class="comprador">10/02/16</span></br>
+				<strong>Carlos Eduardo: </strong></br>
+				<p><span>Escreveu:</span></br></br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...(mais)</p>
+				<button  data-toggle="modal" href="#myModa4"class="btn btn-md btn-primary center-block hidden-xs"><i class="fa fa-check-circle" aria-hidden="true"></i>Mensagen respondida</button>
+			</div>
+			<div class="col-md-9">
+			<!--ITEM 1 -->	
+				<div class="item col-md-6">
+					<div class="nome-produto">
+						<div class="thumb-extrato">
+							<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
+						</div>
+					
+						<div class="titulo-products">
+							<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
+							<p class="preco">R$ 750,00</p>
+			       		<span>2 unidades</span>
+						</div>
+					</div>
+				</div>
+			<!--ITEM 2 -->
+				<div class="item col-md-6">
+					<div class="nome-produto">
+						<div class="thumb-extrato">
+							<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
+						</div>
+					
+						<div class="titulo-products">
+							<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
+							<p class="preco">R$ 750,00</p>
+			       		<span>2 unidades</span>
+						</div>
+					</div>
+				</div>
+				<div class="item col-md-6">
+					<div class="nome-produto">
+						<div class="thumb-extrato">
+							<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
+						</div>
+					
+						<div class="titulo-products">
+							<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
+							<p class="preco">R$ 750,00</p>
+			       		<span>2 unidades</span>
+						</div>
+					</div>
+				</div>
+				<div class="item col-md-6">
+					<div class="nome-produto">
+						<div class="thumb-extrato">
+							<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
+						</div>
+					
+						<div class="titulo-products">
+							<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
+							<p class="preco">R$ 750,00</p>
+			       		<span>2 unidades</span>
+						</div>
+					</div>
+				</div>
+				<div class="buttons-extrato"><img src="images/entrega.png" width="40x40">
+				<a class="btn btn-primary btn-tab-extratos" data-toggle="collapse" href="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">Status do Pedido</a>
+				</div>
+				
+		
+			
+			<div class="collapse" id="collapseExample2">
+        		<!-- widget div-->
+	            <div role="content">
+	                <!-- widget content -->
+	                <div class="widget-body col-md-9">
+	                    <div class="row">
+	                        <form id="wizard-1" novalidate="novalidate">
+	                            <div id="bootstrap-wizard-1" class="col-sm-12">
+	                                <div class="form-bootstrapWizard">
+	                                    <ul class="bootstrapWizard form-wizard">
+	                                        <li class="active" data-target="#step1">
+	                                            <a href="#tab1" data-toggle="tab" class="active"> <span class="step">1</span> <span class="title">separação<br> estoque<br>18/10/2016</span> </a>
+	                                        </li>
+	                                        <li data-target="#step2" class="active">
+	                                            <a href="#tab1" data-toggle="tab" class="active"> <span class="step">2</span> <span class="title">Nota<br>Fiscal<br>18/10/2016</span> </a>
+	                                        </li>
+	                                        <li data-target="#step3" class="active">
+	                                           <a href="#tab1" data-toggle="tab" class="active"> <span class="step">3</span> <span class="title">tranportadota<br><br>18/10/2016</span> </a>
+	                                        </li>
+	                                        <li data-target="#step4">
+	                                           <a href="#tab1" data-toggle="tab" class="active"> <span class="step">4</span> <span class="title">Produto entregue</span> </a></li>
+	                                    </ul>
+ 	                                </div>
+	                            </div>
+	                        </form>
+	                    </div>
+	                </div>
+	                <!-- end widget content -->
+	                <div class="nota-fiscal col-md-2">
+	                    <p>Nota fiscal Eletrônica</p>
+	                    <span class="baixar-arquivo">Baixar arquivo</span>
+	                    <div class="gera-pdf">
+	                    	<span><a href="#">PDF</a><span/>
+	                    </div>
+	                    <div class="gera-xml">
+	                    	<span><a href="#">XML</a><span/>
+	                    </div>
+	                    
+	                </div>
+	            </div>
+			</div><!-- END COLAPSE -->	
+		</div>
+		</div>
+	</div>
+
 
 <!-- INICIO TAB 3 CONVERTIDOS EM VALE -->
-	            	<div class="tab-pane" id="3">
-	            		<h3 class="subtitle">Presentes convertidos em Vale Compra</h3>
-	            		<!-- ENGLOBA ITENS -->	
-		            	<div class="engloba-itens">
-		            		<div class="data-compra">
-								<span>Marina Souza: </span>
-								<span class="comprador">dia 10/02/16</span>
-							</div>
-
-							<div class="agradecimentos col-md-4">
-								<p><strong>Escreveu:</strong><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...(mais</p>
-								<button class="btn btn-md btn-primary center-block hidden-xs"><i class="fa fa-check-circle" aria-hidden="true"></i>Mensagen respondida</button>
-							</div>
-
-							<div class="itens-comprados">
-									
-								<div class="col-md-4">
-									<div class="thumb-extrato">
-										<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
-									<div class="titulo-products">
-										<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
-									</div>
-									</div>
-									<p class="preco">R$ 750,00</p>
-					       			<span>2 unidades</span>
-								</div>
-							</div><!-- itens comprados -->
-							<div class="itens-comprados">
-									
-								<div class="col-md-4">
-									<div class="thumb-extrato">
-										<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
-									<div class="titulo-products">
-										<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
-									</div>
-									</div>
-									<p class="preco">R$ 750,00</p>
-					       			<span>2 unidades</span>
-								</div>
-							</div><!-- itens comprados -->
-								<div class="vale-compra">
-									<p><img src="images/vale.png"><strong>Vale Compra</strong> convertido dia:<span> 14/09/2016</p>
-								</div>
-						</div><!-- END ENGLOBA ITENS -->
+	<div class="tab-pane" id="3">
+		<div class="row">
+			<div class="col-md-12">
+				<h3 class="subtitle">Presentes recebidos e Extratos</h3>
+			</div>
+		</div>
+	
+	<div class="row">
+		
+		<div class="agradecimentos col-md-3">
+			<span class="comprador">10/02/16</span></br>
+			<strong>Carlos Eduardo: </strong></br>
+			<p><span>Escreveu:</span></br></br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...(mais)</p>
+			<button  data-toggle="modal" href="#myModa4"class="btn btn-md btn-primary center-block"><i class="fa fa-check-circle" aria-hidden="true"></i>Mensagen respondida</button>
+		</div>
+			<div class="col-md-9">
+			<!--ITEM 1 -->	
+				<div class="item col-md-6">
+					<div class="nome-produto">
+						<div class="thumb-extrato">
+							<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
+						</div>
+					
+						<div class="titulo-products">
+							<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
+							<p class="preco">R$ 750,00</p>
+			       		<span>2 unidades</span>
+						</div>
+					</div>
+				</div>
+				<div class="item col-md-6">
+					<div class="nome-produto">
+						<div class="thumb-extrato">
+							<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
+						</div>
+					
+						<div class="titulo-products">
+							<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
+							<p class="preco">R$ 750,00</p>
+			       		<span>2 unidades</span>
+						</div>
+					</div>
+				</div>
+				<p class="dolar"><img src="images/vale.png"  width="40x40"><strong>Vale Compra</strong> convertido dia:<span> 14/09/2016</p>
+			</div>
+		
+		</div>
 
 					</div>
 				</div><!-- END TAB CONTENT -->
@@ -585,12 +562,6 @@
       		
 		</div>
   	</div>
- 
-   
-
-	
-		
- 
 
 <!-- MMODAL RESPOSTA MENSAGEM -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -623,6 +594,7 @@
         </div><!-- /.modal-content -->
     </form>
     </div><!-- /.modal-dialog -->
+
 </div><!-- /.modal -->
 
 <!-- MMODAL CONVERTER PRODUTOS EM VALE COMPRAS -->
@@ -644,42 +616,56 @@
 	           		<span>Produtos de:<br><strong>Carlos Eduardo</strong></span>
 	            </div>
 
-	            <div class="itens-comprados">
-					<div class="col-md-12">
-						<div class="thumb-extrato-modal">
+	            <div class="item col-md-12">
+					<div class="nome-produto">
+						<div class="thumb-extrato">
 							<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
-						<div class="titulo-products col-md-8">
-							<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
 						</div>
-						<p class="preco"><strong>R$ 750,00</strong></p>
-		       			
-						</div>
-						
-					</div>
-				</div><!-- itens comprados -->
-				 <div class="itens-comprados">
-					<div class="col-md-12">
-						<div class="thumb-extrato-modal">
-							<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
-						<div class="titulo-products col-md-8">
-							<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
-						</div>
-						<p class="preco"><strong>R$ 750,00</strong></p>
-		       			
-						</div>
-						
-					</div>
 					
-				</div><!-- itens comprados -->
+						<div class="titulo-products">
+							<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
+							<p class="preco">R$ 750,00</p>
+			       		<span>2 unidades</span>
+						</div>
+					</div>
+				</div>
+
+
+	             <div class="item col-md-12">
+					<div class="nome-produto">
+						<div class="thumb-extrato">
+							<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
+						</div>
+					
+						<div class="titulo-products">
+							<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
+							<p class="preco">R$ 750,00</p>
+			       		<span>2 unidades</span>
+						</div>
+					</div>
+				</div>
+				<div class="item col-md-12">
+					<div class="nome-produto">
+						<div class="thumb-extrato">
+							<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
+						</div>
+					
+						<div class="titulo-products">
+							<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
+							<p class="preco">R$ 750,00</p>
+			       		<span>2 unidades</span>
+						</div>
+					</div>
+				</div>
 
 				<div class="total-convertido col-md-12">
-					<div class="kart">
+					<div class="kart col-xs-2">
 						<img src="images/cart-modal.png">
 					</div>
 					<div class="texto-total">
 						<p>Total a ser convertido em vale compras</p>
 					</div>
-					<div class="texto-total">
+					<div class="texto-total col-xs-12">
 						<p class="preco"><strong>R$1.500,00</strong></p>
 					</div>
 
@@ -733,46 +719,45 @@
 	           		<span>Produtos de:<br><strong>Carlos Eduardo</strong></span>
 	            </div>
 
-	            <div class="itens-comprados">
-					<div class="col-md-12">
-						<div class="thumb-extrato-modal">
+	            <div class="item col-md-12">
+					<div class="nome-produto">
+						<div class="thumb-extrato">
 							<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
-						<div class="titulo-products col-md-8">
-							<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
 						</div>
-						<p class="preco"><strong>R$ 750,00</strong></p>
-		       			
-						</div>
-						
-					</div>
-				</div><!-- itens comprados -->
-				 <div class="itens-comprados">
-					<div class="col-md-12">
-						<div class="thumb-extrato-modal">
-							<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
-						<div class="titulo-products col-md-8">
-							<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
-						</div>
-						<p class="preco"><strong>R$ 750,00</strong></p>
-		       			
-						</div>
-						
-					</div>
 					
-				</div><!-- itens comprados -->
+						<div class="titulo-products">
+							<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
+							<p class="preco">R$ 750,00</p>
+			       		<span>2 unidades</span>
+						</div>
+					</div>
+				</div>
+				<div class="item col-md-12">
+					<div class="nome-produto">
+						<div class="thumb-extrato">
+							<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
+						</div>
+					
+						<div class="titulo-products">
+							<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
+							<p class="preco">R$ 750,00</p>
+			       		<span>2 unidades</span>
+						</div>
+					</div>
+				</div>
 
-				
-				<div class="total-convertido-entrega col-md-12">
-					<div class="kart">
-						<img src="images/entrega-modal.png">
-					</div>
-					<div class="texto-endereco">
-						<p><strong>Endereço da entrega</strong></p>
-						<p class="destinatario">Destinatário: <span> Vanessa Silva</span></p>
-						<p class="endereco">Rua Almeida Queiroz de Azevedo, Comercial</p>
-						<p class="referencia">Referência: próximo ao mercado Extra</p>
-					</div>
+				<div class="item col-md-12">
+					<div class="nome-produto">
+						<div class="thumb-extrato">
+							<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
+						</div>
 					
+						<div class="titulo-products">
+							<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra finibus nulla sit amet aliquet.</a><br>
+							<p class="preco">R$ 750,00</p>
+			       		<span>2 unidades</span>
+						</div>
+					</div>
 				</div>
 
 				<div class="condicoes-juridicas col-md-12">
@@ -810,7 +795,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h2 class="modal-title" style="color: #fff;">Menssagem Respondida</h2>
+               
             </div>
 
             <div class="modal-body">
@@ -897,6 +882,8 @@ $(function(){
 
 
 </script>
+
+
 
 
 

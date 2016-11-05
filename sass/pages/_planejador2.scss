@@ -1,0 +1,100 @@
+.wrapper.planejador2 {
+
+	.tab-content  {
+		padding: 30px;
+	}
+
+	.features-planejador {
+		padding-top: 0;
+	}
+
+	
+
+	.icon-check-list {
+		margin-right: 20px;
+	}
+
+	.card-block li {
+		list-style: none;
+	}
+
+	.card-block ul{
+		padding-right: 10px !important;
+	}
+
+	.users {
+    	table-layout: fixed;
+	 	width: 100%;
+	   
+	}
+	
+	.users td {
+	   
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	}
+
+	.users tr {
+		border-bottom: 1px solid #e7e7e7;
+	}
+
+	.users p {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	.users th {
+		font-size: 16px;
+	}
+
+	.caixa1 {
+		
+	    text-align: center;
+	    border: 1px solid;
+
+	}
+
+	.caixa2 {
+		
+	    text-align: center;
+	    border: 1px solid;
+	    padding-bottom: 27px;
+	}
+
+	.cxs {
+		display: block;
+	    margin: auto;
+	    width: auto;
+	}
+
+	.cxs:hover {
+		borde: 2px solid #C99252;
+		padding:0;
+	}
+
+	.imprimir-planilha {
+		padding-bottom: 15px;
+	}
+
+	
+
+
+
+	@media only screen and (max-width : 320px) {
+		.users th {
+			font-size: 14px;
+		}
+
+		.users p {
+			font-size: 12px;
+		}
+
+		.cxs p {
+			font-size: 13px;
+		}
+		
+	}
+
+	
+ 
+}
