@@ -50,10 +50,79 @@
 		margin-bottom: 35px;
 	}
 
+	.divider {
+		padding-bottom: 25px;
+	}
+
+	.tgl {
+	
+	}
+
+	.tgl__buttons {
+		padding-bottom: 15px;
+		
+	}
+
+	.tgl .tgl__save {
+		display: none;
+	}
+
+	.tgl--editing .tgl__save {
+		display: block;
+	}
+
+	.tgl--editing .tgl__edit {
+		display: none;
+	}
+
+	.tgl .tgl__host {
+		display: block;
+		padding: 0;
+
+	}
+
+	.tgl input,
+	.tgl select,
+	.tgl textarea {
+		display: none;
+	}
+
+	.tgl textarea {
+
+	}
+
+	.text-msg-noivos {
+		width: 100%;
+	}
+
+	.tgl--editing .tgl__host {
+		display: none;
+	}
+
+	.tgl--editing input,
+	.tgl--editing select,
+	.tgl--editing textarea {
+		display: block;
+	}
+
+	.alert-info {
+		margin-top: 20px;
+	}
+
+	.card .avatar {
+		width: 200px;
+		overflow: visible;
+	}
+
+
 
 	@media only screen and (max-width :320px) {
 		.features-dados-casamento .nav > li > a {
 			padding: 9px 8px;
+		}
+
+		.tgl .tgl__host {
+			padding: 5px;
 		}
 	}
 

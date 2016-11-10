@@ -9,13 +9,13 @@
 <title>Lista de Casamento</title>
  <script src="js/Chart.min.js"></script>
 <script type="text/javascript">
-    var randomnb = function(){ return Math.round(Math.random()*300)};
+	var randomnb = function(){ return Math.round(Math.random()*300)};
 </script>  
 
 <!-- Bootstrap -->
 <link href="css/main.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/bootstrap.datepicker-fork/1.3.0/css/datepicker3.css" rel="stylesheet">
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.16.0/polyfill.js"></script>
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -30,316 +30,471 @@
   
 <nav class="navbar navbar-default" role="navigation">
   <div class="container"> 
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button id="menu-toggle" type="button" class="navbar-toggle"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar bar1"></span> <span class="icon-bar bar2"></span> <span class="icon-bar bar3"></span> </button>
-      <a class="navbar-brand desktop-only" href="index.html"><img src="images/logo-icon.png" class="img-responsive" alt="" ></a>
-      <div class="nav-title mobile-only">Lista de casamento <strong>Minha lista de presentes</strong></div>
-      </div>
-    
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse">
-      <ul  class="nav navbar-nav navbar-right">
-        <li> <a href="#"> Painel </a> </li>
-        <li> <a href="#"> Lista de presentes </a> </li>
-        <li> <a href="#"> Extrato </a> </li>
-        <li> <a href="#"> Planejador </a> </li>
-        <li  class="active"> <a href="#"> Dados do Casamento </a> </li>
-        <li> <a href="#"> Mini-cartão </a> </li>
-        <li> <a href="#"> Save the date </a> </li>
-        <li> <a href="#"> Mensagens <span class="badge">5</span> </a> </li>
-      </ul>
-    </div>
-    <!-- /.navbar-collapse --> 
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<div class="navbar-header">
+	  <button id="menu-toggle" type="button" class="navbar-toggle"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar bar1"></span> <span class="icon-bar bar2"></span> <span class="icon-bar bar3"></span> </button>
+	  <a class="navbar-brand desktop-only" href="index.html"><img src="images/logo-icon.png" class="img-responsive" alt="" ></a>
+	  <div class="nav-title mobile-only">Lista de casamento <strong>Minha lista de presentes</strong></div>
+	  </div>
+	
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse">
+	  <ul  class="nav navbar-nav navbar-right">
+		<li> <a href="#"> Painel </a> </li>
+		<li> <a href="#"> Lista de presentes </a> </li>
+		<li> <a href="#"> Extrato </a> </li>
+		<li> <a href="#"> Planejador </a> </li>
+		<li  class="active"> <a href="#"> Dados do Casamento </a> </li>
+		<li> <a href="#"> Mini-cartão </a> </li>
+		<li> <a href="#"> Save the date </a> </li>
+		<li> <a href="#"> Mensagens <span class="badge">5</span> </a> </li>
+	  </ul>
+	</div>
+	<!-- /.navbar-collapse --> 
   </div>
 </nav>
 
-<div class="wrapper dados-casamento">
-	<div class="container">	
-		<h3 class="subtitle hidden-xs">Dados do casamento</h3>
-		<p>Nesta área você pode alterar os dados registrados no momento do cadastro.</p>
+<div class="wrappers dados-casamento">
+	<div class="row">
+		<div class="container">	
+		
+			<h3 class="subtitle hidden-xs">Dados do casamento</h3>
+			<p>Nesta área você pode alterar os dados registrados no momento do cadastro.</p>
+		</div>
 	</div>
-	
-	<div class="features-dados-casamento">
-    	<div class="row">
+</div>
+
+<div class="wrapper dados-casamento">
+	<div class="row">
+		<div class="container">	
+			<div id="accordion" role="tablist" aria-multiselectable="true">
+				<div class="card">
+				    <div class="card-header" role="tab" id="headingOne">
+				      <h5 class="mb-0">
+				        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				         <h3 class="subtitle" style="margin: 0;">Sobre os noivos</h3>
+				         <HR WIDTH=100%> 
+				        </a>
+				      </h5>
+				    </div>
+
+				    <div id="collapseOne" class="collapse in" role="tabpanel" aria-labelledby="headingOne">
+				      	<div class="card-block">
+			       		 	<form action="/" action="post" class="tgl" id="js-info-noivos2">
+								<div class="tgl__buttons">
+									<button class="tgl__edit btn btn-md btn-primary btn-add-cart">Editar</button>
+									<button class="tgl__save btn btn-md btn-primary btn-add-cart" type="submit">Salvar Edições</button>
+								</div>
+				  				    <div class="engloba-noiva col-md-12">
+									    
+									    <h5>Noiva</h5>
+									    <div class="col-md-6">
+											<p for="email">Nome:<span></span></p>
+											<div class="tgl__input">
+												<input type="text" name="name" value="Rafael Angeline" required>
+												<span class="tgl__host"></span>
+											</div>
+											
+											
+											<p for="pwd">Mãe:</p>
+											<div class="tgl__input">
+												<input type="text" name="name" value="Viviane Angeline" required>
+												<span class="tgl__host"></span>
+											</div>
+									    </div>  
+									    <div class="col-md-6">
+											<form>
+												<div class="form-group">
+													<p for="email">Email:</p>
+													<div class="tgl__input">
+														<input type="text" name="name" value="Viviane Angeline" required>
+														<span class="tgl__host"></span>
+													</div>
+												</div>
+												<div class="form-group">
+													<p for="pwd">Pai:</p>
+												   <div class="tgl__input">
+														<input type="text" name="name" value="Vosvaldo Angeline" required>
+														<span class="tgl__host"></span>
+													</div>
+												</div>
+											</form> 
+									    </div>
+
+											<HR WIDTH=100%> 
+
+										<h5>Noivo</h5>
+										<div class="col-md-6">
+											<form>
+												
+												<div class="form-group">
+													<p for="pwd">Nome:</p>
+												   <div class="tgl__input">
+														<input type="text" name="name" value="Caio Martins" required>
+														<span class="tgl__host"></span>
+													</div>
+												</div>
+												<div class="form-group">
+													<p for="pwd">Mãe:</p>
+												   <div class="tgl__input">
+														<input type="text" name="name" value="Fernanda de Souza Martins" required>
+														<span class="tgl__host"></span>
+													</div>
+												</div>
+											
+											</form> 
+										</div>  
+										<div class="col-md-6">
+											<form>
+												
+												<div class="form-group">
+													<p for="pwd">E-Mail:</p>
+												   <div class="tgl__input">
+														<input type="text" name="name" value="caio_martins@gmail.com" required>
+														<span class="tgl__host"></span>
+													</div>
+												</div>
+												<div class="form-group">
+													<p for="pwd">Pai:</p>
+												   <div class="tgl__input">
+														<input type="text" name="name" value="Luiz Martins" required>
+														<span class="tgl__host"></span>
+													</div>
+												</div>
+
+												
+											</form> 
+										</div> 
+
+									</div> 
+
+									<div class="linha"></div>
 
 
-  			
+								    <div class="engloba-foto col-md-12">
+										<h5>Foto do casal</h5>
+										<div class="col-md-3">
+										<div class="avatar pull-left"> <img src="images/avatar.png" class="img-rounded" alt=""/> </div>
+										</div>
+										<div class="col-md-9">
+										 <div class="form-group">
+											<div class="upload-drop-zone" id="drop-zone">
+											<input type="text" class="btn btn-default" name="next" value="Enviar foto">
+											<span>JPG ou GIF. Máximo: 1,10 MB</span>
+											</div>
+										  </div> 
 
-				<!--<ul class="nav nav-tabs">
-					<li class="active">
-				        <a  href="#1" data-toggle="tab">Sobre os noivos</a>
-						</li>
-						<li><a href="#2" data-toggle="tab">Mensagen aos convidados</a>
-						</li>
-						<li><a href="#3" data-toggle="tab">Informações do casamento</a>
-						</li>
-						<li><a href="#4" data-toggle="tab">Endereço da entrega</a>
-						</li>
-				</ul>-->
+										</div>
+									   
+								    </div>
+							</form>
+				        </div>
+				    </div>
+				</div>
+				
+				<div class="card">
+				    <div class="card-header" role="tab" id="headingTwo">
+				      <h5 class="mb-0">
+				        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				          <h3 class="subtitle">Mensagem aos Convidados</h3>
+				          <HR WIDTH=100%> 
+				        </a>
+				      </h5>
+				    </div>
+				    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+				      	<div class="card-block">
+					        <form action="/" action="post" class="tgl" id="js-info-mensagem">
 
-			<!-- TAB CONTENT -->
-				<div class="container">
-<!-- INICIO TAB 1  SOBRE OS NOIVOS-->		    
-				   
-	            	   <h3 class="subtitle">Sobre os noivos:</h3>
+								<div class="tgl__buttons">
+									<button class="tgl__edit btn btn-md btn-primary btn-add-cart">Editar</button>
+									<button class="tgl__save btn btn-md btn-primary btn-add-cart" type="submit">Salvar Edições</button>
+								</div>
+			  				    <div class="engloba-noiva col-md-12">
+															
+								  
+								   <div class="col-md-12">
+										<form>
+											<div class="tgl__textarea">
+												<textarea class="text-msg-noivos" name="extra" required>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ullamcorper accumsan quam eu posuere. Donec posuere, odio ac porta pulvinar, tortor ligula iaculis tellus, ac fermentum velit elit a enim. Nunc tincidunt, ante nec venenatis cursus, tortor odio congue orci, eu volutpat ligula nibh vel magna. Nullam egestas nulla ex. Nam gravida sodales tristique. Nulla laoreet arcu nec mi aliquam gravida. Praesent nec porttitor sapien. Integer facilisis eget nisl aliquam fringilla.</textarea>
+												<span class="tgl__host"></span>
+											</div>
+										</form> 
+								   </div>
+								</div> 
+							</form>
+				      	</div>
+				    </div>
+				</div>
 
-	            	   <div class="engloba-noiva col-md-12">
-		            	   <h5>Noiva</h5>
-		            	   <div class="col-md-6">
-		            	   		<form>
-									<div class="form-group">
-									    <p for="email">Nome:<span></span></p>
-									     <div class="editable-input" contenteditable> <i class="fa fa-pencil" aria-hidden="true"></i>Viviani Augusto de Lima Mattos</div>
-									</div>
-									<div class="form-group">
-									    <p for="pwd">Mãe:</p>
-									    <div class="editable-input" contenteditable> <i class="fa fa-pencil" aria-hidden="true"></i>Ana Maria Mattos</div>
-									</div>
-								</form> 
-		            	   </div>  
-		            	   <div class="col-md-6">
-		            	   		<form>
-									<div class="form-group">
-									    <p for="email">Email:</p>
-									    <div class="editable-input" contenteditable> <i class="fa fa-pencil" aria-hidden="true"></i>vivi_mattos@gmail.com</div>
-									</div>
-									<div class="form-group">
-									    <p for="pwd">Pai:</p>
-									   <div class="editable-input" contenteditable> <i class="fa fa-pencil" aria-hidden="true"></i>Flavio Mattos</div>
-									</div>
-								</form> 
-		            	   </div>
-	            		
-		            	    <h5>Noivo</h5>
-		            	    <div class="col-md-6">
-		            	   		<form>
-									<div class="form-group">
-									    <p for="email">Nome:</p>
-									     <div class="editable-input" contenteditable> <i class="fa fa-pencil" aria-hidden="true"></i>Caio Martins</div>
-									</div>
-									<div class="form-group">
-									    <p for="pwd">Mãe:</p>
-									    <div class="editable-input" contenteditable> <i class="fa fa-pencil" aria-hidden="true"></i>Fernanda de Souza Martins</div>
-									</div>
-								</form> 
-		            	    </div>  
-		            	    <div class="col-md-6">
-		            	   		<form>
-									<div class="form-group">
-									    <p for="email">Email:</p>
-									    <div class="editable-input" contenteditable> <i class="fa fa-pencil" aria-hidden="true"></i>caio_martins@gmail.com</div>
-									</div>
-									<div class="form-group">
-									    <p for="pwd">Pai:</p>
-									   <div class="editable-input" contenteditable> <i class="fa fa-pencil" aria-hidden="true"></i>Luiz Martins</div>
-									</div>
-								</form> 
-		            	    </div> 
-	            	   </div> 
+				<div class="card">
+				    <div class="card-header" role="tab" id="headingThree">
+				      <h5 class="mb-0">
+				        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				          <h3 class="subtitle">Informações sobre o Casamento</h3>
+				          <HR WIDTH=100%> 
+				        </a>
+				      </h5>
+				    </div>
+				    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+				        <div class="card-block">
+				        	<form action="/" action="post" class="tgl" id="js-info-infos-casamento">
 
-	            	   <div class="engloba-foto col-md-12">
-		            	    <h5>Foto do casal</h5>
-		            	    <div class="col-md-3">
-		            	   	<div class="avatar pull-left"> <img src="images/avatar.png" class="img-responsive img-rounded" alt=""/> </div>
-		            	    </div>
-		            	    <div class="col-md-9">
-		            	     <div class="form-group">
-	                        <div class="upload-drop-zone" id="drop-zone">
-	                        <input type="text" class="btn btn-default" name="next" value="Enviar foto">
-	                        <span>JPG ou GIF. Máximo: 1,10 MB</span>
-	                        </div>
-	                      </div> 
+								<div class="tgl__buttons">
+									<button class="tgl__edit edit-save-dados btn btn-md btn-primary btn-add-cart">Editar</button>
+									<button class="tgl__save edit-save-dados btn btn-md btn-primary btn-add-cart" type="submit">Salvar Edições</button>
+								</div>
+						  
 
-		            	    </div>
-		            	   
-	            	   </div>
-	            	   	<button class="btn btn-md btn-primary btn-add-cart center-block "><strong>Salvar Edições</strong></button> 
-						
+							    <div class="engloba-noiva col-md-12">
+								   <div class="col-md-12">
+									<div class = "alert alert-info">Atenção:Sua lista de casamento pode ser alterada com até 365 dias de antecedência. Mas fique atento, o site sempre tem novidades para você e alguns produtos podem sair de linha. Matenha a sua Lista de Casamento sempre atualizada.</div>
+									</div>
+								
+								   <div class="col-md-12">
+									<h5>Data</h5>
+										<p for="email"><span></span></p>
+										<div class="tgl__input">
+											<input type="text" name="name" value="22 Setembro de 2016" required>
+											<span class="tgl__host"></span>
+										</div>
+									
+								   </div> 
+
+								   <HR WIDTH=100%> 
+
+								   <div class="col-md-12">
+								   <h5>Cerimônia</h5>
+									</div>
+
+								   <div class="col-md-6">
+										<form>
+											<div class="form-group">
+												<p for="email">CEP:</p>
+												<div class="tgl__input">
+													<input type="text" name="name" value="03275-000" required>
+													<span class="tgl__host"></span>
+												</div>
+											</div>
+											<div class="form-group">
+												<p for="pwd">Estado:</p>
+											   <div class="tgl__input">
+													<input type="text" name="name" value="SP" required>
+													<span class="tgl__host"></span>
+												</div>
+											</div>
+										</form> 
+								   </div>
+								 
+
+								   
+									<div class="col-md-6">
+										<form>
+											
+											<div class="form-group">
+												<p for="pwd">Endereço:</p>
+											   <div class="tgl__input">
+													<input type="text" name="name" value="Rua Genebra, 335" required>
+													<span class="tgl__host"></span>
+												</div>
+											</div>
+											<div class="form-group">
+												<p for="pwd">Cidade:</p>
+											   <div class="tgl__input">
+													<input type="text" name="name" value="São Paulo" required>
+													<span class="tgl__host"></span>
+												</div>
+											</div>
+										
+										</form> 
+									</div> 
+
+									<HR WIDTH=100%>  
+
+									<div class="col-md-12">
+								   <h5>Recepção</h5>
+									</div>
+
+								   <div class="col-md-6">
+										<form>
+											<div class="form-group">
+												<p for="email">CEP:</p>
+												<div class="tgl__input">
+													<input type="text" name="name" value="03275-000" required>
+													<span class="tgl__host"></span>
+												</div>
+											</div>
+											<div class="form-group">
+												<p for="pwd">Estado:</p>
+											   <div class="tgl__input">
+													<input type="text" name="name" value="SP" required>
+													<span class="tgl__host"></span>
+												</div>
+											</div>
+										</form> 
+								   </div>
+								 
+
+								   
+									<div class="col-md-6">
+										<form>
+											
+											<div class="form-group">
+												<p for="pwd">Endereço:</p>
+											   <div class="tgl__input">
+													<input type="text" name="name" value="Rua Genebra, 335" required>
+													<span class="tgl__host"></span>
+												</div>
+											</div>
+											<div class="form-group">
+												<p for="pwd">Cidade:</p>
+											   <div class="tgl__input">
+													<input type="text" name="name" value="São Paulo" required>
+													<span class="tgl__host"></span>
+												</div>
+											</div>
+										
+										</form> 
+									</div>  
+								</div> 
+							</form>
+				        </div>
+				    </div>
+				</div>
 				
 
-<!-- INICIO TAB 2  MENSAGENS AOS CONVIDADOS-->
-					<div class="tab-pane" id="2">
-	            		<h3 class="subtitle">Mensagen aos convidados:</h3>
-	            		 <div class="engloba-foto col-md-12">
-		            	    
-		            	    <div class="col-md-3">
-		            	   	<h5>Mensagem :</h5>
-		            	    </div>
-		            	    <div class="col-md-9">
-		            	    <textarea class="form-control contenteditable" id="exampleTextarea" rows="12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ullamcorper accumsan quam eu posuere. Donec posuere, odio ac porta pulvinar, tortor ligula iaculis tellus, ac fermentum velit elit a enim. Nunc tincidunt, ante nec venenatis cursus, tortor odio congue orci, eu volutpat ligula nibh vel magna. Nullam egestas nulla ex. Nam gravida sodales tristique. Nulla laoreet arcu nec mi aliquam gravida. Praesent nec porttitor sapien. Integer facilisis eget nisl aliquam fringilla.
-		            	    </textarea>
-		            	    </div>
-		            	   
-	            	   </div>
-	            	    	<button class="btn btn-md btn-primary btn-add-cart center-block "><strong>Salvar Edições</strong></button>
-					</div>
+				<div class="card">
+				    <div class="card-header" role="tab" id="headingFour">
+				      <h5 class="mb-0">
+				        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+				          <h3 class="subtitle">Endereço da entrega</h3>
+				          <HR WIDTH=100%> 
+				        </a>
+				      </h5>
+				    </div>
+				    <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
+				      	<div class="card-block">
+				        	<form action="/" action="post" class="tgl" id="js-info-entrega">
 
-<!-- INICIO TAB 3 INFORMAÇOES DO CASAMENTO -->
-	            	<div class="tab-pane" id="3">
-	            		<h3 class="subtitle">Informações do casamento</h3>
-	            		
-		            	    
-		            	    <div class="col-md-12">
-		            	   	    <div class = "alert alert-info">Atenção:Sua lista de casamento pode ser alterada com até 365 dias de antecedência. Mas fique atento, o site sempre tem novidades para você e alguns produtos podem sair de linha. Matenha a sua Lista de Casamento sempre atualizada.</div>
-		            	    </div>
-		                        	   
-	       
-	            	   <div class="engloba-foto col-md-12">
-	            	  		<div class="col-md-4">
-			            	   	<div class="form-group">
-									<p for="email">Data:<span></span></p>
-									    <div class="editable-input" contenteditable><i class="fa fa-pencil" aria-hidden="true"></i>22/09/2016</div>
-								</div>
+							<div class="tgl__buttons">
+								<button class="tgl__edit btn btn-md btn-primary btn-add-cart">Editar</button>
+								<button class="tgl__save btn btn-md btn-primary btn-add-cart" type="submit">Salvar Edições</button>
 							</div>
-	            	   	</div>
+  
 
-	            	   	 <div class="engloba-foto col-md-12">
-	            	  		
-	            	   	 	<h5>Cerimônia</h5>
-	            	  		<div class="col-md-6">
-			            	   	<div class="form-group">
-									<p for="email">CEP:<span></span></p>
-									    <div class="editable-input" contenteditable> <i class="fa fa-pencil" aria-hidden="true"></i>03275-000</div>
-								</div>
-							</div>
-							<div class="col-md-6">
-			            	   	<div class="form-group">
-									<p for="email">Endereço:<span></span></p>
-									    <div class="editable-input" contenteditable> <i class="fa fa-pencil" aria-hidden="true"></i>Rua Genebra, 755</div>
-								</div>
-							</div>
-							<div class="col-md-6">
-			            	   	<div class="form-group">
-									<p for="email">Estado:</p>
-									    <div class="editable-input" contenteditable> <i class="fa fa-pencil" aria-hidden="true"></i>São Paulo (SP)</div>
-								</div>
-							</div>
-							<div class="col-md-6">
-			            	   	<div class="form-group">
-									<p for="email">Cidade:</p>
-									    <div class="editable-input" contenteditable> <i class="fa fa-pencil" aria-hidden="true"></i>São Paulo (SP)</div>
-								</div>
-							</div>
+							   <div class="engloba-noiva col-md-12">
+								   
+									<div class="col-md-12">
+									<div class = "alert alert-info">Atenção:
+									A alteração de endereço pode ser feita a qualquer momento, porém o novo endereço somente será válido para novas compras.
+									As compras feitas antes da alteração serão enviadas para o endereço anterior, mesmo que a liberação do item para entrega seja feita posteriormente. Será considerada sempre a data da compra.</div>
+									</div>
+									<div class="col-md-6">
+										<form class="filtro" style="margin:0">
+										  <select class="selectpicker" data-style="form-control" data-width="160px">
+											<option value="1" selected> Casa da Mãe</option>
+											<option value="1"disabled >------</option>
+											<option value="1">Trabalho</option>
+											<option disabled disabled>------</option>
+											<option value="1">Casa noivos</option>
+										  </select>
+										</form>
+									</div>
+									<div class="col-md-6">
+										<a href="#">><p><i class="fa fa-plus-square-o" aria-hidden="true"></i>Adcionar outro endereço</p></a>
+									</div> 
+								   <div class="col-md-12">
+								   <h5></h5>
+									</div>
 
-							<a href="#"><p><i class="fa fa-map-marker" aria-hidden="true"></i>Ver no Mapa</p></a>
-	            	   	</div>
+								   <div class="col-md-6">
+										<form>
+											<div class="form-group">
+												<p for="email">Endereço:</p>
+												<div class="tgl__input">
+													<input type="text" name="name" value="R. Clodomiro Amazonas" required>
+													<span class="tgl__host"></span>
+												</div>
+											</div>
+											<div class="form-group">
+												<p for="pwd">Cidade:</p>
+											   <div class="tgl__input">
+													<input type="text" name="name" value="SP" required>
+													<span class="tgl__host"></span>
+												</div>
+											</div>
+										</form> 
+								   </div>
+								 
 
-	            	   	 <div class="engloba-foto col-md-12">
-	            	  		
-	            	   	 	<h5>Recepção</h5>
-	            	  		<div class="col-md-6">
-			            	   	<div class="form-group">
-									<p for="email">CEP</p>
-									    <div class="editable-input" contenteditable> <i class="fa fa-pencil" aria-hidden="true"></i>13250-100</div>
-								</div>
-							</div>
-							<div class="col-md-6">
-			            	   	<div class="form-group">
-									<p for="email">Endereço:</p>
-									    <div class="editable-input" contenteditable> <i class="fa fa-pencil" aria-hidden="true"></i>Rua Tenente Genebra, 755</div>
-								</div>
-							</div>
-							<div class="col-md-6">
-			            	   	<div class="form-group">
-									<p for="email">Estado:</p>
-									    <div class="editable-input" contenteditable> <i class="fa fa-pencil" aria-hidden="true"></i>São Paulo (SP)</div>
-								</div>
-							</div>
-							<div class="col-md-6">
-			            	   	<div class="form-group">
-									<p for="email">Cidade:</p>
-									    <div class="editable-input" contenteditable> <i class="fa fa-pencil" aria-hidden="true"></i>São Paulo (SP)</div>
-								</div>
-							</div>
+								   
+									<div class="col-md-6">
+										<form>
+											
+											<div class="form-group">
+												<p for="pwd">Número:</p>
+											   <div class="tgl__input">
+													<input type="text" name="name" value="907" required>
+													<span class="tgl__host"></span>
+												</div>
+											</div>
+											<div class="form-group">
+												<p for="pwd">Bairro:</p>
+											   <div class="tgl__input">
+													<input type="text" name="name" value="Itaim Bibi" required>
+													<span class="tgl__host"></span>
+												</div>
+											</div>
+										
+										</form> 
+									</div>  
 
-							<a href="#"><p><i class="fa fa-map-marker" aria-hidden="true"></i>Ver no Mapa</p></a>
-	            	   	</div>
+								  
+								   <div class="col-md-6">
+										<form>
+											<div class="form-group">
+												<p for="email">CEP:</p>
+												<div class="tgl__input">
+													<input type="text" name="name" value="03275-000" required>
+													<span class="tgl__host"></span>
+												</div>
+											</div>
+											
+										</form> 
+								   </div>
+								 
 
-	            	   	
-	            	   		<button class="btn btn-md btn-primary btn-add-cart center-block "><strong>Salvar Edições</strong></button>
+								   
+									<div class="col-md-6">
+										<form>
+											
+											<div class="form-group">
+												<p for="pwd">Ponto de Referência:</p>
+											   <div class="tgl__input">
+													<input type="text" name="name" value="Em frente ao MASP" required>
+													<span class="tgl__host"></span>
+												</div>
+											</div>
+											
+										
+										</form> 
+									</div>  
+								</div> 
+							</form>
+				      	</div>
+				    </div>
+				</div>
+			</div><!-- end accordion -->
 
-					</div>
-<!-- INICIO TAB 3 ENDEREÇO ENTREGA -->
-					<div class="tab-pane" id="4">
-	            		<h3 class="subtitle">Endereço para entrega:</h3>
-	            		<div class="col-md-12">
-	            	   	    <div class = "alert alert-info">Atenção:
-							A alteração de endereço pode ser feita a qualquer momento, porém o novo endereço somente será válido para novas compras.
-							As compras feitas antes da alteração serão enviadas para o endereço anterior, mesmo que a liberação do item para entrega seja feita posteriormente. Será considerada sempre a data da compra.</div>
-	            	    </div>	
-
-	            	    <div class="engloba-foto col-md-12">
-		            	    
-	            	    	<div class="col-md-6">
-			            	    <form class="filtro" style="margin:0">
-								  <select class="selectpicker" data-style="form-control" data-width="160px">
-									<option value="1" selected> Casa da Mãe</option>
-									<option value="1"disabled >------</option>
-									<option value="1">Trabalho</option>
-									<option disabled disabled>------</option>
-									<option value="1">Casa noivos</option>
-								  </select>
-								</form>
-							</div>
-							<div class="col-md-6">
-								<a href="#">><p><i class="fa fa-plus-square-o" aria-hidden="true"></i>Adcionar outro endereço</p></a>
-							</div>
-						</div>
-						<div class="engloba-foto col-md-12">
-	            	  		
-	            	   	 	
-	            	  		<div class="col-md-6">
-			            	   	<div class="form-group">
-									<p for="email">Endereço</p>
-									    <div class="editable-input" contenteditable> <i class="fa fa-pencil" aria-hidden="true"></i>Rua Amazonas</div>
-								</div>
-							</div>
-							<div class="col-md-6">
-			            	   	<div class="form-group">
-									<p for="email">Número</p>
-									    <div class="editable-input" contenteditable> <i class="fa fa-pencil" aria-hidden="true"></i>907</div>
-								</div>
-							</div>
-							<div class="col-md-6">
-			            	   	<div class="form-group">
-									<p for="email">Cidade</p>
-									    <div class="editable-input" contenteditable> <i class="fa fa-pencil" aria-hidden="true"></i>São Paulo (SP)</div>
-								</div>
-							</div>
-							<div class="col-md-6">
-			            	   	<div class="form-group">
-									<p for="email">Bairro:</p>
-									    <div class="editable-input" contenteditable> <i class="fa fa-pencil" aria-hidden="true"></i>Higienópolis</div>
-								</div>
-							</div>
-							<div class="col-md-6">
-			            	   	<div class="form-group">
-									<p for="email">CEP:</p>
-									    <div class="editable-input" contenteditable> <i class="fa fa-pencil" aria-hidden="true"></i>01132-0000</div>
-								</div>
-							</div>
-							<div class="col-md-6">
-			            	   	<div class="form-group">
-									<p for="email">Ponto de Referência:</p>
-									    <div class="editable-input" contenteditable> <i class="fa fa-pencil" aria-hidden="true"></i>Em frente ao MASP</div>
-								</div>
-							</div>
-
-							
-	            	   	</div>
-	            	   	<button class="btn btn-md btn-primary btn-add-cart center-block "><strong>Salvar Edições</strong></button>
-
-
-					</div>
-				</div><!-- END TAB container -->
-	
-
-      		
 		</div>
-  	</div>
+	</div>
+</div>
 
-</div><!--/. wrapper--> 
+	
+	
+	<div class="features-dados-casamento">
+		
+	</div><!--end features-dados-casamento-->
+
 
 <footer class="footer">
   <div class="container">
@@ -371,11 +526,142 @@
 
 <script>
 $(function(){
-    $("#meubotao").click(function(e){
-        e.preventDefault();
-        el = $(this).data('element');
-        $(el).toggle();
-    });
+	$("#meubotao").click(function(e){
+		e.preventDefault();
+		el = $(this).data('element');
+		$(el).toggle();
+	});
+});
+
+
+</script>
+
+<script>
+
+'use strict';
+
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var EditableInputs = function () {
+  function EditableInputs(formId) {
+	var saveCb = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
+
+	_classCallCheck(this, EditableInputs);
+
+	this.formElement = null;
+	this.saveCb = null;
+
+	this.formElement = jQuery('#' + formId);
+
+	if (this.formElement.length !== 1) {
+	  console.error('Error: you should provide an unique ID.');
+	  return false;
+	}
+
+	if (saveCb !== null) {
+	  this.saveCb = saveCb;
+	}
+
+	this.initForm();
+  }
+
+  EditableInputs.prototype.initForm = function initForm() {
+	this.nonEditableMode();
+
+	this.formElement.find('.tgl__edit').on('click', function (e) {
+	  e.preventDefault();
+
+	  this.editableMode();
+	}.bind(this));
+
+	this.formElement.on('submit', function (e) {
+	  if (this.saveCb !== null) {
+		this.callUsercb();
+	  }
+
+	  this.nonEditableMode();
+
+	  e.preventDefault();
+	}.bind(this));
+  };
+
+  EditableInputs.prototype.nonEditableMode = function nonEditableMode() {
+	this.formElement.removeClass('tgl--editing');
+
+	this.formElement.find('input').each(function (e, i) {
+	  jQuery(this).siblings('.tgl__host').text(jQuery(this).val());
+	});
+
+	this.formElement.find('select').each(function (e, i) {
+	  jQuery(this).siblings('.tgl__host').text(jQuery(this).find('option:selected').data('label'));
+	});
+
+	this.formElement.find('textarea').each(function (e, i) {
+	  jQuery(this).siblings('.tgl__host').html(jQuery(this).val().replace(/(?:\r\n|\r|\n)/g, '<br>'));
+	});
+  };
+
+  EditableInputs.prototype.editableMode = function editableMode() {
+	this.formElement.addClass('tgl--editing');
+  };
+
+  EditableInputs.prototype.callUsercb = function () {
+	var _ref = _asyncToGenerator(regeneratorRuntime.mark(function _callee() {
+	  return regeneratorRuntime.wrap(function _callee$(_context) {
+		while (1) {
+		  switch (_context.prev = _context.next) {
+			case 0:
+			  _context.next = 2;
+			  return this.saveCb(this.formElement);
+
+			case 2:
+			case 'end':
+			  return _context.stop();
+		  }
+		}
+	  }, _callee, this);
+	}));
+
+	function callUsercb() {
+	  return _ref.apply(this, arguments);
+	}
+
+	return callUsercb;
+  }();
+
+  return EditableInputs;
+}();
+
+jQuery(document).ready(function () {
+  var myEditableForm = new EditableInputs('js-my-tgl-form',
+		function(myForm) {
+			console.log('You may call your AJAX here.');
+			return true;
+		});
+
+  
+  var formNoivos = new EditableInputs('js-info-noivos2',
+		function(myForm) {
+			console.log('You may call your AJAX here.');
+			return true;
+		});
+   var formNoivos = new EditableInputs('js-info-mensagem',
+		function(myForm) {
+			console.log('You may call your AJAX here.');
+			return true;
+		});
+   var formNoivos = new EditableInputs('js-info-infos-casamento',
+		function(myForm) {
+			console.log('You may call your AJAX here.');
+			return true;
+		});
+   var formNoivos = new EditableInputs('js-info-entrega',
+		function(myForm) {
+			console.log('You may call your AJAX here.');
+			return true;
+		});
 });
 
 
