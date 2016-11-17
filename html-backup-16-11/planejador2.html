@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--<script src="http://www.w3schools.com/lib/w3data.js"></script>-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>Lista de Casamento</title>
+ <script src="js/Chart.min.js"></script>
+<script type="text/javascript">
+    var randomnb = function(){ return Math.round(Math.random()*300)};
+</script>  
+
+<!-- Bootstrap -->
+<link href="css/main.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/bootstrap.datepicker-fork/1.3.0/css/datepicker3.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+	<![endif]-->
+
+</head>
+<body>
+
+  
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button id="menu-toggle" type="button" class="navbar-toggle"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar bar1"></span> <span class="icon-bar bar2"></span> <span class="icon-bar bar3"></span> </button>
+      <a class="navbar-brand desktop-only" href="index.html"><img src="images/logo-icon.png" class="img-responsive" alt="" ></a>
+      <div class="nav-title mobile-only">Lista de casamento <strong>Minha lista de presentes</strong></div>
+      </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse">
+      <ul  class="nav navbar-nav navbar-right">
+        <li> <a href="#"> Painel </a> </li>
+        <li> <a href="#"> Lista de presentes </a> </li>
+        <li> <a href="#"> Extrato </a> </li>
+        <li class="active"> <a href="#"> Planejador </a> </li>
+        <li> <a href="#"> Dados do Casamento </a> </li>
+        <li> <a href="#"> Mini-cartão </a> </li>
+        <li> <a href="#"> Save the date </a> </li>
+        <li> <a href="#"> Mensagens <span class="badge">5</span> </a> </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+</nav>
+
+<div class="wrapper planejador2">
+	<div class="container">	
+		<h3 class="subtitle hidden-xs">Planejador</h3>
+		<div class="col-md-12">
+	   	    <div class = "alert alert-info">Sabemos que uma grande preocupação neste momento tão especial são as despesas com o casamento. Pensando nisso, criamos um conteúdo especial que vai ajudar vocês na organização dos gastos.</div>
+	    </div>
+	</div>
+
+
+<div class="row">
+	
+		<div class="caixas-check-list container">
+			<div class="col-md-6 col-xs-6">
+				<a class="cxs active " href="#1" data-toggle="tab"><div class="caixa1">
+					<h3 class="subtitle">Check List</h3>
+					<p>Para você não se perder na hora de montar sua casa.</p>
+				</div></a>
+			</div>
+			<div class="col-md-6 col-xs-6">
+				<a class="cxs" href="#2" data-toggle="tab"><div class="caixa2">
+					<h3 class="subtitle">Agenda dos noivos</h3>
+					<p>Organize seu casamento</p>
+				</div></a>
+			</div>
+		</div>
+	
+</div>
+
+
+
+
+
+	<div class="features-planejador">
+    	<div class="row">
+
+
+  			<div id="exTab2" class="container">	
+				
+
+				<div class="tab-content">
+	<!--INICIO TAB 1 CHECK LIST-->		    
+				    <div class="tab-pane active" id="1">
+				    	<div class="container imprimir-planilha">
+							<a href="#"><img src="images/impressora.png" width="24x24;"> Imprimir Planilha</a>
+						</div>
+	            		
+			            <div class="col-md-12 -imgcheck-list">
+			            	<a href="a"><img class="img-responsive" src="http://placehold.it/1050x411"></a>
+			            </div>
+
+					</div><!-- END TAB 1 -->
+
+	<!--INICIO TAB 2 AGENDA DOS NOIVOS -->
+					<div class="tab-pane" id="2">
+	            		<div class="col-md-12 col-xs-12">
+	            			<div id="accordion" role="tablist" aria-multiselectable="true">
+								  <div class="card">
+								    <div class="card-header" role="tab" id="headingTwo">
+								      <p class="mb-0">
+								        <a  class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseTwo">
+								         <img class="icon-check-list" src="http://placehold.it/41x41">1 Ano antes
+								        </a>
+								      </p>
+								    </div>
+
+								    <div id="collapseOne" class="collapse in" role="tabpanel" aria-labelledby="headingOne">
+								      <div class="card-block">
+								       <table class="users">
+										 
+										  <tbody>
+										    <tr>
+										      <th> > Orçamento</th>
+										      <td><p>Calcule seu orçamento, levando em conta a renda do casal e a possível ajuda de terceiros.</p></td>
+										    </tr>
+										    <tr>
+										      <th>> Tipo de cerimônia</th>
+										      <td><p>Escolha o tipo de cerimônia e recepção que você gostaria de dar e quem fará a celebração (contratar padre ou celebrante). Define se será de dia ou à noite, em local ou fechado. Também faça uma estimativa de convidados para a cerimônia e a recepção.</p></td>
+										    </tr>
+										    <tr>
+										      <th>> Moradia</th>
+										      <td><p>Defina onde vão morar juntos</p></td>
+										    </tr>
+										    <tr>
+										      <th>> Assessoria</th>
+										      <td><p>Se estiver com o tempo apertado e preferir contratar uma assessoria de casamento, este é o momento</p>
+												</td>
+										    </tr>
+										  </tbody>
+										</table>
+								       
+								      </div>
+								    </div>
+								  </div>
+								  <div class="card">
+								    <div class="card-header" role="tab" id="headingTwo">
+								      <p class="mb-0">
+								        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								         <img class="icon-check-list" src="http://placehold.it/41x41">10 meses antes
+								        </a>
+								      </p>
+								    </div>
+								    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+								      <div class="card-block">
+								        <p>Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+								      </div>
+								    </div>
+								  </div>
+								  <div class="card">
+								    <div class="card-header" role="tab" id="headingThree">
+								      <p class="mb-0">
+								        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								         <img class="icon-check-list" src="http://placehold.it/41x41">8 meses antes
+								        </a>
+								      </p>
+								    </div>
+								    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+								      <div class="card-block">
+								         <p>proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+								      </div>
+								    </div>
+								  </div>
+								  <div class="card">
+								    <div class="card-header" role="tab" id="headingfour">
+								      <p class="mb-0">
+								        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+								         <img class="icon-check-list" src="http://placehold.it/41x41">6 meses antes
+								        </a>
+								      </p>
+								    </div>
+								    <div id="collapsefour" class="collapse" role="tabpanel" aria-labelledby="headingfour">
+								      <div class="card-block">
+								         <p>proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+								      </div>
+								    </div>
+								  </div>
+
+							 </div>
+							</div><!-- END ACCORDIONN -->
+	            		</div>
+					</div>
+          	
+				</div><!-- END TAB CONTENT -->
+			</div><!-- END TAB CONTAINER-->
+		</div>
+  	</div>
+ 
+   
+
+
+</div><!--/. wrapper--> 
+
+<footer class="footer">
+  <div class="container">
+	<nav class="pull-left">
+	  <ul>
+		<li><a href="#">Regulamento</a></li>
+		<li><a href="#">Dúvidas</a></li>
+		<li><a href="#">Blog</a></li>
+	  </ul>
+	</nav>
+	<div class="social-area pull-right"> <a class="btn btn-social btn-facebook btn-simple"> <i class="fa fa-facebook-square"></i> </a> <a class="btn btn-social btn-twitter btn-simple"> <i class="fa fa-twitter"></i> </a> <a class="btn btn-social btn-pinterest btn-simple"> <i class="fa fa-pinterest"></i> </a> </div>
+	<div class="copyright"> © 2016 Cnova Lista de Casamento </div>
+  </div>
+</footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.countdown.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js"></script> 
+
+<!--  Custom 	 --> 
+<script src="js/custom.min.js"></script> 
+
+
+
+
+
+<script>
+$(function(){
+    $("#meubotao").click(function(e){
+        e.preventDefault();
+        el = $(this).data('element');
+        $(el).toggle();
+    });
+});
+
+
+</script>
+
+
+
+
+</body>
+</html>

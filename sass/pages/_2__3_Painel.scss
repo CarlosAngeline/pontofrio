@@ -107,6 +107,10 @@
 		color: #c99252;
 	}
 
+	.widget-countdown {
+		margin-bottom: 106px;
+	}
+
 	.fundo__minha__lista {
 		background-color: #fbfaf5;
 		border: 1px solid #f4f0e4;
@@ -120,13 +124,13 @@
 	.fundo__extrato {
 		background-color: #fbfaf5;
 		border: 1px solid #f4f0e4;
-		padding-top:15px;
-		padding-bottom: 15px;
+		padding: 20px;
 		
 	}
 
 	.caixa_mensagem_noivos {
-		text-align: right;
+		text-align: center;
+		
 	}
 
 	.caixa_mensagem_noivos a{
@@ -171,6 +175,7 @@
 	.engloba-saldo-atual {
 		display: flex;
 		
+		
 	}
 
 	.saldo-atual-left {
@@ -198,12 +203,20 @@
 	    color: #848789;
 	    transition: all 350ms ease;
 	    border: double;
-	    margin-left: 19px;
-	    margin-right: 19px;
+	    margin-left: 20px;
+	    margin-right: 20px;
 	}
 
 
 	// SECTION TABELA EXTRATO
+
+	.titulo-fdo-extrato {
+		margin-left: 20px;
+	}
+
+	.saldo-atual-extrato-total {
+		color: #9f541b;
+	}
 
 	.engloba-saldo-atual strong {
 		font-size: 20px;
@@ -240,25 +253,51 @@
 	.saldo-atual-right span {
 		font-size: 15px;
 		font-weight: bold;
-		color: #848789
+		color: #9f541b;
 	}
 
 	.saldo-atual-right .usado {
 		margin-top: 10px;
+		font-weight: bold;
+
 	}
 
+	.usado-light {
+		color:  #b8b8b8;
+		margin: 0;
+	}
 	// SECTION ULTIMOS PRESENTE RECEBIDOS
+
+	.lista-extrato {
+		margin-bottom: 30px;
+	}
+
+	.btn-ver-presentes {
+		background-color: #fbfaf5;
+	    border: 1px solid #f4f0e4;
+	    padding-top: 30px;
+	    padding-bottom: 30px;
+	    border-top: none;
+	    
+	}
+
+	.funfo-p-recebidos {
+		background-color: #fbfaf5;
+		border: 1px solid #f4f0e4;
+		padding: 20px;
+		
+	}
 		
 	.agradecimentos {
-		background-color: #fbfaf5;
-    	border: 1px solid #f4f0e4;
-    	padding-top: 20px;
-    	padding-bottom: 20px;
+		background-color: #fff;
+    	margin-bottom:40px;
+    	padding: 15px;
+    
 	}
 
 	.agradecimentos p {
 		margin: 0;
-		padding-bottom: 15px;
+		
 	}
 
 	.data-compra {
@@ -288,6 +327,14 @@
 
 	.buttons-extrato {
 		margin-top: 30px;
+	}
+
+	.botao-conver-libera {
+		padding-top: 20px;
+	}
+
+	.botao-agradecer {
+		padding-top: 20px;
 	}
 
 	//MODAL STYLES
@@ -375,19 +422,17 @@
 
 	
 
+	// SECTION PESQUISAS
 
-
-
-
-
-
-
-	// SECTION PESQUISAS 
+	.pesquisas {
+		margin-top: 30px;
+	} 
 
 	.engloba-pesquisas {
 		display: flex;
 	    align-items: stretch;
 	    padding-bottom: 25px;
+	    margin-bottom: 50px;
 	}
 
 
@@ -395,8 +440,8 @@
 		background-color: #fbfaf5;
 		border: 1px solid #f4f0e4;
 		padding: 15px 25px 15px 25px;
-		margin-top: 25px;
-		height: 100%;
+		
+		height: 400px;
 		display: flex;
 	    flex-direction: column;
 	    justify-content: space-between;
@@ -654,6 +699,13 @@
 			margin: 0;
 		}
 
+		.fundo__pesquisas #txtAge {
+			padding-top: 10px;
+		}
+
+		.painel__admin .fundo__pesquisas {
+			height: 100%;
+		}
 
 
 
@@ -902,6 +954,10 @@
 			padding-right: 0;
 		}
 
+		.painel__admin .fundo__pesquisas {
+			height: 100%;
+		}
+
 
 
 }
@@ -1147,6 +1203,10 @@
 			padding-right: 0;
 		}
 
+		.painel__admin .fundo__pesquisas {
+			height: 100%;
+		}
+
 
 
 }
@@ -1168,6 +1228,14 @@
 		margin-right: 50px;
 		margin-left: 25px;
 	}
+
+	.painel__admin .agradecimentos p {
+		font-size: 13px;
+	}
+
+	.painel__admin .fundo__pesquisas {
+			height: 450px;
+		}
 
 
 } 

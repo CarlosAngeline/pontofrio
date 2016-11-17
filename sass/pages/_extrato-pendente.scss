@@ -1,7 +1,14 @@
 .wrapper.extrato__pendente {
 
+	.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover {
+		background-color: #fbfaf5;
+	}
+	
+
+
 	.tab-content  {
 		padding: 30px;
+		background-color: #fbfaf5;
 	}
 
 	.border-table {
@@ -748,7 +755,7 @@
 		}
 
 		.dropdown-toggle {
-			width: 131px;
+			width: 180px;
 		}
 
 		.dropdown-menu.open {
