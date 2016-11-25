@@ -1,0 +1,121 @@
+// Página Cadastro Steps 01 ao 03
+
+.features-cadastro {
+	padding-top: 0;
+	margin-bottom: 80px;
+}
+
+.features-busca {
+	.form-group {
+		margin:0 2px;
+	}
+}
+
+.features-cadastro .container {
+    position: relative;
+    z-index: 2;
+	background-color:#fbfaf5;
+	padding:35px 0;
+	min-height: 450px;
+	border-radius: 4px;
+	//margin-bottom: 40px;
+	border: 1px solid #f4f0e4;
+}
+
+fieldset .table-space{
+	padding-bottom: 20px;
+}
+
+.features-cadastro {
+	.cadastro-steps{	
+		.input-group {
+			margin: 8px 0;
+		}
+
+		.help-block {
+			margin-bottom: 40px;
+		}
+	}
+	
+	.wizard-footer{
+		p{
+		color:red;
+		}
+	}
+	.btn-previous{
+		margin-right:15px;
+	}
+	.btn-next,  btn-finish{
+		margin-left:15px;
+	}
+	h4 {color:$default-color;}
+	h5 {color: #666;}
+	p{color: #666;}
+	fieldset {
+		border-bottom: 1px solid #f4f0e4;
+		padding:30px 0;
+	}
+	
+	.sucesso {
+		h4{
+		color:#5a4d67;
+		font-weight:bold;
+		}
+
+	
+	}
+	.linha {
+		width: 180px;
+		height: 1px;
+		border: 1px solid $default-color;
+		margin: 25px auto;
+	}
+	.checkbox {
+		a{
+			color: $default-color;
+			text-decoration: underline;
+		}
+	}
+	
+}
+
+//melhorar
+.upload-drop-zone {
+	
+  height: 200px;
+  border-width: 2px;
+  margin-bottom: 20px;
+  position: relative;
+    margin-bottom: 3rem;
+	span {
+		height: 20px;
+		line-height: 20px;
+		display: block;
+	}
+}
+
+/* skin.css Style*/
+.upload-drop-zone {
+  color: #ccc;
+  border-style: dashed;
+  border-color: #ccc;
+  line-height: 200px;
+  text-align: center
+}
+.upload-drop-zone.drop {
+  color: #222;
+  border-color: #222;
+}
+
+@media (max-width: $screen-xs-max) {
+	.nav-pills.nav-wizard > li .nav-wedge,
+	.nav-pills.nav-wizard > li .nav-arrow {
+	width: 80px;
+	}
+
+	.pager li {
+		
+		
+		margin-bottom: 15px;
+	}
+}

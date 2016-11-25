@@ -46,8 +46,8 @@
 		<li> <a href="#"> Planejador </a> </li>
 		<li> <a href="#"> Dados do Casamento </a> </li>
 		<li> <a href="#"> Mini-cartão </a> </li>
-		<li> <a href="#"> Save the date </a> </li>
-		<li class="active"> <a href="#"> Mensagens <span class="badge">5</span> </a> </li>
+		<li class="active"> <a href="#"> Save the date </a> </li>
+		<li> <a href="#"> Mensagens <span class="badge">5</span> </a> </li>
 	  </ul>
 	</div>
 	<!-- /.navbar-collapse --> 
@@ -58,112 +58,150 @@
 	<div class="container">	
 		<h3 class="subtitle hidden-xs">Save the Date</h3>
 	</div>
-<!-- widget content -->
-    <div class="container">
-      
-    		<div class="widget-body">
-    	        <form id="wizard-1" novalidate="novalidate">
-                    <div id="bootstrap-wizard-1">
-                        <div class="form-bootstrapWizard">
-                            <ul class="bootstrapWizard form-wizard">
-                                <li class="active" data-target="#step1">
-                                    <a href="#tab1" data-toggle="tab" class="active"> <span class="step">1</span> <span class="title">Modelo</a>
-                                </li>
-                                <li data-target="#step2">
-                                    <a href="#tab1" data-toggle="tab" class="active"> <span class="step">2</span> <span class="title">Mensagem</a>
-                                </li>
-                                <li data-target="#step3">
-                                   <a href="#tab1" data-toggle="tab" class="active"> <span class="step">3</span> <span class="title">Compartilhar</a>
-                                </li>
-                               
-                            </ul>
-                       
-                        </div>
-                      
-                    </div>
-                </form>
-
-            </div>
-         
-    </div>
-                
-
+              
 	<div class="features-models">
 		<div class="row">
 			<div class="container">	
 				<div class="engloba-noiva col-md-12">
+					<div class="widget-body">
+		    	        <form id="wizard-1" novalidate="novalidate">
+		                    <div id="bootstrap-wizard-1">
+		                        <div class="form-bootstrapWizard">
+		                            <ul class="bootstrapWizard form-wizard">
+		                                <li class="active" data-target="#step1">
+		                                    <a href="#tab1" data-toggle="tab" class="active"> <span class="step">1</span> <span class="title">Modelo</a>
+		                                </li>
+		                                <li data-target="#step2">
+		                                    <a href="#tab1" data-toggle="tab" class="active"> <span class="step">2</span> <span class="title">Mensagem</a>
+		                                </li>
+		                                <li data-target="#step3">
+		                                   <a href="#tab1" data-toggle="tab" class="active"> <span class="step">3</span> <span class="title">Compartilhar</a>
+		                                </li>
+		                               
+		                            </ul>
+		                       
+		                        </div>
+		                      
+		                    </div>
+		                </form>
+
+		            </div>
+
+
 					<h5>Modelo</h5>
 					  <p>Escolha o modelo de sua mensagem</p>
-			<!-- MODELO MSG 1--> 					
-					<div class="col-md-4 col-sm-6">
+					<!-- MODELO MSG 1--> 					
+					<div class="col-md-3 col-sm-6">
 						
-						<div class="tag right"><span><i class="fa fa-search-plus" aria-hidden="true"></i></span></div>
-						<div class="tag right checked" id="escolhido" style="display: none;"><span><i class="fa fa-check-circle-o" aria-hidden="true"></i></span></div>
+						<div class="tag right"><i class="fa fa-arrows-alt" aria-hidden="true"></i></div>
+						<div class="tag right checked" id="escolhido1" style="display: none;"><span></div>
 						<div class="item">
 
-						<a title="Image 1" href="#"><img class="thumbnail img-responsive" src="http://placehold.it/507x271"></a>
+						<a title="Image 1" href="#"><img class="modelo-msg img-responsive" src="http://placehold.it/190x190"></a>
+											
+						</div>
+						<button type="button" id="js-quero-este" class="btn btn-default center-block" data-dismiss="modal">Quero este</button>
+						<button type="button" id="card-escolhido" class="btn btn-md btn-primary btn-add-cart center-block center-block" data-dismiss="modal">Escolhido</button>
+
 						
-
-						</div> 
-
 					</div>
-			<!-- MODELO MSG 2--> 
-					<div class="col-md-4 col-sm-6">
+					<!-- MODELO MSG 2--> 
+					<div class="col-md-3 col-sm-6">
 						
-						<div class="tag right"><span><i class="fa fa-search-plus" aria-hidden="true"></i></span></div>
-						<div class="tag right checked" id="escolhido2" style="display: none;"><span><i class="fa fa-check-circle-o" aria-hidden="true"></i></span></div>
+						<div class="tag right"></div>
+						<div class="tag right checked" id="escolhido2" style="display: none;"><span></div>
 						<div class="item">
-
-						<a title="Image 2" href="#"><img class="thumbnail img-responsive" src="http://placehold.it/507x271"></a>
-					
+						<a title="Image 2" href="#"><img class="modelo-msg img-responsive" src="http://placehold.it/190x190"></a>
 						</div> 
-					</div>
-			<!-- MODELO MSG 3-->
-					<div class="col-md-4 col-sm-6">
+						<button type="button" id="js-quero-este" class="btn btn-default center-block" data-dismiss="modal">Quero este</button>
+						<button type="button" id="card-escolhido" class="btn btn-md btn-primary btn-add-cart center-block center-block" data-dismiss="modal">Escolhido</button>
+						</div>
+					<!-- MODELO MSG 3-->
+					<div class="col-md-3 col-sm-6">
 						
-						<div class="tag right"><span><i class="fa fa-search-plus" aria-hidden="true"></i></span></div>
+						<div class="tag right"></div>
 						<div class="tag right checked" id="escolhido3" style="display: none;"><span><i class="fa fa-check-circle-o" aria-hidden="true"></i></span></div>
 						<div class="item">
 
-						<a title="Image 3" href="#"><img class="thumbnail img-responsive" src="http://placehold.it/507x271"></a>
+						<a title="Image 3" href="#"><img class="modelo-msg img-responsive" src="http://placehold.it/190x190"></a>
 						
-						</div> 
-					</div>
-			<!-- MODELO MSG 4-->
-					<div class="col-md-4 col-sm-6">
+						</div>
+						<button type="button" id="js-quero-este" class="btn btn-default center-block" data-dismiss="modal">Quero este</button>
+						<button type="button" id="card-escolhido" class="btn btn-md btn-primary btn-add-cart center-block center-block" data-dismiss="modal">Escolhido</button> 
+						</div>
+					<!-- MODELO MSG 4-->
+					<div class="col-md-3 col-sm-6">
 						
-						<div class="tag right"><span><i class="fa fa-search-plus" aria-hidden="true"></i></span></div>
-						<div class="tag right checked" id="escolhido4" style="display: none;"><span><i class="fa fa-check-circle-o" aria-hidden="true"></i></span></div>
+						<div class="tag right"></div>
+						<div class="tag right checked" id="escolhido4" style="display: none;"><span></div>
 						<div class="item">
 
-						<a title="Image 4" href="#"><img class="thumbnail img-responsive" src="http://placehold.it/507x271"></a>
-						</div> 
-					</div>
-			<!-- MODELO MSG 5-->		
-					<div class="col-md-4 col-sm-6">
+						<a title="Image 4" href="#"><img class="modelo-msg img-responsive" src="http://placehold.it/190x190"></a>
 						
-						<div class="tag right"><span><i class="fa fa-search-plus" aria-hidden="true"></i></span></div>
+						</div>
+						<button type="button" id="js-quero-este" class="btn btn-default center-block" data-dismiss="modal">Quero este</button>
+						<button type="button" id="card-escolhido" class="btn btn-md btn-primary btn-add-cart center-block center-block" data-dismiss="modal">Escolhido</button> 
+						</div>
+					<!-- MODELO MSG 5-->		
+					<div class="col-md-3 col-sm-6">
+						
+						<div class="tag right"></div>
 						<div class="tag right checked" id="escolhido5" style="display: none;"><span><i class="fa fa-check-circle-o" aria-hidden="true"></i></span></div>
 						<div class="item">
 
-						<a title="Image 5" href="#"><img class="thumbnail img-responsive" src="http://placehold.it/507x271"></a>
-						</div> 
-					</div>
-			<!-- MODELO MSG 6-->		
-					<div class="col-md-4 col-sm-6">
+						<a title="Image 5" href="#"><img class="modelo-msg img-responsive" src="http://placehold.it/190x190"></a>
 						
-						<div class="tag right"><span><i class="fa fa-search-plus" aria-hidden="true"></i></span></div>
+						</div> 
+						<button type="button" id="js-quero-este" class="btn btn-default center-block" data-dismiss="modal">Quero este</button>
+						<button type="button" id="card-escolhido" class="btn btn-md btn-primary btn-add-cart center-block center-block" data-dismiss="modal">Escolhido</button>
+					</div>
+					<!-- MODELO MSG 6-->		
+					<div class="col-md-3 col-sm-6">
+						
+						<div class="tag right"></div>
 						<div class="tag right checked" id="escolhido6" style="display: none;"><span><i class="fa fa-check-circle-o" aria-hidden="true"></i></span></div>
 						<div class="item">
 
-						<a title="Image 6" href="#"><img class="thumbnail img-responsive" src="http://placehold.it/507x271"></a>
+						<a title="Image 6" href="#"><img class="modelo-msg img-responsive" src="http://placehold.it/190x190"></a>
+						
 						</div> 
+						<button type="button" id="js-quero-este" class="btn btn-default center-block" data-dismiss="modal">Quero este</button>
+						<button type="button" id="card-escolhido" class="btn btn-md btn-primary btn-add-cart center-block center-block" data-dismiss="modal">Escolhido</button>
+					</div>
+
+					<!-- MODELO MSG 7-->		
+					<div class="col-md-3 col-sm-6">
+						
+						<div class="tag right"></div>
+						<div class="tag right checked" id="escolhido7" style="display: none;"><span><i class="fa fa-check-circle-o" aria-hidden="true"></i></span></div>
+						<div class="item">
+
+						<a title="Image 7" href="#"><img class="modelo-msg img-responsive" src="http://placehold.it/190x190"></a>
+						
+						</div>
+						<button type="button" id="js-quero-este" class="btn btn-default center-block" data-dismiss="modal">Quero este</button> 
+						<button type="button" id="card-escolhido" class="btn btn-md btn-primary btn-add-cart center-block center-block" data-dismiss="modal">Escolhido</button>
+					</div>
+
+					<!-- MODELO MSG 8-->		
+					<div class="col-md-3 col-sm-6">
+						
+						<div class="tag right"></div>
+						<div class="tag right checked" id="escolhido8" style="display: none;"><span><i class="fa fa-check-circle-o" aria-hidden="true"></i></span></div>
+						<div class="item">
+
+						<a title="Image 8" href="#"><img class="modelo-msg img-responsive" src="http://placehold.it/190x190"></a>
+						
+						</div> 
+						<button type="button" id="js-quero-este" class="btn btn-default center-block" data-dismiss="modal">Quero este</button>
+						<button type="button" id="card-escolhido" class="btn btn-md btn-primary btn-add-cart center-block center-block" data-dismiss="modal">Escolhido</button>
+
 					</div>
 
 				</div>
 			</div>
 			<div class="imprimir-compra-cartao col-md-12">
-				<button class="btn btn-md btn-primary btn-add-cart center-block"><strong>Escrever Mensagem</strong></button>
+				<button class="btn btn-md btn-primary btn-add-cart center-block"><strong>Escrever Mensagem ></strong></button>
 				
 			   
 			</div>
@@ -174,24 +212,21 @@
 <!-- MMODAL RESPOSTA LIGHTBOX-->
 
 <div class="modelos-modal">
-<div tabindex="-1" class="modal fade" id="myModal" role="dialog">
-	<div class="modal-dialog">
-	    <div class="modal-content img-responsive">
-		    <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h2 class="modal-title" style="color: #fff;"></h2>
-            </div>
-		<div class="modal-body"> 
+	<div tabindex="-1" class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog">
+		    <div class="modal-content img-responsive">
+			    <div class="modal-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	                <h2 class="modal-title" style="color: #fff;"></h2>
+	            </div>
+			<div class="modal-body"> 
 
-			
-		</div>
+				
+			</div>
 		
-		<div class="modal-footer">
-			<button type="button" id="js-quero-este" class="btn btn-md btn-primary btn-add-cart center-block" data-dismiss="modal">Quero este</button>
+		    </div>
 		</div>
-	    </div>
 	</div>
-</div>
 </div>
 
 
@@ -241,7 +276,7 @@ $(function(){
 window.selectedItem = null;
 
 $(document).ready(function() {
-	$('.thumbnail').click(function(e){
+	$('.modelo-msg').click(function(e){
 		e.preventDefault();
 
 		window.selectedItem = $(this).parents('.item').siblings('.checked').get(0);

@@ -24,46 +24,26 @@
 	.thumbnail img-responsive {width: 10%;}
 
 	.tag {
-	    top: 5px;
-	    left: 290px;
+	    top: 16px;
+	    left: 192px;
 	    z-index: 200;
 	    position: absolute;
-	    border-radius: 100%;
-	    width: 45px;
-	    height: 45px;
+	    width: 27px;
+	    height: 27px;
 	    color: #FFFFFF;
-	    font-weight: bold;
 	    margin: 12px;
-	    line-height: 45px;
+	    line-height: 34px;
 	    text-align: center;
+	    background: #fff;
 	   
 	}
 
-	.fa-search-plus:before {
-		font-size: 35px;
+	.fa-arrows-alt {
+		font-size: 22px;
 		color: #777;
 	}
 
-	.checked {
-		top: 58px;
-	    left: 134px;
-	    z-index: 200;
-	    position: absolute;
-	    border-radius: 100%;
-	    width: 45px;
-	    height: 45px;
-	    color: #FFFFFF;
-	    font-weight: bold;
-	    margin: 12px;
-	    line-height: 45px;
-	    text-align: center;
-
-	}
-
-	.fa-check-circle-o:before {
-		font-size: 70px;
-		color: #777;
-	}
+	
 
 	.bootstrapWizard {
     display: block;

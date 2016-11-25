@@ -1,9 +1,39 @@
 .wrapper.extrato__pendente {
 
+	
 	.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover {
 		background-color: #fbfaf5;
+		color: #c99252;
+		border-color: #f4f0e4;
+    	border-bottom: 1px solid #fbfaf5;
+	}
+
+	.nav-tabs > li > a {
+		padding: 15px 20px;
+		font-size: 13px;
+		border: 1px solid #f4f0e4;
+		border-bottom: 1px solid #fbfaf5;
+	}
+
+	.nav-tabs {
+		border-color: #f4f0e4;
+	}
+
+	.nav-tabs > li {
+		text-align: center;
 	}
 	
+	.title-tabs {
+		font-weight: bold;
+		font-size: 14px;
+		display: inline-block;
+   		margin-bottom: 9px;
+
+	}
+
+	.tot-pres-rec {
+		color: #848789;
+	}
 
 
 	.tab-content  {
@@ -11,8 +41,31 @@
 		background-color: #fbfaf5;
 	}
 
-	.border-table {
-		
+	.tag {
+		top: -25px;
+	    left: 83px;
+	    z-index: 200;
+	    position: absolute;
+	    width: 27px;
+	    height: 27px;
+	    color: #fff;
+	    margin: 12px;
+	    line-height: 28px;
+	    text-align: center;
+	    background: #adb8c5;
+	    border-radius: 100%;
+	}
+
+	.price-tabs{
+	 	font-size: 16px;
+	}
+
+	.tag.two-tag {
+		left: 161px;
+	}
+
+	.tag.three-tag {
+		left: 146px;
 	}
 
 	.bootstrap-select {
@@ -20,15 +73,33 @@
 	}
 
 	.agradecimentos {
-		background-color: #fbfaf5;
-    	border: 1px solid #f4f0e4;
-    	padding-top: 20px;
-    	padding-bottom: 20px;
+		background-color: #fff;
+    	padding: 20px 16px;
+    	margin-bottom:20px;
 	}
 
 	.agradecimentos p {
 		margin: 0;
-		padding-bottom: 15px;
+		font-size: 14px;
+		
+	}
+
+	.link-msg {
+		color: #c99252;
+	}
+
+	.botao-conver-libera {
+		padding-bottom: 20px;
+	}
+
+	.botao-agradecer {
+		padding-top: 20px;
+	}
+
+	.funfo-p-recebidos {
+		border-bottom: 1px solid #f4f0e4;
+		padding-top: 20px;
+		padding-bottom: 40px;
 	}
 
 	.data-compra {
@@ -38,8 +109,20 @@
 
 	.nome-produto{
 		display: flex;
-		padding-top: 20px;
+		padding-bottom: 20px;
 
+	}
+
+	.data-compra {
+		margin: 0;
+    	color: #c99252;
+    	font-weight: bold;
+	}
+
+	.nome-comprador {
+		font-weight: bold;
+		margin: 0;
+		padding-bottom: 15px;
 	}
 
 
@@ -54,6 +137,18 @@
 
 	.preco {
 		margin: 0;
+		color: #9f541b;
+		font-size: 16px !important;
+		padding-top: 13px;
+	}
+
+	.qtd-unidade {
+		font-size: 12px;
+		color: #adb8c5;
+	}
+
+	.title-product {
+
 	}
 
 	.btn-tab-extratos {
@@ -151,7 +246,8 @@
 	}
 
 	.buttons-extrato {
-		padding-bottom: 20px;
+		padding-top: 20px;
+		padding-bottom: 15px;
 
 	}
 
@@ -205,10 +301,10 @@
 	}
 
 	.bootstrapWizard li .step i {
-	    font-size: 10px;
+	    font-size: 19px;
 	    font-weight: 400;
 	    position: relative;
-	    top: -1.5px
+	    top: -0.5px
 	}
 
 	.bootstrapWizard li .step {
@@ -229,13 +325,13 @@
 	}
 
 	.bootstrapWizard li.active .step,.bootstrapWizard li.active.complete .step {
-	    background: #0091d9;
+	    background: #c99252;
 	    color: #fff;
 	    font-weight: 700;
-	    padding: 7px 13px;
+	    padding: 7px;
 	    font-size: 15px;
 	    border-radius: 50%;
-	    border: 3px solid #55606E
+	    border: 3px solid #c99252;
 	}
 
 	.bootstrapWizard li.complete .title,.bootstrapWizard li.active .title {
@@ -297,13 +393,7 @@
 
 	// tabela credito
 
-	.fundo__extrato {
-		background-color: #fbfaf5;
-		border: 1px solid #f4f0e4;
-		padding-top:15px;
-		
-		
-	}
+	
 
 	// SECTION SALDO ATUAL
 
@@ -322,6 +412,31 @@
 
 	.saldo-interno p {
 		margin: 0;
+	}
+
+	.recebido {
+		color: #9f541b;
+	}
+
+	.total-recebido {
+		color: #9f541b;
+		margin: 0;
+		font-size: 30px;
+	}
+
+	.sub-total{
+		color: #666;
+	}
+
+	.icon-dolar {
+		margin-right: 17px;
+	}
+
+	.fa-chevron-down {
+		font-size: 20px;
+		color: #adb8c5;
+		position: relative;
+		top: 18px;
 	}
 
 	.saldo-atual-left {
@@ -349,6 +464,7 @@
 
 	.engloba-saldo-atual strong {
 		font-size: 17px;
+		color: #adb8c5;
 	}
 
 	.saldo-atual-right {
@@ -464,6 +580,33 @@
 	}
 
 
+	.status-entrega {
+		display: flex;
+		align-items: center;
+		padding-top: 20px;
+		border-top: 1px solid #f4f0e4;
+	}
+
+	.previsao-entrega {
+		margin-right: 34px;
+   		margin-left: 16px;
+	}
+
+	.previsao-entrega strong {
+		color: #e02b3c;
+	}
+
+	.previsao-entrega span {
+		color: #a9adb9;
+	}
+
+	
+	.endereco-entrega .endereco {
+		margin: 0;
+		color: #a9aebb;
+	}
+
+
 
 	@media only screen and (max-width :320px) {
 	
@@ -504,6 +647,8 @@
 		.nav-tabs > li > a {
 			padding: 9px 8px;
 			font-size: 13px;
+			border: 1px solid #f4f0e4;
+			border-bottom: 1px solid #fbfaf5;
 		}
 
 		[class*="features-"] .container {
@@ -617,8 +762,10 @@
 		}
 
 		.nav-tabs > li > a {
-			padding: 9px 21px;
+			padding: 9px 8px;
 			font-size: 13px;
+			border: 1px solid #f4f0e4;
+			border-bottom: 1px solid #fbfaf5;
 		}
 
 		[class*="features-"] .container {
@@ -732,7 +879,9 @@
 
 		.nav-tabs > li > a {
 			padding: 9px 8px;
-			font-size: 14px;
+			font-size: 13px;
+			border: 1px solid #f4f0e4;
+			border-bottom: 1px solid #fbfaf5;
 		}
 
 		[class*="features-"] .container {
