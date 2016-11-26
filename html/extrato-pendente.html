@@ -57,19 +57,19 @@
 <div class="wrapper extrato__pendente">
 	<div class="container border-table">	
 		
-
+	<div class="col-md-12">	
 		<div class="page-heading">
 			<div class="row">
 				<div class="container">
 					<h1 class="entry-title hidden-xs"><span>Presentes recebidos e Extratos</span></h1>
 					<h1 class="entry-title hidden-lg"><span>Extrato</span></h1>
-					<h6><span class="tot-pres-rec">14 presentes recebidos</span></h6>
+					<h6><span class="tot-pres-rec hidden-xs">14 presentes recebidos</span></h6>
 				</div>
 			</div>
 		</div>
 		
-			
-			<div class="col-md-4 col-sm-5 hidden-xs">
+	</div>		
+			<div class="col-md-12 col-sm-5 hidden-xs">
 				<div class="fundo__extrato">
 					<div class="engloba-saldo-atual">
 						<div class="saldo-interno">
@@ -133,19 +133,21 @@
 	
 		<div class="saldo-atual-mobile hidden-md hidden-lg hidden-sm">
 	
-			<div class="icon-dolar fa-area-3">
-				<i class="fa fa-usd" aria-hidden="true"></i>
-			</div>
+			
+				<div class="icon-dolar">
+					<img src="images/dolar.gif">
+				</div>
+			
 			<div class="precos">
 				<p><strong>Saldo Atual</strong></p>
-				<p><strong>R$ 25.000,00</strong>de: R$ 35.500,00</p>
+				<p><strong><span class="total-recebido-mobile">R$ 25.000,00</span><span class="total-credito-mobile"></strong>de: R$ 35.500,00</span></p>
 			</div>
 
 					<div class="btn-group">
 						
 
 						<div class="dropdown">
-						  <button type="button" class="btn btn-danger dropdown-toggle seta-baixa" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-caret-down" aria-hidden="true"></i>
+						  <button type="button" class="btn btn-danger dropdown-toggle seta-baixa" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-chevron-down" aria-hidden="true"></i>
 						</button>
 
 						  	<div class="dropdown-content limite-credito">
@@ -179,9 +181,11 @@
 						</div>
 					</div><!--end btn -->
 
+
 		</div>
-		
-	
+		<div class="rec-mobile">
+			<h6><span class="tot-pres-rec-mobile hidden-md hidden-lg hidden-sm">8 presentes recebidos</span></h6>
+		</div>
 	</div>
 	
 <div class="features-extrato">
@@ -198,7 +202,8 @@
 				</li>
 				<li>
 					<div class="tag right three-tag">106</div>
-					<a href="#3" data-toggle="tab"><span class="title-tabs">Convertidos em vale</span><br><span class="price-tabs"> R$ 32.500,00</span></a>
+					<a class="hidden-xs" href="#3" data-toggle="tab"><span class="title-tabs">Convertidos em Vale</span><br><span class="price-tabs"> R$ 32.500,00</span></a>
+					<a class="hidden-sm hidden-lg" href="#3" data-toggle="tab"><span class="title-tabs">Vale</span><br><span class="price-tabs"> R$ 32.500,00</span></a>
 				</li>
 
 				
@@ -237,18 +242,24 @@
 					</div>
 
 				<div class="row"><!--INICIO DOS  ITENS DENTRO DA TABELA -->
-					<div class="col-md-4 col-sm-4">
+					<div class="col-md-4">
 						<div class="agradecimentos">
 							
 							
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...<a class="link-msg" href="#">(ver mais)</a></p>
-							<div class="botao-agradecer">
-								<button data-toggle="modal" href="#myModal" class="btn btn-default">Agradecer</button>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...<a class="link-msg" href="javascript:abreFecha('#mais-msg')">(ver mais)</a></p>
+
+							<p id="mais-msg">ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...</p>
+							
+
+							<div class="botao-agradecer ">
+								<img src="images/ic-respondida.gif"><a class="link-respondida"  data-toggle="modal" href="#myModa4">Respondida</a>
+								
 							</div>
 						</div>
 					</div>
 					<div class="col-md-8">
 						<div class="agradecimentos">
+							<p class="nome-comprador hidden-lg">Itens comprados</p>
 							<div class="row">
 								<div class="col-md-6">
 									<div class="nome-produto">
@@ -293,9 +304,67 @@
 							</div>
 					</div><!-- end col -->
 				</div><!--row -->
-			</div>	<!--FIM DOS  ITENS DENTRO DA TABELA -->
+			</div>	<!--FIM ENGLOBA ITENS-->
 
 		<!--INICIO DOS  ITENS DENTRO DA div NO CASO DE DUPLICAR -->
+
+			<!-- ENGLOBA ITENS -->	
+			<div class="funfo-p-recebidos">	
+					<div class="row">
+						<div class="col-md-12">
+							<p class="data-compra">20/09/16</p>
+							<p class="nome-comprador">Carlos Eduardo</p>
+						</div>
+					</div>
+
+				<div class="row"><!--INICIO DOS  ITENS DENTRO DA TABELA -->
+					<div class="col-md-4">
+						<div class="agradecimentos">
+							
+							
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...<a class="link-msg" href="#">(ver mais)</a></p>
+							<div class="botao-agradecer">
+								<button data-toggle="modal" href="#myModal" class="btn btn-default">Agradecer</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-8">
+						<div class="agradecimentos">
+							<p class="nome-comprador hidden-lg">Itens comprados</p>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="nome-produto">
+										<div class="thumb-extrato">
+											<a href="#"><img class="thumb" src="http://placehold.it/60pxx60px" alt="..."></a>
+										</div>
+									
+										<div class="titulo-products">
+											<a class="title-product" href="#">Smart TV LED Curved 55" Ultra HD 4K Samsung55JU6700 com UHD Upscaling, Quad Core, Wi-Fi, Entradas HDMI e USB</a><br>
+											<p class="preco">R$ 750,00</p>
+							       		<span class="qtd-unidade">2 unidades</span>
+										</div>
+									</div>
+								</div>
+								
+								<!--PARA DUPLICAR COLE AQUI -->
+
+
+								<!--END DUPLICAR -->
+							</div><!-- row -->
+							
+						</div><!--agradecimentos -->
+							<div class="row">
+								<div class="col-md-12">
+									<div class="botao-conver-libera">
+										<button data-toggle="modal" href="#myModal2" class="btn btn-md btn-primary btn-tab-extratos">Converter em vale compras</button>
+										<button data-toggle="modal" href="#myModal3" class="btn btn-md btn-primary btn-tab-extratos">Liberar para entrega</button>
+									</div>
+								</div>
+							</div>
+					</div><!-- end col -->
+				</div><!--row -->
+			</div>	<!--FIM ENGLOBA ITENS-->
+
 
 		
 		<!--FIM DOS  ITENS DENTRO DA TABELA -->
@@ -325,19 +394,24 @@
 			<div class="row"><!--INICIO DOS  ITENS DENTRO DA TABELA -->
 				
 					
-				<div class="col-md-4 col-sm-4">
+				<div class="col-md-4">
 					<div class="agradecimentos">
 						
 						
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...(mais)</p>
-						<div class="botao-agradecer">
-							<button data-toggle="modal" href="#myModa4" class="btn btn-default">Respondida</button>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...<a class="link-msg" href="#">(ver mais)</a></p>
+						
+						<div class="botao-agradecer ">
+							<img src="images/ic-respondida.gif"><a class="link-respondida"  data-toggle="modal" href="#myModa4">Respondida</a>
+							
 						</div>
+
+						
 					</div>
 				</div>
 		<div class="col-md-8">
 
 			<div class="agradecimentos">
+				<p class="nome-comprador hidden-lg">Itens comprados</p>
 				<div class="row">
 					<div class="col-md-6">
 						<div class="nome-produto">
@@ -449,19 +523,20 @@
 			<div class="row"><!--INICIO DOS  ITENS DENTRO DA TABELA -->
 				
 					
-				<div class="col-md-4 col-sm-4">
+				<div class="col-md-4">
 					<div class="agradecimentos">
 						
 						
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...(mais)</p>
-						<div class="botao-agradecer">
-							<button data-toggle="modal" href="#myModa4" class="btn btn-default">Respondida</button>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...<a class="link-msg" href="#">(ver mais)</a></p>
+						<div class="botao-agradecer ">
+							<img src="images/ic-respondida.gif"><a class="link-respondida"  data-toggle="modal" href="#myModa4">Respondida</a>
 						</div>
 					</div>
 				</div>
 		<div class="col-md-8">
 
 			<div class="agradecimentos">
+				<p class="nome-comprador hidden-lg">Itens comprados</p>
 				<div class="row">
 					<div class="col-md-6">
 						<div class="nome-produto">
@@ -499,7 +574,7 @@
 						<div class="status-entrega">
 							<div class="buttons-extrato"><img src="images/icon-entrega.gif"></div>
 							<div class="previsao-entrega"><strong>Em entrega</strong></br><span>Previsão 14/09/16</span> </div>
-							<div><a class="" data-toggle="collapse" href="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">Status do Pedido <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+							<div><a class="" data-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">Status do Pedido <i class="fa fa-angle-down" aria-hidden="true"></i></a>
 							</div>
 						</div>
 					</div>
@@ -507,7 +582,7 @@
 
 				<div class="row">
 					<div class="col-md-12">
-						<div class="collapse" id="collapseExample2">
+						<div class="collapse" id="collapseExample3">
 		        		<!-- widget div-->
 			            <div role="content">
 			                <!-- widget content -->
@@ -590,19 +665,20 @@
 		<div class="row"><!--INICIO DOS  ITENS DENTRO DA TABELA -->
 			
 				
-			<div class="col-md-4 col-sm-4">
+			<div class="col-md-4">
 				<div class="agradecimentos">
 					
 					
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...(mais)</p>
-					<div class="botao-agradecer">
-						<button data-toggle="modal" href="#myModal" class="btn btn-default">Agradecer</button>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...<a class="link-msg" href="#">(ver mais)</a></p>
+					<div class="botao-agradecer ">
+						<img src="images/ic-respondida.gif"><a class="link-respondida"  data-toggle="modal" href="#myModa4">Respondida</a>
 					</div>
 				</div>
 			</div>
 		<div class="col-md-8">
 
 			<div class="agradecimentos">
+				<p class="nome-comprador hidden-lg">Itens comprados</p>
 				<div class="row">
 					<div class="col-md-6">
 						<div class="nome-produto">
@@ -644,12 +720,21 @@
 						</div>
 					</div>
 				</div><!-- row -->
+				
 				<div class="row">
 					<div class="col-md-12">
-						<div class="buttons-extrato"><p class="dolar"><img src="images/vale.png"  width="40x40"><strong>Vale Compra</strong> convertido dia:<span> 14/09/2016</p>
+						<div class="status-entrega">
+							<div class="buttons-extrato"><img src="images/ic-carrinho.gif"></div>
+							<div class="previsao-entrega"><strong>Vale Compras</strong></br><span>Convertido 14/09/16</span> </div>
+							
+							<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Loja on-line">
+							 <a href="#"> Marktplace<i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+							</button>
 						</div>
 					</div>
 				</div>
+
+					
 				
 
 			</div><!--agradecimentos -->
@@ -1003,6 +1088,19 @@ $(function(){
 });
 
 
+</script>
+
+<script>
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+
+<script>
+	function abreFecha(sel) {
+	  $(sel).slideToggle();
+	}
 </script>
 
 

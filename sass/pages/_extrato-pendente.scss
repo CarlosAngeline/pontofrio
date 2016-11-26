@@ -1,5 +1,9 @@
 .wrapper.extrato__pendente {
-
+	
+	.fundo__extrato {
+		display: flex;
+		justify-content: flex-end;
+	}
 	
 	.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover {
 		background-color: #fbfaf5;
@@ -35,6 +39,16 @@
 		color: #848789;
 	}
 
+	.link-respondida {
+		font-size: 14px;
+	    font-weight: bold;
+	    color: #c99252;
+	}
+
+	.botao-agradecer img {
+		margin-right: 10px;
+	}
+
 
 	.tab-content  {
 		padding: 30px;
@@ -62,6 +76,7 @@
 
 	.tag.two-tag {
 		left: 161px;
+		background-color: #5a4d67;
 	}
 
 	.tag.three-tag {
@@ -86,6 +101,10 @@
 
 	.link-msg {
 		color: #c99252;
+	}
+
+	#mais-msg {
+	  display: none;
 	}
 
 	.botao-conver-libera {
@@ -609,7 +628,10 @@
 
 
 	@media only screen and (max-width :320px) {
-	
+		.nav{
+			margin-left:2px!important;
+		}
+		
 		.tab-content {
 			padding:20px;
 		}
@@ -727,6 +749,9 @@
 
 	@media only screen and (max-width :375px) {
 
+		.nav{
+			margin-left:25px;
+		}
 		.tab-content {
 			padding:20px;
 		}
@@ -766,6 +791,21 @@
 			font-size: 13px;
 			border: 1px solid #f4f0e4;
 			border-bottom: 1px solid #fbfaf5;
+			margin-right: 2px;
+		}
+
+		.tag {
+			top: -32px;
+    		left: 25px;
+		}
+
+		.tag.two-tag {
+			left: 26px;
+    		background-color: #5a4d67;
+		}
+
+		.tag.three-tag {
+			left: 32px;
 		}
 
 		[class*="features-"] .container {
@@ -843,14 +883,40 @@
 
 	@media only screen and (max-width :414px) {
 
+		.nav{
+			margin-left:25px;
+		}
+
+		.tag {
+			top: -29px;
+    		left: 22px;
+		}
+
+		.tag.two-tag {
+			left: 28px;
+		}
+
+		.tag.three-tag {
+			left: 33px;
+		}
+
 		.tab-content {
 			padding:20px;
+		}
+
+		.page-heading .entry-title {
+			margin-top: 0;
+			margin-bottom: 18px;
 		}
 
 		.saldo-atual-mobile {
 			display: flex;
 		    align-items: center;
 		    padding-bottom: 15px;
+		    padding-top: 15px;
+		    border-bottom: 1px solid #f4f0e4;
+		    border-top: 1px solid #f4f0e4;
+		    margin-bottom: 28px;
 		   
 		}
 
@@ -858,6 +924,22 @@
 			margin-top: 0;
 			margin-bottom: 0;
 			font-size: 13px;
+		}
+
+		.saldo-atual-mobile strong {
+			color: #b8b8b8;
+			font-size: 14px;
+		}
+
+		.total-recebido-mobile {
+			font-size: 16px;
+			color: #9f541b;
+			margin-right: 10px;
+		}
+
+		.total-credito-mobile {
+			font-size: 14px;
+			color: #666;
 		}
 
 		.fa-area-3 {
@@ -904,11 +986,23 @@
 		}
 
 		.dropdown-toggle {
-			width: 180px;
+			width: 138px;
+		}
+
+		.fa-chevron-down {
+			top: -2px;
+		}
+
+		.tot-pres-rec-mobile {
+			color: #848789;
+		}
+
+		.rec-mobile {
+			margin-bottom: 28px;
 		}
 
 		.dropdown-menu.open {
-			left: -79px;
+			left: -61px;
 		}
 
 		.agradecimentos p{
