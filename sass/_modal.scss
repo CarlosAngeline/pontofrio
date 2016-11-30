@@ -27,10 +27,15 @@ button.close {
     filter: alpha(opacity=20);
 }
 
+.modal {
+    z-index: 9999 !important;
+}
+
 .modal-content {
     border: 0 none;
     border-radius: 4px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.15), 0 0 1px 1px rgba(0, 0, 0, 0.1);
+    
 }
 .modal-dialog {
     padding-top: 60px;

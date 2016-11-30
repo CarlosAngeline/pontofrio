@@ -21,6 +21,8 @@
 
 	.nav-tabs {
 		border-color: #f4f0e4;
+		position: relative;
+    	z-index: 2000;
 	}
 
 	.nav-tabs > li {
@@ -53,6 +55,12 @@
 	.tab-content  {
 		padding: 30px;
 		background-color: #fbfaf5;
+		margin-left: calc( -1 * (( 100vw - 100% ) / 2 ));
+	    margin-right: calc( -1 * (( 100vw - 100% ) / 2 ));
+	    padding-left: calc( (( 100vw - 100% ) / 2 ));
+	    padding-right: calc( (( 100vw - 100% ) / 2 ));
+	    border-top: 1px solid #f4f0e4;
+	    margin-top: -1px;
 	}
 
 	.tag {
@@ -70,13 +78,17 @@
 	    border-radius: 100%;
 	}
 
+	li.active .tag {
+		background-color: #5a4d67;
+	}
+
 	.price-tabs{
 	 	font-size: 16px;
 	}
 
 	.tag.two-tag {
 		left: 161px;
-		background-color: #5a4d67;
+		background-color: #adb8c5;
 	}
 
 	.tag.three-tag {
@@ -116,9 +128,12 @@
 	}
 
 	.funfo-p-recebidos {
-		border-bottom: 1px solid #f4f0e4;
 		padding-top: 20px;
 		padding-bottom: 40px;
+	}
+
+	.linha-separadora {
+		border-bottom: 1px solid #f4f0e4;
 	}
 
 	.data-compra {
@@ -148,10 +163,12 @@
 
 	.thumb {
 		margin-right: 15px;
+	
 	}
 
 	.titulo-products {
-		margin-right: 15px;
+	
+		 
 	}
 
 	.preco {
@@ -166,27 +183,58 @@
 		color: #adb8c5;
 	}
 
-	.title-product {
-
-	}
-
-	.btn-tab-extratos {
-		
-
-	}
-
-	.engloba-itens {
-		margin-top:100px;
-
-		
-		
-	}
-
 	.filtro {
 		border-bottom: 0;
 	}
 
+	.condicoes {
+		font-size: 12px;
+	}
+
+	.condicoes2 {
+		font-size: 12px;
+		margin-top: 20px;
+		text-align: left;
+	}
+
+// TALL MODAL 835PX
+
+	.modal.modal-wide .modal-dialog {
+	  width: 75%;
+	}
+	.modal-wide .modal-body {
+	  overflow-y: auto;
+	  max-height:none!important;
+	}
+
+	/* irrelevant styling */
+	body { text-align: center; }
+	body p { 
+	  max-width: auto; 
+	  margin: 20px auto; 
+	}
+	
+
+	
+
+	.subtitle-modal {
+		color: #c99252;
+		font-size: 16px;
+	}
+
+	.autor-email {
+		padding-bottom: 15px;
+	}
+
+
+
 //MODAL STYLES
+
+	.modal-body span{
+		color:#a9adb9;
+		font-size: 12px
+	}
+
 
 	.modal-title {
 		color: #fff;
@@ -230,11 +278,13 @@
 		border-top: 1px solid #e4ebf1;
 		padding-top: 30px;
 		padding-bottom: 30px;
+		align-items: center;
 	}
 
 	.termos-condicoes {
 		padding-top: 20px;
 		padding-bottom: 20px;
+		text-align: center;
 	}
 
 	.condicoes-juridicas {
@@ -410,6 +460,62 @@
 	}
 
 
+	//MODAL TALL
+
+	.info-qtd >.preco {
+		padding: 0;
+		margin-left: 22px;
+		margin-right: 11px;
+
+	}
+
+	.data-prazo .preco {
+		padding-top: 0;
+	}
+
+	.data-prazo {
+		text-align: left;
+		width: 200px;
+		
+	}
+
+	.info-qtd {
+		display: flex;
+		margin-top: 12px;
+	}
+	.btn-confirmar {
+		text-align: center;
+	}
+
+	.thumb-carrinho {
+		margin-left: 10px;
+	}
+
+	.titulo-products-carrinho {
+		text-align: right;
+		padding-top: 9px;
+		
+	}
+
+	.titulo-products-carrinho p{
+		font-size: 14px;
+		color: #a9adb9;
+	}
+
+	.preco-carrinho strong {
+		color: #9f541b;
+	}
+
+	.condicoes-juridicas p {
+		font-size: 12px;
+		color: #9e9e9e;
+	}
+
+	.modal-footer span {
+		color: #a9adb9;
+    	font-size: 12px
+	}
+
 	// tabela credito
 
 	
@@ -481,6 +587,12 @@
 
 	// SECTION TABELA EXTRATO
 
+	.engloba-saldo-atual {
+		display: block;
+		z-index: 9999;
+	}
+
+
 	.engloba-saldo-atual strong {
 		font-size: 17px;
 		color: #adb8c5;
@@ -491,7 +603,6 @@
 		margin-right: 25px;
 		border-left: 1px solid  #848789;
 	    padding-left: 31px;
-	    display: none;
 	}
 
 	.saldo-atual-right .number {
@@ -501,7 +612,7 @@
 
 
 	.saldo-atual-right table {
-		
+		width: 100%;
 
 	}
 
@@ -518,12 +629,60 @@
 	.saldo-atual-right span {
 		font-size: 15px;
 		font-weight: bold;
-		color: #848789
+		color: #9f541b;
 	}
 
 	.saldo-atual-right .usado {
 		margin-top: 10px;
+		font-weight: bold;
+
 	}
+
+	.reais-titulo-table {
+		text-align: right;
+		color: #848789;
+		padding-bottom: 20px;
+	}
+
+	.titulo-table {
+		color: #848789;
+		padding-bottom: 22px;
+	}
+
+	.usado-light {
+		color:  #b8b8b8;
+		margin: 0;
+
+	}
+
+	.limite-credito table {
+		table-layout: fixed;
+	}
+
+	.usado-bottom {
+		padding-top: 20px;
+		font-weight: bold;
+		color: #9f541b;
+		font-size: 16px;
+	}
+
+	.usado-credito {
+		padding-bottom: 10px;
+	}
+
+	.usado-light p {
+		font-size: 12px;
+		color: #adb8c5;
+	}
+
+	.usado {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid #ebe4cf;
+
+	}
+
+
  //  DROPDOWN LIMITE CREDITO
 
  	/* Dropdown Button */
@@ -546,11 +705,11 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #fafafa;
+    background-color: #fff;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   
     z-index: 9999;
-    border: 1px solid #bfbfbf;
+    border: 1px solid #f3f2ed;
 }
 
 /* Links inside the dropdown */
@@ -560,6 +719,7 @@
     text-decoration: none;
     display: block;
 }
+
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: #f1f1f1}
@@ -575,14 +735,14 @@
 }
 
 	.limite-credito {
-		left: -208px !important;
-		min-width: 266px;
-		top: 65px;
+		left: -247px !important;
+		width: 303px;
+		top: 77px;
 		
 	}
 
 	.limite-credito  {
-		padding: 10px !important;
+		padding: 25px !important;
 		
 	}
 
@@ -596,6 +756,7 @@
 
 	.number {
 		text-align: right!important;
+		width: 178px;
 	}
 
 
@@ -625,6 +786,40 @@
 		color: #a9aebb;
 	}
 
+	
+
+	@media only screen and (min-width: 768px) {
+
+		#exTab2 {
+			margin-top: -118px;
+		}
+	}
+
+	@media only screen and (max-width: 768px) {
+
+		.nav-tabs > li > a {
+			padding: 15px 5px;
+		}
+
+		.tag {
+			left: 24px;
+		}
+
+		.tag.two-tag {
+			left: 55px;
+		}
+
+		.tag.three-tag {
+			left: 45px;
+		}
+
+		.icon-dolar {
+			margin-right: 6px;
+		}
+	}
+
+
+
 
 
 	@media only screen and (max-width :320px) {
@@ -634,6 +829,7 @@
 		
 		.tab-content {
 			padding:20px;
+			margin: 0;
 		}
 
 		.saldo-atual-mobile {
@@ -733,6 +929,10 @@
 			font-size: 13px;
 		}
 
+		.condicoes-juridicas h6 {
+			color: #a9adb9;
+		}
+
 		.checkbox-inline p {
 			font-size: 13px;
 		}
@@ -744,6 +944,33 @@
 		.dolar {
 			font-size: 13px;
 		}
+
+		.funfo-p-recebidos {
+			padding-bottom: 0;
+		}
+
+		.btn-agradecer {
+			width: 100%;
+		}
+
+		.modal-title {
+			font-size: 20px;
+		}
+		.endereco-entrega .endereco {
+			font-size: 14px;
+		}
+
+		.thumb-carrinho {
+			display: none;
+		}
+
+		.titulo-products-carrinho {
+			text-align: center;
+		}
+
+		.data-prazo-carrinho {
+			text-align: center;
+		}
 	}
 
 
@@ -754,6 +981,7 @@
 		}
 		.tab-content {
 			padding:20px;
+			margin: 0;
 		}
 
 		.saldo-atual-mobile {
@@ -879,6 +1107,33 @@
 		.dolar {
 			font-size: 13px;
 		}
+
+		.funfo-p-recebidos {
+			padding-bottom: 0;
+		}
+
+		.btn-agradecer {
+			width: 100%;
+		}
+
+		.modal-title {
+			font-size: 20px;
+		}
+		.endereco-entrega .endereco {
+			font-size: 14px;
+		}
+
+		.thumb-carrinho {
+			display: none;
+		}
+
+		.titulo-products-carrinho {
+			text-align: center;
+		}
+
+		.data-prazo-carrinho {
+			text-align: center;
+		}
 	}
 
 	@media only screen and (max-width :414px) {
@@ -902,6 +1157,7 @@
 
 		.tab-content {
 			padding:20px;
+			margin:0;
 		}
 
 		.page-heading .entry-title {
@@ -1048,6 +1304,33 @@
 
 		.dolar {
 			font-size: 13px;
+			text-align: center;
+		}
+
+		.funfo-p-recebidos {
+			padding-bottom: 0;
+		}
+
+		.btn-agradecer {
+			width: 100%;
+		}
+
+		.modal-title {
+			font-size: 20px;
+		}
+		.endereco-entrega .endereco {
+			font-size: 14px;
+		}
+
+		.thumb-carrinho {
+			display: none;
+		}
+
+		.titulo-products-carrinho {
+			text-align: center;
+		}
+
+		.data-prazo-carrinho {
 			text-align: center;
 		}
 
